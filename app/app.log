@@ -1,0 +1,1503 @@
+2024-08-07 00:07:32,734 - WARNING -  * Debugger is active!
+2024-08-07 00:07:32,748 - INFO -  * Debugger PIN: 145-870-983
+2024-08-07 00:08:08,367 - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\techcamp_elearn\\app\\main.py', reloading
+2024-08-07 00:08:10,023 - WARNING -  * Debugger is active!
+2024-08-07 00:08:10,040 - INFO -  * Debugger PIN: 145-870-983
+2024-08-07 00:08:12,550 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:12] "GET /journeys/1000 HTTP/1.1" 200 -
+2024-08-07 00:08:13,670 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:13] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:08:13,684 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:13] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:13,703 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:13] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:13,720 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:13] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:13,775 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:13] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:08:13,791 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:13] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:13,822 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:13] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:13,822 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:13] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:08:13,841 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:13] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:08:13,921 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:13] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:13,921 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:13] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:13,929 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:13] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:13,962 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:13] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:08:13,974 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:13] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:14,683 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:14] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-07 00:08:15,223 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:15] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-07 00:08:16,398 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:16] "GET / HTTP/1.1" 200 -
+2024-08-07 00:08:16,871 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:16] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:08:17,041 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:17] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:17,043 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:17] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:08:17,054 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:17] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:17,059 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:17] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:08:17,065 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:17] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:08:17,067 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:17] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:17,076 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:17] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:17,079 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:17] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:17,085 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:17] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:17,092 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:17] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:17,098 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:17] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:08:17,103 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:17] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:17,107 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:17] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:17,676 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:17] "[36mGET /static/img/header.jpg HTTP/1.1[0m" 304 -
+2024-08-07 00:08:17,681 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:17] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-07 00:08:21,502 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:21] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-08-07 00:08:21,937 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:21] "GET /login HTTP/1.1" 200 -
+2024-08-07 00:08:22,404 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:22] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:08:22,432 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:22] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:08:22,457 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:22] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:08:22,589 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:22] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:22,597 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:22] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:22,602 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:22] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:22,605 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:22] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:22,608 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:22] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:22,609 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:22] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:22,617 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:22] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:22,644 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:22] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:22,652 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:22] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:08:22,656 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:22] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:22,658 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:22] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:08:23,235 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:23] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-07 00:08:25,822 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:25] "[32mGET /login_oauth HTTP/1.1[0m" 302 -
+2024-08-07 00:08:28,122 - INFO - User details retrieved: ropykevin@gmail.com, Ropy Kevin
+2024-08-07 00:08:28,435 - INFO - User found: ropy kevin
+2024-08-07 00:08:28,437 - INFO - Redirecting to category journeys with category ID: 1
+2024-08-07 00:08:28,439 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:28] "[32mGET /login/callback?state=LET67RWAvJUQcYwGlvGStZ3E2LKGmK&code=4/0AcvDMrBAsj3yFUUtjQngssVMkxd43vjs8Y4eVpzJPizq20ve6YBSX3QUnOA7kvZK2IV1wA&scope=email+profile+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile+openid&authuser=0&prompt=none HTTP/1.1[0m" 302 -
+2024-08-07 00:08:29,150 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:29] "GET /1/journeys HTTP/1.1" 200 -
+2024-08-07 00:08:29,624 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:29] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:08:29,636 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:29] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:08:29,811 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:29] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:08:29,819 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:29] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:08:29,826 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:29] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:08:29,828 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:29] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:29,843 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:29] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:29,844 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:29] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:29,851 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:29] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:29,853 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:29] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:29,857 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:29] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:29,861 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:29] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:29,863 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:29] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:29,866 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:29] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:30,433 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:30] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-07 00:08:50,209 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:50] "GET / HTTP/1.1" 200 -
+2024-08-07 00:08:50,687 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:50] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:08:50,689 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:50] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:08:50,890 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:50] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:50,892 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:50] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:50,899 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:50] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:50,902 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:50] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:08:50,913 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:50] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:50,916 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:50] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:08:50,920 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:50] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:50,923 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:50] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:50,928 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:50] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:50,931 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:50] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:50,935 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:50] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:08:50,937 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:50] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:51,736 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:51] "[36mGET /static/img/header.jpg HTTP/1.1[0m" 304 -
+2024-08-07 00:08:51,740 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:51] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-07 00:08:54,456 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:54] "GET /1000/journeys HTTP/1.1" 200 -
+2024-08-07 00:08:55,056 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:55] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:08:55,184 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:55] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:08:55,188 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:55] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:08:55,189 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:55] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:08:55,195 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:55] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:55,196 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:55] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:08:55,216 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:55] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:55,235 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:55] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:55,242 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:55] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:55,353 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:55] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:55,369 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:55] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:55,375 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:55] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:55,383 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:55] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:55,387 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:55] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:08:55,832 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:55] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-07 00:08:59,379 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:59] "GET /journeys/1000 HTTP/1.1" 200 -
+2024-08-07 00:08:59,885 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:59] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:08:59,897 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:59] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:08:59,954 - INFO - 127.0.0.1 - - [07/Aug/2024 00:08:59] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:09:00,046 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:00] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:09:00,087 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:00] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:00,095 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:00] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:00,102 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:00] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:00,105 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:00] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:09:00,119 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:00] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:00,122 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:00] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:00,126 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:00] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:00,130 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:00] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:00,141 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:00] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:00,143 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:00] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:00,666 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:00] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-07 00:09:26,760 - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\techcamp_elearn\\app\\main.py', reloading
+2024-08-07 00:09:28,443 - WARNING -  * Debugger is active!
+2024-08-07 00:09:28,466 - INFO -  * Debugger PIN: 145-870-983
+2024-08-07 00:09:31,560 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:31] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-08-07 00:09:31,955 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:31] "GET /login HTTP/1.1" 200 -
+2024-08-07 00:09:32,614 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:32] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:09:32,709 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:32] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:09:32,718 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:32] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:09:32,722 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:32] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:32,726 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:32] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:32,728 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:32] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:09:32,733 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:32] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:09:32,737 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:32] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:32,739 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:32] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:32,741 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:32] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:32,746 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:32] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:32,747 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:32] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:32,755 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:32] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:32,755 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:32] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:33,429 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:33] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-07 00:09:35,050 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:35] "[32mGET /login_oauth HTTP/1.1[0m" 302 -
+2024-08-07 00:09:37,099 - INFO - User details retrieved: ropykevin@gmail.com, Ropy Kevin
+2024-08-07 00:09:37,470 - INFO - User found: ropy kevin
+2024-08-07 00:09:37,470 - INFO - Redirecting to category journeys with category ID: 1000
+2024-08-07 00:09:37,473 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:37] "[32mGET /login/callback?state=3lw9rX70IBTU3guPsRJ2O4ukTiI0kB&code=4/0AcvDMrB9-aPDfxzvT5fQuXumxX86GzIcMkB7OCEFQimESQF3_owIdzrfWxgSk1fVrX5vIA&scope=email+profile+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile+openid&authuser=0&prompt=none HTTP/1.1[0m" 302 -
+2024-08-07 00:09:38,851 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:38] "GET /1000/journeys HTTP/1.1" 200 -
+2024-08-07 00:09:39,785 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:39] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:09:39,787 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:39] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:09:39,789 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:39] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:09:39,792 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:39] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:09:39,796 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:39] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:39,798 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:39] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:39,803 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:39] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:39,998 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:39] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:40,004 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:40] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:09:40,004 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:40] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:40,006 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:40] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:40,010 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:40] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:40,012 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:40] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:40,014 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:40] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:40,623 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:40] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-07 00:09:43,881 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:43] "GET /journeys/1000 HTTP/1.1" 200 -
+2024-08-07 00:09:44,370 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:44] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:09:44,432 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:44] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:09:44,437 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:44] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:09:44,440 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:44] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:09:44,442 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:44] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:44,455 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:44] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:44,457 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:44] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:09:44,538 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:44] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:44,604 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:44] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:44,605 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:44] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:44,607 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:44] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:44,608 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:44] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:44,609 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:44] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:44,609 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:44] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:45,066 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:45] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-07 00:09:52,218 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:52] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-08-07 00:09:52,593 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:52] "GET /login HTTP/1.1" 200 -
+2024-08-07 00:09:53,074 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:53] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:09:53,105 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:53] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:09:53,259 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:53] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:53,265 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:53] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:09:53,271 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:53] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:53,274 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:53] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:53,277 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:53] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:53,281 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:53] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:53,287 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:53] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:09:53,291 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:53] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:53,295 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:53] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:09:53,297 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:53] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:53,304 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:53] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:53,305 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:53] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:53,941 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:53] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-07 00:09:55,184 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:55] "[32mGET /login_oauth HTTP/1.1[0m" 302 -
+2024-08-07 00:09:56,473 - INFO - User details retrieved: ropykevin@gmail.com, Ropy Kevin
+2024-08-07 00:09:56,955 - INFO - User found: ropy kevin
+2024-08-07 00:09:56,955 - INFO - Redirecting to category journeys with category ID: 1000
+2024-08-07 00:09:56,956 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:56] "[32mGET /login/callback?state=ryNQFBXEUHXnWALzAY2rHygMfPLDnY&code=4/0AcvDMrDGqjCe0Um2zoe2AyHsD0UtuOmpw7D_gXTt5irKKs_ICZgUa-R_BvhbcuPYOYmrhg&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+openid+https://www.googleapis.com/auth/userinfo.email&authuser=0&prompt=none HTTP/1.1[0m" 302 -
+2024-08-07 00:09:58,050 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:58] "GET /1000/journeys HTTP/1.1" 200 -
+2024-08-07 00:09:58,515 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:58] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:09:58,748 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:58] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:09:58,748 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:58] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:09:58,755 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:58] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:09:58,755 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:58] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:09:58,778 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:58] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:58,787 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:58] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:58,788 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:58] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:59,095 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:59] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:59,106 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:59] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:59,125 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:59] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:59,140 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:59] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:59,142 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:59] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:59,149 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:59] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:09:59,915 - INFO - 127.0.0.1 - - [07/Aug/2024 00:09:59] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-07 00:10:45,843 - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\techcamp_elearn\\app\\main.py', reloading
+2024-08-07 00:11:43,235 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-07 00:11:43,235 - INFO - [33mPress CTRL+C to quit[0m
+2024-08-07 00:11:43,242 - INFO -  * Restarting with stat
+2024-08-07 00:11:45,185 - WARNING -  * Debugger is active!
+2024-08-07 00:11:45,200 - INFO -  * Debugger PIN: 145-870-983
+2024-08-07 00:11:45,250 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:45] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-08-07 00:11:45,650 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:45] "GET /login HTTP/1.1" 200 -
+2024-08-07 00:11:46,356 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:46] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:11:46,356 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:46] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:11:46,376 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:46] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:11:46,390 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:46] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:11:46,390 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:46] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:11:46,423 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:46] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:11:46,442 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:46] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:11:46,471 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:46] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:11:46,474 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:46] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:11:46,499 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:46] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:11:46,579 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:46] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:11:46,606 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:46] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:11:46,615 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:46] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:11:46,622 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:46] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:11:47,228 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:47] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-07 00:11:49,433 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:49] "[32mGET /login_oauth HTTP/1.1[0m" 302 -
+2024-08-07 00:11:50,770 - INFO - User details retrieved: ropykevin@gmail.com, Ropy Kevin
+2024-08-07 00:11:51,061 - INFO - User found: ropy kevin
+2024-08-07 00:11:51,061 - INFO - Redirecting to category journeys with category ID: None
+2024-08-07 00:11:51,062 - ERROR - An error occurred: Could not build url for endpoint 'category_journeys'. Did you forget to specify values ['category_id']?
+2024-08-07 00:11:51,062 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:51] "[32mGET /login/callback?state=KF45qPkhv3JxkLjQRSoXPnyOgdEwGE&code=4/0AcvDMrAumMqP2U2V3zbDpjNCr-iWZmw3-oPH7BvnP3fBAbpOIr78BIWEK21nI7F9_-VddA&scope=email+profile+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile+openid&authuser=0&prompt=none HTTP/1.1[0m" 302 -
+2024-08-07 00:11:51,454 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:51] "GET /login HTTP/1.1" 200 -
+2024-08-07 00:11:51,937 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:51] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:11:51,944 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:51] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:11:52,161 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:52] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:11:52,179 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:52] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:11:52,190 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:52] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:11:52,198 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:52] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:11:52,214 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:52] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:11:52,217 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:52] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:11:52,228 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:52] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:11:52,231 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:52] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:11:52,234 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:52] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:11:52,236 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:52] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:11:52,246 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:52] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:11:52,249 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:52] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:11:52,893 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:52] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-07 00:11:55,460 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:55] "[32mGET /login_oauth HTTP/1.1[0m" 302 -
+2024-08-07 00:11:56,491 - INFO - User details retrieved: ropykevin@gmail.com, Ropy Kevin
+2024-08-07 00:11:56,780 - INFO - User found: ropy kevin
+2024-08-07 00:11:56,780 - INFO - Redirecting to category journeys with category ID: None
+2024-08-07 00:11:56,785 - ERROR - An error occurred: Could not build url for endpoint 'category_journeys'. Did you forget to specify values ['category_id']?
+2024-08-07 00:11:56,788 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:56] "[32mGET /login/callback?state=4F5hac5Twaj7dVI8ZYHhjjHfTdjwaM&code=4/0AcvDMrBVanet0vZHCeFfFfc7pQkfihNvZMW9dbZbuiB5cDDrfOBdL-5tm5NGRmTRBJtTng&scope=email+profile+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile+openid&authuser=0&prompt=none HTTP/1.1[0m" 302 -
+2024-08-07 00:11:57,167 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:57] "GET /login HTTP/1.1" 200 -
+2024-08-07 00:11:57,698 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:57] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:11:57,863 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:57] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:11:57,872 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:57] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:11:57,875 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:57] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:11:57,880 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:57] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:11:57,882 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:57] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:11:57,892 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:57] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:11:57,896 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:57] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:11:57,901 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:57] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:11:57,905 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:57] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:11:57,918 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:57] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:11:57,922 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:57] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:11:57,930 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:57] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:11:57,930 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:57] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:11:58,499 - INFO - 127.0.0.1 - - [07/Aug/2024 00:11:58] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-07 00:12:26,887 - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\techcamp_elearn\\app\\main.py', reloading
+2024-08-07 00:12:26,980 - INFO -  * Restarting with stat
+2024-08-07 00:12:28,943 - WARNING -  * Debugger is active!
+2024-08-07 00:12:28,956 - INFO -  * Debugger PIN: 145-870-983
+2024-08-07 00:12:34,309 - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\techcamp_elearn\\app\\main.py', reloading
+2024-08-07 00:12:34,393 - INFO -  * Restarting with stat
+2024-08-07 00:12:35,850 - WARNING -  * Debugger is active!
+2024-08-07 00:12:35,869 - INFO -  * Debugger PIN: 145-870-983
+2024-08-07 00:12:37,013 - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\techcamp_elearn\\app\\main.py', reloading
+2024-08-07 00:12:37,084 - INFO -  * Restarting with stat
+2024-08-07 00:12:39,051 - WARNING -  * Debugger is active!
+2024-08-07 00:12:39,062 - INFO -  * Debugger PIN: 145-870-983
+2024-08-07 00:12:39,704 - INFO - 127.0.0.1 - - [07/Aug/2024 00:12:39] "[32mGET /login_oauth HTTP/1.1[0m" 302 -
+2024-08-07 00:12:41,280 - INFO - 127.0.0.1 - - [07/Aug/2024 00:12:41] "[32mGET /login/callback?state=wUwseZJEMKFiqkR0mm4VdYPU9dTTSW&code=4/0AcvDMrDjvEad-uQzaL3luzvQq_P4rPBXTR35lVTyDvmC-VLOfu_VZnMnIpyQ9w9x-SkMTg&scope=email+profile+openid+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile&authuser=0&prompt=none HTTP/1.1[0m" 302 -
+2024-08-07 00:12:42,008 - INFO - 127.0.0.1 - - [07/Aug/2024 00:12:42] "GET / HTTP/1.1" 200 -
+2024-08-07 00:12:42,646 - INFO - 127.0.0.1 - - [07/Aug/2024 00:12:42] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:12:42,659 - INFO - 127.0.0.1 - - [07/Aug/2024 00:12:42] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:12:42,674 - INFO - 127.0.0.1 - - [07/Aug/2024 00:12:42] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:12:42,678 - INFO - 127.0.0.1 - - [07/Aug/2024 00:12:42] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:12:42,682 - INFO - 127.0.0.1 - - [07/Aug/2024 00:12:42] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:12:42,689 - INFO - 127.0.0.1 - - [07/Aug/2024 00:12:42] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:12:42,693 - INFO - 127.0.0.1 - - [07/Aug/2024 00:12:42] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:12:42,697 - INFO - 127.0.0.1 - - [07/Aug/2024 00:12:42] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:12:42,700 - INFO - 127.0.0.1 - - [07/Aug/2024 00:12:42] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:12:42,702 - INFO - 127.0.0.1 - - [07/Aug/2024 00:12:42] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:12:42,705 - INFO - 127.0.0.1 - - [07/Aug/2024 00:12:42] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:12:42,708 - INFO - 127.0.0.1 - - [07/Aug/2024 00:12:42] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:12:42,710 - INFO - 127.0.0.1 - - [07/Aug/2024 00:12:42] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:12:42,711 - INFO - 127.0.0.1 - - [07/Aug/2024 00:12:42] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:12:43,398 - INFO - 127.0.0.1 - - [07/Aug/2024 00:12:43] "[36mGET /static/img/header.jpg HTTP/1.1[0m" 304 -
+2024-08-07 00:12:43,425 - INFO - 127.0.0.1 - - [07/Aug/2024 00:12:43] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-07 00:12:46,749 - INFO - 127.0.0.1 - - [07/Aug/2024 00:12:46] "GET /1000/journeys HTTP/1.1" 200 -
+2024-08-07 00:12:47,216 - INFO - 127.0.0.1 - - [07/Aug/2024 00:12:47] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:12:47,427 - INFO - 127.0.0.1 - - [07/Aug/2024 00:12:47] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:12:47,428 - INFO - 127.0.0.1 - - [07/Aug/2024 00:12:47] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:12:47,436 - INFO - 127.0.0.1 - - [07/Aug/2024 00:12:47] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:12:47,437 - INFO - 127.0.0.1 - - [07/Aug/2024 00:12:47] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:12:47,530 - INFO - 127.0.0.1 - - [07/Aug/2024 00:12:47] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:12:47,609 - INFO - 127.0.0.1 - - [07/Aug/2024 00:12:47] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:12:47,610 - INFO - 127.0.0.1 - - [07/Aug/2024 00:12:47] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:12:47,635 - INFO - 127.0.0.1 - - [07/Aug/2024 00:12:47] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:12:47,637 - INFO - 127.0.0.1 - - [07/Aug/2024 00:12:47] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:12:47,664 - INFO - 127.0.0.1 - - [07/Aug/2024 00:12:47] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:12:47,667 - INFO - 127.0.0.1 - - [07/Aug/2024 00:12:47] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:12:47,669 - INFO - 127.0.0.1 - - [07/Aug/2024 00:12:47] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:12:47,671 - INFO - 127.0.0.1 - - [07/Aug/2024 00:12:47] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:12:48,082 - INFO - 127.0.0.1 - - [07/Aug/2024 00:12:48] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-07 00:13:49,619 - INFO - 127.0.0.1 - - [07/Aug/2024 00:13:49] "GET /journeys/1000 HTTP/1.1" 200 -
+2024-08-07 00:13:50,255 - INFO - 127.0.0.1 - - [07/Aug/2024 00:13:50] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:13:50,259 - INFO - 127.0.0.1 - - [07/Aug/2024 00:13:50] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:13:50,261 - INFO - 127.0.0.1 - - [07/Aug/2024 00:13:50] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:13:50,269 - INFO - 127.0.0.1 - - [07/Aug/2024 00:13:50] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:13:50,275 - INFO - 127.0.0.1 - - [07/Aug/2024 00:13:50] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:13:50,280 - INFO - 127.0.0.1 - - [07/Aug/2024 00:13:50] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:13:50,291 - INFO - 127.0.0.1 - - [07/Aug/2024 00:13:50] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:13:50,294 - INFO - 127.0.0.1 - - [07/Aug/2024 00:13:50] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:13:50,298 - INFO - 127.0.0.1 - - [07/Aug/2024 00:13:50] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:13:50,302 - INFO - 127.0.0.1 - - [07/Aug/2024 00:13:50] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:13:50,306 - INFO - 127.0.0.1 - - [07/Aug/2024 00:13:50] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:13:50,308 - INFO - 127.0.0.1 - - [07/Aug/2024 00:13:50] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:13:50,312 - INFO - 127.0.0.1 - - [07/Aug/2024 00:13:50] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:13:50,315 - INFO - 127.0.0.1 - - [07/Aug/2024 00:13:50] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:13:50,889 - INFO - 127.0.0.1 - - [07/Aug/2024 00:13:50] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-07 00:13:56,606 - INFO - 127.0.0.1 - - [07/Aug/2024 00:13:56] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-08-07 00:13:57,001 - INFO - 127.0.0.1 - - [07/Aug/2024 00:13:57] "GET /login HTTP/1.1" 200 -
+2024-08-07 00:13:57,472 - INFO - 127.0.0.1 - - [07/Aug/2024 00:13:57] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:13:57,480 - INFO - 127.0.0.1 - - [07/Aug/2024 00:13:57] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:13:57,644 - INFO - 127.0.0.1 - - [07/Aug/2024 00:13:57] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:13:57,645 - INFO - 127.0.0.1 - - [07/Aug/2024 00:13:57] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:13:57,651 - INFO - 127.0.0.1 - - [07/Aug/2024 00:13:57] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:13:57,655 - INFO - 127.0.0.1 - - [07/Aug/2024 00:13:57] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:13:57,659 - INFO - 127.0.0.1 - - [07/Aug/2024 00:13:57] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:13:57,663 - INFO - 127.0.0.1 - - [07/Aug/2024 00:13:57] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:13:57,670 - INFO - 127.0.0.1 - - [07/Aug/2024 00:13:57] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:13:57,671 - INFO - 127.0.0.1 - - [07/Aug/2024 00:13:57] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:13:57,678 - INFO - 127.0.0.1 - - [07/Aug/2024 00:13:57] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:13:57,685 - INFO - 127.0.0.1 - - [07/Aug/2024 00:13:57] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:13:57,690 - INFO - 127.0.0.1 - - [07/Aug/2024 00:13:57] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:13:57,693 - INFO - 127.0.0.1 - - [07/Aug/2024 00:13:57] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:13:58,289 - INFO - 127.0.0.1 - - [07/Aug/2024 00:13:58] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-07 00:14:02,090 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:02] "GET / HTTP/1.1" 200 -
+2024-08-07 00:14:02,584 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:02] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:14:02,589 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:02] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:14:02,593 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:02] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:14:02,597 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:02] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:14:02,601 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:02] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:02,608 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:02] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:02,611 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:02] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:14:02,615 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:02] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:02,619 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:02] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:02,621 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:02] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:02,764 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:02] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:02,772 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:02] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:02,777 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:02] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:02,778 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:02] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:03,225 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:03] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-07 00:14:03,226 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:03] "[36mGET /static/img/header.jpg HTTP/1.1[0m" 304 -
+2024-08-07 00:14:05,991 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:05] "GET /1000/journeys HTTP/1.1" 200 -
+2024-08-07 00:14:06,484 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:06] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:06,652 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:06] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:14:06,653 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:06] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:14:06,654 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:06] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:14:06,658 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:06] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:14:06,673 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:06] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:06,679 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:06] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:06,690 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:06] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:06,693 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:06] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:06,697 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:06] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:06,701 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:06] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:06,704 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:06] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:06,708 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:06] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:06,709 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:06] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:14:07,328 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:07] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-07 00:14:09,883 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:09] "[32mGET /journeys/1000 HTTP/1.1[0m" 302 -
+2024-08-07 00:14:10,420 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:10] "GET /login HTTP/1.1" 200 -
+2024-08-07 00:14:12,126 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:12] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:14:12,419 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:12] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:12,577 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:12] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:14:12,580 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:12] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:14:12,588 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:12] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:14:12,780 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:12] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:12,793 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:12] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:14:12,825 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:12] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:12,828 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:12] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:12,832 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:12] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:12,837 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:12] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:12,840 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:12] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:12,846 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:12] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:12,846 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:12] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:15,866 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:15] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-07 00:14:54,753 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:54] "GET / HTTP/1.1" 200 -
+2024-08-07 00:14:55,451 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:55] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:14:55,507 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:55] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:14:55,511 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:55] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:14:55,515 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:55] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:14:55,519 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:55] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:14:55,521 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:55] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:55,524 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:55] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:55,527 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:55] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:55,528 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:55] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:55,693 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:55] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:55,825 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:55] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:55,833 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:55] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:55,839 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:55] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:55,841 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:55] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:14:56,723 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:56] "[36mGET /static/img/header.jpg HTTP/1.1[0m" 304 -
+2024-08-07 00:14:59,287 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:59] "GET / HTTP/1.1" 200 -
+2024-08-07 00:14:59,884 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:59] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:14:59,885 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:59] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:14:59,889 - INFO - 127.0.0.1 - - [07/Aug/2024 00:14:59] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:15:00,065 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:00] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:15:00,081 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:00] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:15:00,086 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:00] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:15:00,089 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:00] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:15:00,094 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:00] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:15:00,096 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:00] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:15:00,100 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:00] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:15:00,103 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:00] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:15:00,105 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:00] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:15:00,107 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:00] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:15:00,108 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:00] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:15:00,899 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:00] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-07 00:15:45,060 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:45] "GET / HTTP/1.1" 200 -
+2024-08-07 00:15:45,931 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:45] "GET /static/css/font-awesome.css HTTP/1.1" 200 -
+2024-08-07 00:15:45,931 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:45] "GET /static/css/st.css HTTP/1.1" 200 -
+2024-08-07 00:15:46,135 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:46] "GET /static/css/bootstrap.css HTTP/1.1" 200 -
+2024-08-07 00:15:46,144 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:46] "GET /static/css/menu.css HTTP/1.1" 200 -
+2024-08-07 00:15:46,154 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:46] "GET /static/js/jquery.js HTTP/1.1" 200 -
+2024-08-07 00:15:46,156 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:46] "GET /static/css/animate.css HTTP/1.1" 200 -
+2024-08-07 00:15:47,034 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:47] "GET /static/js/bootstrap.js HTTP/1.1" 200 -
+2024-08-07 00:15:47,252 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:47] "GET /static/js/plugins.js HTTP/1.1" 200 -
+2024-08-07 00:15:48,235 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:48] "GET /static/js/parallax.js HTTP/1.1" 200 -
+2024-08-07 00:15:49,018 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:49] "GET /static/js/countto.js HTTP/1.1" 200 -
+2024-08-07 00:15:49,335 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:49] "GET /static/js/portfolio.js HTTP/1.1" 200 -
+2024-08-07 00:15:49,338 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:49] "GET /static/js/animheader.js HTTP/1.1" 200 -
+2024-08-07 00:15:49,439 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:49] "GET /static/js/scripts.js HTTP/1.1" 200 -
+2024-08-07 00:15:50,476 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:50] "GET /static/js/js/main.js HTTP/1.1" 200 -
+2024-08-07 00:15:51,157 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:51] "GET /static/img/header.jpg HTTP/1.1" 200 -
+2024-08-07 00:15:52,367 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:52] "GET /static/img/favicon.png HTTP/1.1" 200 -
+2024-08-07 00:15:52,385 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:52] "[33mGET /app/static/img/favicon.png HTTP/1.1[0m" 404 -
+2024-08-07 00:15:54,476 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:54] "GET /1000/journeys HTTP/1.1" 200 -
+2024-08-07 00:15:55,262 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:55] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:15:55,426 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:55] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:15:55,500 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:55] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:15:55,503 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:55] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:15:55,505 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:55] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:15:55,506 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:55] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:15:56,179 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:56] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:15:56,181 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:56] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:15:56,184 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:56] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:15:56,186 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:56] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:15:56,188 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:56] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:15:56,189 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:56] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:15:56,741 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:56] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:15:56,797 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:56] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:15:57,425 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:57] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-07 00:15:57,871 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:57] "[32mGET /journeys/1000 HTTP/1.1[0m" 302 -
+2024-08-07 00:15:58,430 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:58] "GET /login HTTP/1.1" 200 -
+2024-08-07 00:15:59,474 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:59] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:15:59,478 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:59] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:15:59,489 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:59] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:15:59,500 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:59] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:15:59,507 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:59] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:15:59,510 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:59] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:15:59,950 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:59] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:15:59,997 - INFO - 127.0.0.1 - - [07/Aug/2024 00:15:59] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:00,042 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:00] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:00,044 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:00] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:00,046 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:00] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:00,048 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:00] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:00,624 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:00] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:00,627 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:00] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:01,862 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:01] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-07 00:16:03,520 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:03] "[32mGET /login_oauth HTTP/1.1[0m" 302 -
+2024-08-07 00:16:19,535 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:19] "GET /1000/journeys HTTP/1.1" 200 -
+2024-08-07 00:16:20,109 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:20] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:16:20,408 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:20] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:16:20,418 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:20] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:16:20,420 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:20] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:20,426 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:20] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:20,429 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:20] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:20,433 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:20] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:16:20,435 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:20] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:20,439 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:20] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:16:20,442 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:20] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:20,444 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:20] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:20,447 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:20] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:20,448 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:20] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:20,450 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:20] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:23,647 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:23] "GET /journeys/1000 HTTP/1.1" 200 -
+2024-08-07 00:16:24,283 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:24] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:16:24,286 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:24] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:16:24,290 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:24] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:16:24,293 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:24] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:16:24,294 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:24] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:16:24,320 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:24] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:24,324 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:24] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:24,326 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:24] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:24,328 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:24] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:24,493 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:24] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:24,518 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:24] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:24,539 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:24] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:24,548 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:24] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:24,556 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:24] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:34,781 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:34] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-08-07 00:16:35,299 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:35] "GET /login HTTP/1.1" 200 -
+2024-08-07 00:16:35,928 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:35] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:16:35,956 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:35] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:16:35,959 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:35] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:16:35,960 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:35] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:16:36,116 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:36] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:36,147 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:36] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:36,148 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:36] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:36,151 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:36] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:36,154 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:36] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:36,156 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:36] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:36,158 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:36] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:36,160 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:36] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:16:36,162 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:36] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:36,163 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:36] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:39,110 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:39] "[32mGET /login_oauth HTTP/1.1[0m" 302 -
+2024-08-07 00:16:47,418 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:47] "[32mGET /login/callback?state=Fw33N1i7CNmlIkBADxkcymAVQ857LT&code=4/0AcvDMrDByJQm6tTkeMw4HQJ8HCelggP7iQYvZPjuAmADQBQJccEgUBDd1shjMj5JBvXkkQ&scope=email+profile+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile+openid&authuser=8&prompt=none HTTP/1.1[0m" 302 -
+2024-08-07 00:16:48,149 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:48] "GET / HTTP/1.1" 200 -
+2024-08-07 00:16:49,236 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:49] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:16:49,239 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:49] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:49,240 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:49] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:16:49,245 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:49] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:49,248 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:49] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:16:49,251 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:49] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:49,254 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:49] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:49,257 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:49] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:16:49,258 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:49] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:49,439 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:49] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:16:49,442 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:49] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:49,457 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:49] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:49,460 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:49] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:49,464 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:49] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:50,229 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:50] "[36mGET /static/img/header.jpg HTTP/1.1[0m" 304 -
+2024-08-07 00:16:55,093 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:55] "GET /1000/journeys HTTP/1.1" 200 -
+2024-08-07 00:16:55,667 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:55] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:16:55,670 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:55] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:16:55,672 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:55] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:16:55,674 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:55] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:55,678 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:55] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:16:55,678 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:55] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:16:55,684 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:55] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:55,814 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:55] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:55,818 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:55] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:55,852 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:55] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:55,856 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:55] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:55,860 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:55] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:55,864 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:55] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:16:55,867 - INFO - 127.0.0.1 - - [07/Aug/2024 00:16:55] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:00,598 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:00] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-08-07 00:17:01,076 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:01] "GET /login HTTP/1.1" 200 -
+2024-08-07 00:17:01,503 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:01] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:17:01,512 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:01] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:17:01,688 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:01] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:17:01,698 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:01] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:17:01,710 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:01] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:17:01,716 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:01] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:01,731 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:01] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:01,735 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:01] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:01,739 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:01] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:01,741 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:01] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:01,769 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:01] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:01,770 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:01] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:01,771 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:01] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:01,882 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:01] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:06,219 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:06] "GET / HTTP/1.1" 200 -
+2024-08-07 00:17:06,809 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:06] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:17:06,824 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:06] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:17:06,984 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:06] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:17:06,984 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:06] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:17:07,001 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:07] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:07,004 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:07] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:17:07,007 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:07] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:07,010 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:07] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:07,011 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:07] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:07,018 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:07] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:07,019 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:07] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:07,020 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:07] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:07,022 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:07] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:07,024 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:07] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:07,819 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:07] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-07 00:17:09,440 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:09] "GET /1000/journeys HTTP/1.1" 200 -
+2024-08-07 00:17:09,918 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:09] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:17:09,926 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:09] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:17:10,102 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:10] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:17:10,104 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:10] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:10,107 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:10] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:17:10,107 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:10] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:17:10,537 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:10] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:10,552 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:10] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:10,571 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:10] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:10,584 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:10] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:10,685 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:10] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:10,688 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:10] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:10,691 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:10] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:10,692 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:10] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:11,441 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:11] "[32mGET /journeys/1000 HTTP/1.1[0m" 302 -
+2024-08-07 00:17:11,866 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:11] "GET /login HTTP/1.1" 200 -
+2024-08-07 00:17:12,490 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:12] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:17:12,501 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:12] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:17:12,679 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:12] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:12,690 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:12] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:17:12,694 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:12] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:12,699 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:12] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:17:12,702 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:12] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:17:12,703 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:12] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:12,706 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:12] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:12,708 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:12] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:12,756 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:12] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:12,758 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:12] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:12,760 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:12] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:12,867 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:12] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:15,677 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:15] "[32mGET /login_oauth HTTP/1.1[0m" 302 -
+2024-08-07 00:17:21,954 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:21] "[32mGET /login/callback?state=bbkzkKXPh8dXxKRNOuiAXiAegxBEHS&code=4/0AcvDMrBHHgHWkw-Om5BDWut-4OrXpEniuL0L7ywlAspPvXycKSOisR0XgiWAkCanhusFIA&scope=email+profile+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile+openid&authuser=8&prompt=none HTTP/1.1[0m" 302 -
+2024-08-07 00:17:22,678 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:22] "GET / HTTP/1.1" 200 -
+2024-08-07 00:17:23,736 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:23] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:17:23,743 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:23] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:17:23,745 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:23] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:17:23,749 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:23] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:23,752 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:23] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:23,754 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:23] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:23,758 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:23] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:23,760 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:23] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:23,761 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:23] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:17:23,925 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:23] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:17:23,931 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:23] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:23,941 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:23] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:23,944 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:23] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:23,949 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:23] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:17:24,655 - INFO - 127.0.0.1 - - [07/Aug/2024 00:17:24] "[36mGET /static/img/header.jpg HTTP/1.1[0m" 304 -
+2024-08-07 00:18:25,587 - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\techcamp_elearn\\app\\main.py', reloading
+2024-08-07 00:18:25,706 - INFO -  * Restarting with stat
+2024-08-07 00:18:27,336 - WARNING -  * Debugger is active!
+2024-08-07 00:18:27,344 - INFO -  * Debugger PIN: 145-870-983
+2024-08-07 00:18:35,024 - INFO - 127.0.0.1 - - [07/Aug/2024 00:18:35] "[32mGET /login_oauth HTTP/1.1[0m" 302 -
+2024-08-07 00:18:37,394 - INFO - 127.0.0.1 - - [07/Aug/2024 00:18:37] "[32mGET /login/callback?state=8uqxVLJW1Bn6R8d8VMmKYfPp9NTZrh&code=4/0AcvDMrCOTopPLtEVsTEkkp5Hf3xBO5g7nrX42j-jQMKHP7_ogak8McTvkz-0aNRZtm8kxA&scope=email+profile+openid+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile&authuser=0&prompt=none HTTP/1.1[0m" 302 -
+2024-08-07 00:18:37,840 - INFO - 127.0.0.1 - - [07/Aug/2024 00:18:37] "GET /login HTTP/1.1" 200 -
+2024-08-07 00:18:38,507 - INFO - 127.0.0.1 - - [07/Aug/2024 00:18:38] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:18:38,522 - INFO - 127.0.0.1 - - [07/Aug/2024 00:18:38] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:18:38,534 - INFO - 127.0.0.1 - - [07/Aug/2024 00:18:38] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:18:38,550 - INFO - 127.0.0.1 - - [07/Aug/2024 00:18:38] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:18:38,562 - INFO - 127.0.0.1 - - [07/Aug/2024 00:18:38] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:18:38,628 - INFO - 127.0.0.1 - - [07/Aug/2024 00:18:38] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:18:38,646 - INFO - 127.0.0.1 - - [07/Aug/2024 00:18:38] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:18:38,683 - INFO - 127.0.0.1 - - [07/Aug/2024 00:18:38] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:18:38,696 - INFO - 127.0.0.1 - - [07/Aug/2024 00:18:38] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:18:38,717 - INFO - 127.0.0.1 - - [07/Aug/2024 00:18:38] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:18:38,733 - INFO - 127.0.0.1 - - [07/Aug/2024 00:18:38] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:18:38,743 - INFO - 127.0.0.1 - - [07/Aug/2024 00:18:38] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:18:38,751 - INFO - 127.0.0.1 - - [07/Aug/2024 00:18:38] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:18:38,771 - INFO - 127.0.0.1 - - [07/Aug/2024 00:18:38] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:18:39,265 - INFO - 127.0.0.1 - - [07/Aug/2024 00:18:39] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-07 00:18:45,505 - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\techcamp_elearn\\app\\main.py', reloading
+2024-08-07 00:18:45,588 - INFO -  * Restarting with stat
+2024-08-07 00:18:46,952 - WARNING -  * Debugger is active!
+2024-08-07 00:18:46,963 - INFO -  * Debugger PIN: 145-870-983
+2024-08-07 00:29:07,635 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-07 00:29:07,635 - INFO - [33mPress CTRL+C to quit[0m
+2024-08-07 00:29:07,643 - INFO -  * Restarting with stat
+2024-08-07 00:29:08,771 - WARNING -  * Debugger is active!
+2024-08-07 00:29:08,784 - INFO -  * Debugger PIN: 145-870-983
+2024-08-07 00:29:45,004 - INFO - 127.0.0.1 - - [07/Aug/2024 00:29:45] "GET / HTTP/1.1" 200 -
+2024-08-07 00:29:46,154 - INFO - 127.0.0.1 - - [07/Aug/2024 00:29:46] "GET /static/js/bootstrap.js HTTP/1.1" 200 -
+2024-08-07 00:29:46,154 - INFO - 127.0.0.1 - - [07/Aug/2024 00:29:46] "GET /static/js/parallax.js HTTP/1.1" 200 -
+2024-08-07 00:29:46,176 - INFO - 127.0.0.1 - - [07/Aug/2024 00:29:46] "GET /static/js/plugins.js HTTP/1.1" 200 -
+2024-08-07 00:29:46,195 - INFO - 127.0.0.1 - - [07/Aug/2024 00:29:46] "GET /static/css/menu.css HTTP/1.1" 200 -
+2024-08-07 00:29:46,195 - INFO - 127.0.0.1 - - [07/Aug/2024 00:29:46] "GET /static/js/scripts.js HTTP/1.1" 200 -
+2024-08-07 00:29:46,201 - INFO - 127.0.0.1 - - [07/Aug/2024 00:29:46] "GET /static/css/st.css HTTP/1.1" 200 -
+2024-08-07 00:29:46,227 - INFO - 127.0.0.1 - - [07/Aug/2024 00:29:46] "GET /static/js/animheader.js HTTP/1.1" 200 -
+2024-08-07 00:29:46,227 - INFO - 127.0.0.1 - - [07/Aug/2024 00:29:46] "GET /static/css/animate.css HTTP/1.1" 200 -
+2024-08-07 00:29:46,280 - INFO - 127.0.0.1 - - [07/Aug/2024 00:29:46] "GET /static/js/js/main.js HTTP/1.1" 200 -
+2024-08-07 00:29:46,296 - INFO - 127.0.0.1 - - [07/Aug/2024 00:29:46] "GET /static/js/portfolio.js HTTP/1.1" 200 -
+2024-08-07 00:29:46,322 - INFO - 127.0.0.1 - - [07/Aug/2024 00:29:46] "GET /static/css/font-awesome.css HTTP/1.1" 200 -
+2024-08-07 00:29:46,328 - INFO - 127.0.0.1 - - [07/Aug/2024 00:29:46] "GET /static/js/jquery.js HTTP/1.1" 200 -
+2024-08-07 00:29:46,339 - INFO - 127.0.0.1 - - [07/Aug/2024 00:29:46] "GET /static/js/countto.js HTTP/1.1" 200 -
+2024-08-07 00:29:46,347 - INFO - 127.0.0.1 - - [07/Aug/2024 00:29:46] "GET /static/css/bootstrap.css HTTP/1.1" 200 -
+2024-08-07 00:29:51,603 - INFO - 127.0.0.1 - - [07/Aug/2024 00:29:51] "GET /static/img/header.jpg HTTP/1.1" 200 -
+2024-08-07 00:29:52,490 - INFO - 127.0.0.1 - - [07/Aug/2024 00:29:52] "[33mGET /app/static/img/favicon.png HTTP/1.1[0m" 404 -
+2024-08-07 00:29:52,907 - INFO - 127.0.0.1 - - [07/Aug/2024 00:29:52] "GET /static/img/favicon.png HTTP/1.1" 200 -
+2024-08-07 00:29:53,686 - INFO - 127.0.0.1 - - [07/Aug/2024 00:29:53] "GET /1000/journeys HTTP/1.1" 200 -
+2024-08-07 00:29:54,315 - INFO - 127.0.0.1 - - [07/Aug/2024 00:29:54] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:29:54,505 - INFO - 127.0.0.1 - - [07/Aug/2024 00:29:54] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:29:54,509 - INFO - 127.0.0.1 - - [07/Aug/2024 00:29:54] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:29:54,514 - INFO - 127.0.0.1 - - [07/Aug/2024 00:29:54] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:29:54,517 - INFO - 127.0.0.1 - - [07/Aug/2024 00:29:54] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:29:54,519 - INFO - 127.0.0.1 - - [07/Aug/2024 00:29:54] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:29:54,958 - INFO - 127.0.0.1 - - [07/Aug/2024 00:29:54] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:29:54,964 - INFO - 127.0.0.1 - - [07/Aug/2024 00:29:54] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:29:54,968 - INFO - 127.0.0.1 - - [07/Aug/2024 00:29:54] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:29:54,969 - INFO - 127.0.0.1 - - [07/Aug/2024 00:29:54] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:29:54,971 - INFO - 127.0.0.1 - - [07/Aug/2024 00:29:54] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:29:54,976 - INFO - 127.0.0.1 - - [07/Aug/2024 00:29:54] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:29:54,978 - INFO - 127.0.0.1 - - [07/Aug/2024 00:29:54] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:29:55,120 - INFO - 127.0.0.1 - - [07/Aug/2024 00:29:55] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:30:14,409 - INFO - 127.0.0.1 - - [07/Aug/2024 00:30:14] "[32mGET /journeys/1000 HTTP/1.1[0m" 302 -
+2024-08-07 00:30:14,847 - INFO - 127.0.0.1 - - [07/Aug/2024 00:30:14] "GET /login HTTP/1.1" 200 -
+2024-08-07 00:30:15,286 - INFO - 127.0.0.1 - - [07/Aug/2024 00:30:15] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:30:15,492 - INFO - 127.0.0.1 - - [07/Aug/2024 00:30:15] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:30:15,499 - INFO - 127.0.0.1 - - [07/Aug/2024 00:30:15] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:30:15,518 - INFO - 127.0.0.1 - - [07/Aug/2024 00:30:15] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:30:15,520 - INFO - 127.0.0.1 - - [07/Aug/2024 00:30:15] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:30:15,523 - INFO - 127.0.0.1 - - [07/Aug/2024 00:30:15] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:30:15,530 - INFO - 127.0.0.1 - - [07/Aug/2024 00:30:15] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:30:15,531 - INFO - 127.0.0.1 - - [07/Aug/2024 00:30:15] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:30:15,534 - INFO - 127.0.0.1 - - [07/Aug/2024 00:30:15] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:30:15,537 - INFO - 127.0.0.1 - - [07/Aug/2024 00:30:15] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:30:15,543 - INFO - 127.0.0.1 - - [07/Aug/2024 00:30:15] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:30:15,547 - INFO - 127.0.0.1 - - [07/Aug/2024 00:30:15] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:30:15,547 - INFO - 127.0.0.1 - - [07/Aug/2024 00:30:15] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:30:15,550 - INFO - 127.0.0.1 - - [07/Aug/2024 00:30:15] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:30:17,462 - INFO - 127.0.0.1 - - [07/Aug/2024 00:30:17] "[32mGET /login_oauth HTTP/1.1[0m" 302 -
+2024-08-07 00:30:52,376 - INFO - 127.0.0.1 - - [07/Aug/2024 00:30:52] "[32mGET /login/callback?state=JHKJ8btkNDYFjQSEUHH8HlBvONtGK3&code=4/0AcvDMrB4JgixrLWB2TJdrmBBbEC7JuUFyPN-NXdzXttb2GaitkP8N6CM8SFUCFvMO9GYGw&scope=email+profile+openid+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile&authuser=3&prompt=none HTTP/1.1[0m" 302 -
+2024-08-07 00:30:53,153 - INFO - 127.0.0.1 - - [07/Aug/2024 00:30:53] "GET / HTTP/1.1" 200 -
+2024-08-07 00:30:53,869 - INFO - 127.0.0.1 - - [07/Aug/2024 00:30:53] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:30:54,067 - INFO - 127.0.0.1 - - [07/Aug/2024 00:30:54] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:30:54,069 - INFO - 127.0.0.1 - - [07/Aug/2024 00:30:54] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:30:54,069 - INFO - 127.0.0.1 - - [07/Aug/2024 00:30:54] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:30:54,074 - INFO - 127.0.0.1 - - [07/Aug/2024 00:30:54] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:30:54,078 - INFO - 127.0.0.1 - - [07/Aug/2024 00:30:54] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:30:54,080 - INFO - 127.0.0.1 - - [07/Aug/2024 00:30:54] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:30:54,081 - INFO - 127.0.0.1 - - [07/Aug/2024 00:30:54] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:30:54,085 - INFO - 127.0.0.1 - - [07/Aug/2024 00:30:54] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:30:54,089 - INFO - 127.0.0.1 - - [07/Aug/2024 00:30:54] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:30:54,092 - INFO - 127.0.0.1 - - [07/Aug/2024 00:30:54] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:30:54,094 - INFO - 127.0.0.1 - - [07/Aug/2024 00:30:54] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:30:54,096 - INFO - 127.0.0.1 - - [07/Aug/2024 00:30:54] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:30:54,097 - INFO - 127.0.0.1 - - [07/Aug/2024 00:30:54] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:30:54,723 - INFO - 127.0.0.1 - - [07/Aug/2024 00:30:54] "[36mGET /static/img/header.jpg HTTP/1.1[0m" 304 -
+2024-08-07 00:31:38,853 - INFO - 127.0.0.1 - - [07/Aug/2024 00:31:38] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-08-07 00:31:39,317 - INFO - 127.0.0.1 - - [07/Aug/2024 00:31:39] "GET /login HTTP/1.1" 200 -
+2024-08-07 00:31:39,896 - INFO - 127.0.0.1 - - [07/Aug/2024 00:31:39] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 00:31:39,905 - INFO - 127.0.0.1 - - [07/Aug/2024 00:31:39] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 00:31:39,909 - INFO - 127.0.0.1 - - [07/Aug/2024 00:31:39] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 00:31:40,136 - INFO - 127.0.0.1 - - [07/Aug/2024 00:31:40] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 00:31:40,141 - INFO - 127.0.0.1 - - [07/Aug/2024 00:31:40] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 00:31:40,143 - INFO - 127.0.0.1 - - [07/Aug/2024 00:31:40] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 00:31:40,152 - INFO - 127.0.0.1 - - [07/Aug/2024 00:31:40] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 00:31:40,154 - INFO - 127.0.0.1 - - [07/Aug/2024 00:31:40] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 00:31:40,156 - INFO - 127.0.0.1 - - [07/Aug/2024 00:31:40] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 00:31:40,159 - INFO - 127.0.0.1 - - [07/Aug/2024 00:31:40] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 00:31:40,162 - INFO - 127.0.0.1 - - [07/Aug/2024 00:31:40] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 00:31:40,166 - INFO - 127.0.0.1 - - [07/Aug/2024 00:31:40] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 00:31:40,169 - INFO - 127.0.0.1 - - [07/Aug/2024 00:31:40] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 00:31:40,170 - INFO - 127.0.0.1 - - [07/Aug/2024 00:31:40] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 00:33:05,448 - INFO - 127.0.0.1 - - [07/Aug/2024 00:33:05] "[32mGET /login_oauth HTTP/1.1[0m" 302 -
+2024-08-07 00:33:15,138 - INFO - 127.0.0.1 - - [07/Aug/2024 00:33:15] "[35m[1mGET /login/callback?state=mpeKsALxqRnT0IevPQC6UK7fPp3qIO&code=4/0AcvDMrBO-wRiDM88RmCQMhF6O5IlzDZNcQEcOohr_eSgJ352rMP4LMnAAVpFdChwgj90Ng&scope=email+profile+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile+openid&authuser=2&prompt=none HTTP/1.1[0m" 500 -
+2024-08-07 00:33:15,848 - INFO - 127.0.0.1 - - [07/Aug/2024 00:33:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-08-07 08:06:12,203 - INFO - 127.0.0.1 - - [07/Aug/2024 08:06:12] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-07 08:06:12,206 - INFO - 127.0.0.1 - - [07/Aug/2024 08:06:12] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-07 08:06:12,206 - INFO - 127.0.0.1 - - [07/Aug/2024 08:06:12] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-07 08:06:12,206 - INFO - 127.0.0.1 - - [07/Aug/2024 08:06:12] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-07 08:06:12,206 - INFO - 127.0.0.1 - - [07/Aug/2024 08:06:12] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-07 08:06:12,220 - INFO - 127.0.0.1 - - [07/Aug/2024 08:06:12] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-07 08:06:12,226 - INFO - 127.0.0.1 - - [07/Aug/2024 08:06:12] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-07 08:06:12,233 - INFO - 127.0.0.1 - - [07/Aug/2024 08:06:12] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-07 08:06:12,242 - INFO - 127.0.0.1 - - [07/Aug/2024 08:06:12] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-07 08:06:12,253 - INFO - 127.0.0.1 - - [07/Aug/2024 08:06:12] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-07 08:06:12,265 - INFO - 127.0.0.1 - - [07/Aug/2024 08:06:12] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-07 08:06:12,272 - INFO - 127.0.0.1 - - [07/Aug/2024 08:06:12] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-07 08:06:12,282 - INFO - 127.0.0.1 - - [07/Aug/2024 08:06:12] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-07 08:06:12,283 - INFO - 127.0.0.1 - - [07/Aug/2024 08:06:12] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-07 08:06:16,714 - INFO - 127.0.0.1 - - [07/Aug/2024 08:06:16] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-08 00:07:20,286 - INFO - 127.0.0.1 - - [08/Aug/2024 00:07:20] "[32mGET /login_oauth HTTP/1.1[0m" 302 -
+2024-08-08 22:51:04,142 - INFO - 127.0.0.1 - - [08/Aug/2024 22:51:04] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-08 22:51:04,897 - INFO - 127.0.0.1 - - [08/Aug/2024 22:51:04] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-08 22:51:05,540 - INFO - 127.0.0.1 - - [08/Aug/2024 22:51:05] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-08 22:51:05,564 - INFO - 127.0.0.1 - - [08/Aug/2024 22:51:05] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-08 22:51:05,571 - INFO - 127.0.0.1 - - [08/Aug/2024 22:51:05] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-08 22:51:05,870 - INFO - 127.0.0.1 - - [08/Aug/2024 22:51:05] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-08 22:51:05,884 - INFO - 127.0.0.1 - - [08/Aug/2024 22:51:05] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-08 22:51:05,887 - INFO - 127.0.0.1 - - [08/Aug/2024 22:51:05] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-08 22:51:05,908 - INFO - 127.0.0.1 - - [08/Aug/2024 22:51:05] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-08 22:51:05,911 - INFO - 127.0.0.1 - - [08/Aug/2024 22:51:05] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-08 22:51:06,558 - INFO - 127.0.0.1 - - [08/Aug/2024 22:51:06] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-08 22:51:06,565 - INFO - 127.0.0.1 - - [08/Aug/2024 22:51:06] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-08 22:51:06,566 - INFO - 127.0.0.1 - - [08/Aug/2024 22:51:06] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-08 22:51:06,610 - INFO - 127.0.0.1 - - [08/Aug/2024 22:51:06] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-08 22:52:14,511 - INFO - 127.0.0.1 - - [08/Aug/2024 22:52:14] "GET / HTTP/1.1" 200 -
+2024-08-08 22:52:14,516 - INFO - 127.0.0.1 - - [08/Aug/2024 22:52:14] "GET / HTTP/1.1" 200 -
+2024-08-08 22:52:14,525 - INFO - 127.0.0.1 - - [08/Aug/2024 22:52:14] "GET / HTTP/1.1" 200 -
+2024-08-08 22:52:14,528 - INFO - 127.0.0.1 - - [08/Aug/2024 22:52:14] "GET / HTTP/1.1" 200 -
+2024-08-08 22:52:14,789 - INFO - 127.0.0.1 - - [08/Aug/2024 22:52:14] "GET / HTTP/1.1" 200 -
+2024-08-08 22:52:14,790 - INFO - 127.0.0.1 - - [08/Aug/2024 22:52:14] "GET / HTTP/1.1" 200 -
+2024-08-08 22:52:18,885 - INFO - 127.0.0.1 - - [08/Aug/2024 22:52:18] "GET /static/css/menu.css HTTP/1.1" 200 -
+2024-08-08 22:52:19,030 - INFO - 127.0.0.1 - - [08/Aug/2024 22:52:19] "GET /static/css/st.css HTTP/1.1" 200 -
+2024-08-08 22:52:19,203 - INFO - 127.0.0.1 - - [08/Aug/2024 22:52:19] "GET /static/css/animate.css HTTP/1.1" 200 -
+2024-08-08 22:52:19,468 - INFO - 127.0.0.1 - - [08/Aug/2024 22:52:19] "GET /static/css/bootstrap.css HTTP/1.1" 200 -
+2024-08-08 22:52:19,717 - INFO - 127.0.0.1 - - [08/Aug/2024 22:52:19] "GET /static/css/font-awesome.css HTTP/1.1" 200 -
+2024-08-08 22:52:19,971 - INFO - 127.0.0.1 - - [08/Aug/2024 22:52:19] "GET /static/js/portfolio.js HTTP/1.1" 200 -
+2024-08-08 22:52:20,134 - INFO - 127.0.0.1 - - [08/Aug/2024 22:52:20] "GET /static/js/jquery.js HTTP/1.1" 200 -
+2024-08-08 22:52:20,335 - INFO - 127.0.0.1 - - [08/Aug/2024 22:52:20] "GET /static/js/countto.js HTTP/1.1" 200 -
+2024-08-08 22:52:20,582 - INFO - 127.0.0.1 - - [08/Aug/2024 22:52:20] "GET /static/js/bootstrap.js HTTP/1.1" 200 -
+2024-08-08 22:52:20,896 - INFO - 127.0.0.1 - - [08/Aug/2024 22:52:20] "GET /static/js/js/main.js HTTP/1.1" 200 -
+2024-08-08 22:52:21,117 - INFO - 127.0.0.1 - - [08/Aug/2024 22:52:21] "GET /static/js/scripts.js HTTP/1.1" 200 -
+2024-08-08 22:52:21,288 - INFO - 127.0.0.1 - - [08/Aug/2024 22:52:21] "GET /static/js/plugins.js HTTP/1.1" 200 -
+2024-08-08 22:52:21,390 - INFO - 127.0.0.1 - - [08/Aug/2024 22:52:21] "GET /static/js/parallax.js HTTP/1.1" 200 -
+2024-08-08 22:52:21,491 - INFO - 127.0.0.1 - - [08/Aug/2024 22:52:21] "GET /static/js/animheader.js HTTP/1.1" 200 -
+2024-08-08 22:52:21,592 - INFO - 127.0.0.1 - - [08/Aug/2024 22:52:21] "[33mGET /static/css/fonts/fontawesome-webfont.woff2?v=4.3.0 HTTP/1.1[0m" 404 -
+2024-08-08 22:52:21,980 - INFO - 127.0.0.1 - - [08/Aug/2024 22:52:21] "[33mGET /static/css/fonts/fontawesome-webfont.woff?v=4.3.0 HTTP/1.1[0m" 404 -
+2024-08-08 22:52:22,078 - INFO - 127.0.0.1 - - [08/Aug/2024 22:52:22] "GET /static/img/header.jpg HTTP/1.1" 200 -
+2024-08-08 22:52:22,190 - INFO - 127.0.0.1 - - [08/Aug/2024 22:52:22] "GET /static/img/favicon.png HTTP/1.1" 200 -
+2024-08-08 22:52:24,118 - INFO - 127.0.0.1 - - [08/Aug/2024 22:52:24] "[33mGET /static/css/fonts/fontawesome-webfont.ttf?v=4.3.0 HTTP/1.1[0m" 404 -
+2024-08-08 22:52:28,421 - INFO - 127.0.0.1 - - [08/Aug/2024 22:52:28] "[33mGET /app/static/img/favicon.png HTTP/1.1[0m" 404 -
+2024-08-08 23:06:37,580 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-08 23:06:37,580 - INFO - [33mPress CTRL+C to quit[0m
+2024-08-08 23:06:37,595 - INFO -  * Restarting with stat
+2024-08-08 23:06:39,362 - WARNING -  * Debugger is active!
+2024-08-08 23:06:39,384 - INFO -  * Debugger PIN: 145-870-983
+2024-08-08 23:11:34,775 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-08 23:11:34,775 - INFO - [33mPress CTRL+C to quit[0m
+2024-08-08 23:11:34,789 - INFO -  * Restarting with stat
+2024-08-08 23:11:36,796 - WARNING -  * Debugger is active!
+2024-08-08 23:11:36,815 - INFO -  * Debugger PIN: 145-870-983
+2024-08-08 23:15:40,037 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-08 23:15:40,037 - INFO - [33mPress CTRL+C to quit[0m
+2024-08-08 23:15:40,052 - INFO -  * Restarting with stat
+2024-08-08 23:15:41,754 - WARNING -  * Debugger is active!
+2024-08-08 23:15:41,789 - INFO -  * Debugger PIN: 145-870-983
+2024-08-08 23:27:18,912 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-08 23:27:18,912 - INFO - [33mPress CTRL+C to quit[0m
+2024-08-08 23:27:18,929 - INFO -  * Restarting with stat
+2024-08-08 23:27:20,215 - WARNING -  * Debugger is active!
+2024-08-08 23:27:20,215 - INFO -  * Debugger PIN: 145-870-983
+2024-08-08 23:28:24,896 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-08 23:28:24,897 - INFO - [33mPress CTRL+C to quit[0m
+2024-08-08 23:28:24,904 - INFO -  * Restarting with stat
+2024-08-08 23:28:27,021 - WARNING -  * Debugger is active!
+2024-08-08 23:28:27,039 - INFO -  * Debugger PIN: 145-870-983
+2024-08-08 23:30:14,661 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-08 23:30:14,661 - INFO - [33mPress CTRL+C to quit[0m
+2024-08-08 23:30:14,681 - INFO -  * Restarting with stat
+2024-08-08 23:30:17,421 - WARNING -  * Debugger is active!
+2024-08-08 23:30:17,436 - INFO -  * Debugger PIN: 145-870-983
+2024-08-08 23:37:02,440 - INFO - 127.0.0.1 - - [08/Aug/2024 23:37:02] "GET / HTTP/1.1" 200 -
+2024-08-08 23:37:29,888 - INFO - 127.0.0.1 - - [08/Aug/2024 23:37:29] "GET / HTTP/1.1" 200 -
+2024-08-08 23:38:44,998 - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\techcamp_elearn\\app\\main.py', reloading
+2024-08-08 23:38:45,275 - INFO -  * Restarting with stat
+2024-08-08 23:38:48,168 - WARNING -  * Debugger is active!
+2024-08-08 23:38:48,190 - INFO -  * Debugger PIN: 145-870-983
+2024-08-08 23:38:50,594 - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\techcamp_elearn\\app\\main.py', reloading
+2024-08-08 23:38:50,757 - INFO -  * Restarting with stat
+2024-08-08 23:38:54,142 - WARNING -  * Debugger is active!
+2024-08-08 23:38:54,168 - INFO -  * Debugger PIN: 145-870-983
+2024-08-08 23:39:04,747 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-08 23:39:04,748 - INFO - [33mPress CTRL+C to quit[0m
+2024-08-08 23:39:04,751 - INFO -  * Restarting with stat
+2024-08-08 23:39:06,778 - WARNING -  * Debugger is active!
+2024-08-08 23:39:06,803 - INFO -  * Debugger PIN: 145-870-983
+2024-08-08 23:41:41,589 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-08 23:41:41,589 - INFO - [33mPress CTRL+C to quit[0m
+2024-08-08 23:41:41,597 - INFO -  * Restarting with stat
+2024-08-08 23:41:42,927 - WARNING -  * Debugger is active!
+2024-08-08 23:41:42,935 - INFO -  * Debugger PIN: 145-870-983
+2024-08-08 23:43:41,919 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-08 23:43:41,919 - INFO - [33mPress CTRL+C to quit[0m
+2024-08-08 23:43:41,935 - INFO -  * Restarting with stat
+2024-08-08 23:43:43,524 - WARNING -  * Debugger is active!
+2024-08-08 23:43:43,560 - INFO -  * Debugger PIN: 145-870-983
+2024-08-08 23:44:28,433 - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\techcamp_elearn\\app\\main.py', reloading
+2024-08-08 23:44:28,447 - INFO -  * Detected change in 'c:\\Users\\Admin\\Desktop\\techcamp_elearn\\app\\main.py', reloading
+2024-08-08 23:44:28,778 - INFO -  * Restarting with stat
+2024-08-08 23:44:28,785 - INFO -  * Restarting with stat
+2024-08-08 23:44:31,230 - WARNING -  * Debugger is active!
+2024-08-08 23:44:31,250 - INFO -  * Debugger PIN: 145-870-983
+2024-08-08 23:44:31,275 - WARNING -  * Debugger is active!
+2024-08-08 23:44:31,304 - INFO -  * Debugger PIN: 145-870-983
+2024-08-08 23:44:31,321 - INFO - 127.0.0.1 - - [08/Aug/2024 23:44:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-08-08 23:44:51,654 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-08 23:44:51,654 - INFO - [33mPress CTRL+C to quit[0m
+2024-08-08 23:44:51,662 - INFO -  * Restarting with stat
+2024-08-08 23:44:53,190 - WARNING -  * Debugger is active!
+2024-08-08 23:44:53,200 - INFO -  * Debugger PIN: 145-870-983
+2024-08-08 23:46:20,127 - INFO - 127.0.0.1 - - [08/Aug/2024 23:46:20] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-08-08 23:46:21,192 - INFO - 127.0.0.1 - - [08/Aug/2024 23:46:21] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-08-08 23:46:21,223 - INFO - 127.0.0.1 - - [08/Aug/2024 23:46:21] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-08-08 23:46:28,276 - INFO - 127.0.0.1 - - [08/Aug/2024 23:46:28] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-08-08 23:46:29,393 - INFO - 127.0.0.1 - - [08/Aug/2024 23:46:29] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-08-08 23:48:33,323 - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\techcamp_elearn\\app\\main.py', reloading
+2024-08-08 23:48:33,533 - INFO -  * Restarting with stat
+2024-08-08 23:48:37,023 - WARNING -  * Debugger is active!
+2024-08-08 23:48:37,040 - INFO -  * Debugger PIN: 145-870-983
+2024-08-08 23:49:22,046 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-08 23:49:22,046 - INFO - [33mPress CTRL+C to quit[0m
+2024-08-08 23:49:22,060 - INFO -  * Restarting with stat
+2024-08-08 23:49:24,482 - WARNING -  * Debugger is active!
+2024-08-08 23:49:24,520 - INFO -  * Debugger PIN: 145-870-983
+2024-08-09 00:16:51,387 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-09 00:16:51,387 - INFO - [33mPress CTRL+C to quit[0m
+2024-08-09 00:16:51,395 - INFO -  * Restarting with stat
+2024-08-09 00:16:53,361 - WARNING -  * Debugger is active!
+2024-08-09 00:16:53,369 - INFO -  * Debugger PIN: 145-870-983
+2024-08-09 00:19:01,565 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-09 00:19:01,565 - INFO - [33mPress CTRL+C to quit[0m
+2024-08-09 00:19:01,580 - INFO -  * Restarting with stat
+2024-08-09 00:19:04,384 - WARNING -  * Debugger is active!
+2024-08-09 00:19:04,408 - INFO -  * Debugger PIN: 145-870-983
+2024-08-09 00:20:54,529 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-09 00:20:54,529 - INFO - [33mPress CTRL+C to quit[0m
+2024-08-09 00:20:54,548 - INFO -  * Restarting with stat
+2024-08-09 00:20:56,329 - WARNING -  * Debugger is active!
+2024-08-09 00:20:56,352 - INFO -  * Debugger PIN: 145-870-983
+2024-08-09 00:27:15,129 - INFO - 127.0.0.1 - - [09/Aug/2024 00:27:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-08-09 00:50:25,411 - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\techcamp_elearn\\app\\main.py', reloading
+2024-08-09 00:50:25,646 - INFO -  * Restarting with stat
+2024-08-09 00:50:29,420 - WARNING -  * Debugger is active!
+2024-08-09 00:50:29,456 - INFO -  * Debugger PIN: 145-870-983
+2024-08-09 00:50:33,269 - INFO - 127.0.0.1 - - [09/Aug/2024 00:50:33] "GET / HTTP/1.1" 200 -
+2024-08-09 00:50:33,622 - INFO - 127.0.0.1 - - [09/Aug/2024 00:50:33] "GET /static/css/bootstrap.css HTTP/1.1" 200 -
+2024-08-09 00:50:33,642 - INFO - 127.0.0.1 - - [09/Aug/2024 00:50:33] "GET /static/css/animate.css HTTP/1.1" 200 -
+2024-08-09 00:50:35,364 - INFO - 127.0.0.1 - - [09/Aug/2024 00:50:35] "GET /static/css/font-awesome.css HTTP/1.1" 200 -
+2024-08-09 00:50:35,394 - INFO - 127.0.0.1 - - [09/Aug/2024 00:50:35] "GET /static/css/menu.css HTTP/1.1" 200 -
+2024-08-09 00:50:35,450 - INFO - 127.0.0.1 - - [09/Aug/2024 00:50:35] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-09 00:50:35,491 - INFO - 127.0.0.1 - - [09/Aug/2024 00:50:35] "GET /static/js/jquery.js HTTP/1.1" 200 -
+2024-08-09 00:50:35,562 - INFO - 127.0.0.1 - - [09/Aug/2024 00:50:35] "GET /static/js/bootstrap.js HTTP/1.1" 200 -
+2024-08-09 00:50:35,588 - INFO - 127.0.0.1 - - [09/Aug/2024 00:50:35] "GET /static/js/plugins.js HTTP/1.1" 200 -
+2024-08-09 00:50:35,613 - INFO - 127.0.0.1 - - [09/Aug/2024 00:50:35] "GET /static/js/parallax.js HTTP/1.1" 200 -
+2024-08-09 00:50:35,631 - INFO - 127.0.0.1 - - [09/Aug/2024 00:50:35] "GET /static/js/countto.js HTTP/1.1" 200 -
+2024-08-09 00:50:35,651 - INFO - 127.0.0.1 - - [09/Aug/2024 00:50:35] "GET /static/js/portfolio.js HTTP/1.1" 200 -
+2024-08-09 00:50:35,671 - INFO - 127.0.0.1 - - [09/Aug/2024 00:50:35] "GET /static/js/animheader.js HTTP/1.1" 200 -
+2024-08-09 00:50:35,700 - INFO - 127.0.0.1 - - [09/Aug/2024 00:50:35] "GET /static/js/scripts.js HTTP/1.1" 200 -
+2024-08-09 00:50:35,722 - INFO - 127.0.0.1 - - [09/Aug/2024 00:50:35] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-09 00:50:47,122 - INFO - 127.0.0.1 - - [09/Aug/2024 00:50:47] "GET /static/img/header.jpg HTTP/1.1" 200 -
+2024-08-09 00:50:47,223 - INFO - 127.0.0.1 - - [09/Aug/2024 00:50:47] "GET /static/img/favicon.png HTTP/1.1" 200 -
+2024-08-09 00:50:48,213 - INFO - 127.0.0.1 - - [09/Aug/2024 00:50:48] "[33mGET /app/static/img/favicon.png HTTP/1.1[0m" 404 -
+2024-08-09 00:50:48,270 - INFO - 127.0.0.1 - - [09/Aug/2024 00:50:48] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-09 00:51:30,180 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-09 00:51:30,185 - INFO - [33mPress CTRL+C to quit[0m
+2024-08-09 00:51:30,194 - INFO -  * Restarting with stat
+2024-08-09 00:51:34,263 - WARNING -  * Debugger is active!
+2024-08-09 00:51:34,300 - INFO -  * Debugger PIN: 145-870-983
+2024-08-09 00:51:52,049 - INFO - 127.0.0.1 - - [09/Aug/2024 00:51:52] "GET / HTTP/1.1" 200 -
+2024-08-09 00:51:52,462 - INFO - 127.0.0.1 - - [09/Aug/2024 00:51:52] "GET /static/css/bootstrap.css HTTP/1.1" 200 -
+2024-08-09 00:51:52,515 - INFO - 127.0.0.1 - - [09/Aug/2024 00:51:52] "GET /static/js/bootstrap.js HTTP/1.1" 200 -
+2024-08-09 00:51:52,518 - INFO - 127.0.0.1 - - [09/Aug/2024 00:51:52] "GET /static/css/font-awesome.css HTTP/1.1" 200 -
+2024-08-09 00:51:52,544 - INFO - 127.0.0.1 - - [09/Aug/2024 00:51:52] "GET /static/js/plugins.js HTTP/1.1" 200 -
+2024-08-09 00:51:52,566 - INFO - 127.0.0.1 - - [09/Aug/2024 00:51:52] "GET /static/js/parallax.js HTTP/1.1" 200 -
+2024-08-09 00:51:52,575 - INFO - 127.0.0.1 - - [09/Aug/2024 00:51:52] "GET /static/css/animate.css HTTP/1.1" 200 -
+2024-08-09 00:51:52,588 - INFO - 127.0.0.1 - - [09/Aug/2024 00:51:52] "GET /static/js/countto.js HTTP/1.1" 200 -
+2024-08-09 00:51:52,604 - INFO - 127.0.0.1 - - [09/Aug/2024 00:51:52] "GET /static/js/portfolio.js HTTP/1.1" 200 -
+2024-08-09 00:51:52,611 - INFO - 127.0.0.1 - - [09/Aug/2024 00:51:52] "GET /static/js/animheader.js HTTP/1.1" 200 -
+2024-08-09 00:51:52,611 - INFO - 127.0.0.1 - - [09/Aug/2024 00:51:52] "GET /static/js/scripts.js HTTP/1.1" 200 -
+2024-08-09 00:51:52,644 - INFO - 127.0.0.1 - - [09/Aug/2024 00:51:52] "GET /static/js/js/main.js HTTP/1.1" 200 -
+2024-08-09 00:51:52,654 - INFO - 127.0.0.1 - - [09/Aug/2024 00:51:52] "GET /static/js/jquery.js HTTP/1.1" 200 -
+2024-08-09 00:51:52,666 - INFO - 127.0.0.1 - - [09/Aug/2024 00:51:52] "GET /static/css/menu.css HTTP/1.1" 200 -
+2024-08-09 00:51:52,688 - INFO - 127.0.0.1 - - [09/Aug/2024 00:51:52] "GET /static/css/st.css HTTP/1.1" 200 -
+2024-08-09 00:52:00,402 - INFO - 127.0.0.1 - - [09/Aug/2024 00:52:00] "GET / HTTP/1.1" 200 -
+2024-08-09 00:52:00,539 - INFO - 127.0.0.1 - - [09/Aug/2024 00:52:00] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-09 00:52:00,563 - INFO - 127.0.0.1 - - [09/Aug/2024 00:52:00] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-09 00:52:00,563 - INFO - 127.0.0.1 - - [09/Aug/2024 00:52:00] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-09 00:52:00,566 - INFO - 127.0.0.1 - - [09/Aug/2024 00:52:00] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-09 00:52:00,567 - INFO - 127.0.0.1 - - [09/Aug/2024 00:52:00] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-09 00:52:00,576 - INFO - 127.0.0.1 - - [09/Aug/2024 00:52:00] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-09 00:52:00,629 - INFO - 127.0.0.1 - - [09/Aug/2024 00:52:00] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-09 00:52:00,646 - INFO - 127.0.0.1 - - [09/Aug/2024 00:52:00] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-09 00:52:00,650 - INFO - 127.0.0.1 - - [09/Aug/2024 00:52:00] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-09 00:52:00,680 - INFO - 127.0.0.1 - - [09/Aug/2024 00:52:00] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-09 00:52:00,681 - INFO - 127.0.0.1 - - [09/Aug/2024 00:52:00] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-09 00:52:00,687 - INFO - 127.0.0.1 - - [09/Aug/2024 00:52:00] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-09 00:52:00,712 - INFO - 127.0.0.1 - - [09/Aug/2024 00:52:00] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-09 00:52:00,721 - INFO - 127.0.0.1 - - [09/Aug/2024 00:52:00] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-09 00:52:00,763 - INFO - 127.0.0.1 - - [09/Aug/2024 00:52:00] "GET /static/img/header.jpg HTTP/1.1" 200 -
+2024-08-09 00:52:00,870 - INFO - 127.0.0.1 - - [09/Aug/2024 00:52:00] "GET /static/img/favicon.png HTTP/1.1" 200 -
+2024-08-09 00:53:19,367 - INFO - 127.0.0.1 - - [09/Aug/2024 00:53:19] "GET / HTTP/1.1" 200 -
+2024-08-09 00:53:19,477 - INFO - 127.0.0.1 - - [09/Aug/2024 00:53:19] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-09 00:53:19,578 - INFO - 127.0.0.1 - - [09/Aug/2024 00:53:19] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-09 00:53:19,590 - INFO - 127.0.0.1 - - [09/Aug/2024 00:53:19] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-09 00:53:19,594 - INFO - 127.0.0.1 - - [09/Aug/2024 00:53:19] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-09 00:53:21,160 - INFO - 127.0.0.1 - - [09/Aug/2024 00:53:21] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-09 00:53:21,176 - INFO - 127.0.0.1 - - [09/Aug/2024 00:53:21] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-09 00:53:21,220 - INFO - 127.0.0.1 - - [09/Aug/2024 00:53:21] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-09 00:53:21,234 - INFO - 127.0.0.1 - - [09/Aug/2024 00:53:21] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-09 00:53:21,284 - INFO - 127.0.0.1 - - [09/Aug/2024 00:53:21] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-09 00:53:21,295 - INFO - 127.0.0.1 - - [09/Aug/2024 00:53:21] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-09 00:53:21,321 - INFO - 127.0.0.1 - - [09/Aug/2024 00:53:21] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-09 00:53:21,416 - INFO - 127.0.0.1 - - [09/Aug/2024 00:53:21] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-09 00:53:21,420 - INFO - 127.0.0.1 - - [09/Aug/2024 00:53:21] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-09 00:53:21,447 - INFO - 127.0.0.1 - - [09/Aug/2024 00:53:21] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-09 00:53:21,753 - INFO - 127.0.0.1 - - [09/Aug/2024 00:53:21] "[36mGET /static/img/header.jpg HTTP/1.1[0m" 304 -
+2024-08-09 00:53:21,870 - INFO - 127.0.0.1 - - [09/Aug/2024 00:53:21] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-09 01:00:59,724 - INFO - 127.0.0.1 - - [09/Aug/2024 01:00:59] "GET / HTTP/1.1" 200 -
+2024-08-09 01:00:59,777 - INFO - 127.0.0.1 - - [09/Aug/2024 01:00:59] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-09 01:00:59,782 - INFO - 127.0.0.1 - - [09/Aug/2024 01:00:59] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-09 01:00:59,800 - INFO - 127.0.0.1 - - [09/Aug/2024 01:00:59] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-09 01:00:59,801 - INFO - 127.0.0.1 - - [09/Aug/2024 01:00:59] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-09 01:00:59,802 - INFO - 127.0.0.1 - - [09/Aug/2024 01:00:59] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-09 01:00:59,820 - INFO - 127.0.0.1 - - [09/Aug/2024 01:00:59] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-09 01:00:59,849 - INFO - 127.0.0.1 - - [09/Aug/2024 01:00:59] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-09 01:00:59,865 - INFO - 127.0.0.1 - - [09/Aug/2024 01:00:59] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-09 01:00:59,875 - INFO - 127.0.0.1 - - [09/Aug/2024 01:00:59] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-09 01:00:59,887 - INFO - 127.0.0.1 - - [09/Aug/2024 01:00:59] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-09 01:00:59,893 - INFO - 127.0.0.1 - - [09/Aug/2024 01:00:59] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-09 01:00:59,905 - INFO - 127.0.0.1 - - [09/Aug/2024 01:00:59] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-09 01:00:59,906 - INFO - 127.0.0.1 - - [09/Aug/2024 01:00:59] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-09 01:00:59,918 - INFO - 127.0.0.1 - - [09/Aug/2024 01:00:59] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-09 01:01:00,844 - INFO - 127.0.0.1 - - [09/Aug/2024 01:01:00] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-09 01:01:49,154 - INFO - 127.0.0.1 - - [09/Aug/2024 01:01:49] "GET / HTTP/1.1" 200 -
+2024-08-09 01:01:49,183 - INFO - 127.0.0.1 - - [09/Aug/2024 01:01:49] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-09 01:01:49,216 - INFO - 127.0.0.1 - - [09/Aug/2024 01:01:49] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-09 01:01:49,220 - INFO - 127.0.0.1 - - [09/Aug/2024 01:01:49] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-09 01:01:49,223 - INFO - 127.0.0.1 - - [09/Aug/2024 01:01:49] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-09 01:01:49,228 - INFO - 127.0.0.1 - - [09/Aug/2024 01:01:49] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-09 01:01:49,233 - INFO - 127.0.0.1 - - [09/Aug/2024 01:01:49] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-09 01:01:49,236 - INFO - 127.0.0.1 - - [09/Aug/2024 01:01:49] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-09 01:01:49,249 - INFO - 127.0.0.1 - - [09/Aug/2024 01:01:49] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-09 01:01:49,254 - INFO - 127.0.0.1 - - [09/Aug/2024 01:01:49] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-09 01:01:49,256 - INFO - 127.0.0.1 - - [09/Aug/2024 01:01:49] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-09 01:01:49,282 - INFO - 127.0.0.1 - - [09/Aug/2024 01:01:49] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-09 01:01:49,285 - INFO - 127.0.0.1 - - [09/Aug/2024 01:01:49] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-09 01:01:49,293 - INFO - 127.0.0.1 - - [09/Aug/2024 01:01:49] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-09 01:01:49,296 - INFO - 127.0.0.1 - - [09/Aug/2024 01:01:49] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-09 01:01:49,346 - INFO - 127.0.0.1 - - [09/Aug/2024 01:01:49] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-09 01:01:53,079 - INFO - 127.0.0.1 - - [09/Aug/2024 01:01:53] "GET /1000/journeys HTTP/1.1" 200 -
+2024-08-09 01:01:53,109 - INFO - 127.0.0.1 - - [09/Aug/2024 01:01:53] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-09 01:01:53,132 - INFO - 127.0.0.1 - - [09/Aug/2024 01:01:53] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-09 01:01:53,138 - INFO - 127.0.0.1 - - [09/Aug/2024 01:01:53] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-09 01:01:53,147 - INFO - 127.0.0.1 - - [09/Aug/2024 01:01:53] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-09 01:01:53,148 - INFO - 127.0.0.1 - - [09/Aug/2024 01:01:53] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-09 01:01:53,148 - INFO - 127.0.0.1 - - [09/Aug/2024 01:01:53] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-09 01:01:53,150 - INFO - 127.0.0.1 - - [09/Aug/2024 01:01:53] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-09 01:01:53,159 - INFO - 127.0.0.1 - - [09/Aug/2024 01:01:53] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-09 01:01:53,161 - INFO - 127.0.0.1 - - [09/Aug/2024 01:01:53] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-09 01:01:53,176 - INFO - 127.0.0.1 - - [09/Aug/2024 01:01:53] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-09 01:01:53,180 - INFO - 127.0.0.1 - - [09/Aug/2024 01:01:53] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-09 01:01:53,185 - INFO - 127.0.0.1 - - [09/Aug/2024 01:01:53] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-09 01:01:53,203 - INFO - 127.0.0.1 - - [09/Aug/2024 01:01:53] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-09 01:01:53,204 - INFO - 127.0.0.1 - - [09/Aug/2024 01:01:53] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-09 01:04:41,200 - INFO - 127.0.0.1 - - [09/Aug/2024 01:04:41] "GET / HTTP/1.1" 200 -
+2024-08-09 01:04:41,262 - INFO - 127.0.0.1 - - [09/Aug/2024 01:04:41] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-09 01:04:41,283 - INFO - 127.0.0.1 - - [09/Aug/2024 01:04:41] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-09 01:04:41,289 - INFO - 127.0.0.1 - - [09/Aug/2024 01:04:41] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-09 01:04:41,291 - INFO - 127.0.0.1 - - [09/Aug/2024 01:04:41] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-09 01:04:41,297 - INFO - 127.0.0.1 - - [09/Aug/2024 01:04:41] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-09 01:04:41,303 - INFO - 127.0.0.1 - - [09/Aug/2024 01:04:41] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-09 01:04:41,305 - INFO - 127.0.0.1 - - [09/Aug/2024 01:04:41] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-09 01:04:41,312 - INFO - 127.0.0.1 - - [09/Aug/2024 01:04:41] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-09 01:04:41,321 - INFO - 127.0.0.1 - - [09/Aug/2024 01:04:41] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-09 01:04:41,332 - INFO - 127.0.0.1 - - [09/Aug/2024 01:04:41] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-09 01:04:41,333 - INFO - 127.0.0.1 - - [09/Aug/2024 01:04:41] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-09 01:04:41,339 - INFO - 127.0.0.1 - - [09/Aug/2024 01:04:41] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-09 01:04:41,350 - INFO - 127.0.0.1 - - [09/Aug/2024 01:04:41] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-09 01:04:41,352 - INFO - 127.0.0.1 - - [09/Aug/2024 01:04:41] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-09 01:04:42,330 - INFO - 127.0.0.1 - - [09/Aug/2024 01:04:42] "[36mGET /static/img/header.jpg HTTP/1.1[0m" 304 -
+2024-08-09 01:04:42,349 - INFO - 127.0.0.1 - - [09/Aug/2024 01:04:42] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-09 01:04:42,579 - INFO - 127.0.0.1 - - [09/Aug/2024 01:04:42] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-09 01:04:45,034 - INFO - 127.0.0.1 - - [09/Aug/2024 01:04:45] "GET /1000/journeys HTTP/1.1" 200 -
+2024-08-09 01:04:45,085 - INFO - 127.0.0.1 - - [09/Aug/2024 01:04:45] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-09 01:04:45,115 - INFO - 127.0.0.1 - - [09/Aug/2024 01:04:45] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-09 01:04:45,116 - INFO - 127.0.0.1 - - [09/Aug/2024 01:04:45] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-09 01:04:45,118 - INFO - 127.0.0.1 - - [09/Aug/2024 01:04:45] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-09 01:04:45,118 - INFO - 127.0.0.1 - - [09/Aug/2024 01:04:45] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-09 01:04:45,119 - INFO - 127.0.0.1 - - [09/Aug/2024 01:04:45] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-09 01:04:45,120 - INFO - 127.0.0.1 - - [09/Aug/2024 01:04:45] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-09 01:04:45,132 - INFO - 127.0.0.1 - - [09/Aug/2024 01:04:45] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-09 01:04:45,138 - INFO - 127.0.0.1 - - [09/Aug/2024 01:04:45] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-09 01:04:45,145 - INFO - 127.0.0.1 - - [09/Aug/2024 01:04:45] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-09 01:04:45,147 - INFO - 127.0.0.1 - - [09/Aug/2024 01:04:45] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-09 01:04:45,148 - INFO - 127.0.0.1 - - [09/Aug/2024 01:04:45] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-09 01:04:45,160 - INFO - 127.0.0.1 - - [09/Aug/2024 01:04:45] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-09 01:04:45,160 - INFO - 127.0.0.1 - - [09/Aug/2024 01:04:45] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-09 01:04:45,456 - INFO - 127.0.0.1 - - [09/Aug/2024 01:04:45] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-09 01:05:35,042 - INFO - 127.0.0.1 - - [09/Aug/2024 01:05:35] "GET /1000/journeys HTTP/1.1" 200 -
+2024-08-09 01:05:35,082 - INFO - 127.0.0.1 - - [09/Aug/2024 01:05:35] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-09 01:05:35,087 - INFO - 127.0.0.1 - - [09/Aug/2024 01:05:35] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-09 01:05:35,097 - INFO - 127.0.0.1 - - [09/Aug/2024 01:05:35] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-09 01:05:35,100 - INFO - 127.0.0.1 - - [09/Aug/2024 01:05:35] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-09 01:05:35,108 - INFO - 127.0.0.1 - - [09/Aug/2024 01:05:35] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-09 01:05:35,110 - INFO - 127.0.0.1 - - [09/Aug/2024 01:05:35] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-09 01:05:35,115 - INFO - 127.0.0.1 - - [09/Aug/2024 01:05:35] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-09 01:05:35,127 - INFO - 127.0.0.1 - - [09/Aug/2024 01:05:35] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-09 01:05:35,137 - INFO - 127.0.0.1 - - [09/Aug/2024 01:05:35] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-09 01:05:35,140 - INFO - 127.0.0.1 - - [09/Aug/2024 01:05:35] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-09 01:05:35,149 - INFO - 127.0.0.1 - - [09/Aug/2024 01:05:35] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-09 01:05:35,150 - INFO - 127.0.0.1 - - [09/Aug/2024 01:05:35] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-09 01:05:35,158 - INFO - 127.0.0.1 - - [09/Aug/2024 01:05:35] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-09 01:05:35,160 - INFO - 127.0.0.1 - - [09/Aug/2024 01:05:35] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-09 01:05:39,371 - INFO - 127.0.0.1 - - [09/Aug/2024 01:05:39] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-09 01:05:44,820 - INFO - 127.0.0.1 - - [09/Aug/2024 01:05:44] "[32mGET /journeys/1000 HTTP/1.1[0m" 302 -
+2024-08-09 01:05:44,852 - INFO - 127.0.0.1 - - [09/Aug/2024 01:05:44] "GET /login HTTP/1.1" 200 -
+2024-08-09 01:05:44,892 - INFO - 127.0.0.1 - - [09/Aug/2024 01:05:44] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-09 01:05:44,903 - INFO - 127.0.0.1 - - [09/Aug/2024 01:05:44] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-09 01:05:44,914 - INFO - 127.0.0.1 - - [09/Aug/2024 01:05:44] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-09 01:05:44,916 - INFO - 127.0.0.1 - - [09/Aug/2024 01:05:44] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-09 01:05:44,923 - INFO - 127.0.0.1 - - [09/Aug/2024 01:05:44] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-09 01:05:44,926 - INFO - 127.0.0.1 - - [09/Aug/2024 01:05:44] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-09 01:05:44,944 - INFO - 127.0.0.1 - - [09/Aug/2024 01:05:44] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-09 01:05:44,958 - INFO - 127.0.0.1 - - [09/Aug/2024 01:05:44] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-09 01:05:44,962 - INFO - 127.0.0.1 - - [09/Aug/2024 01:05:44] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-09 01:05:44,965 - INFO - 127.0.0.1 - - [09/Aug/2024 01:05:44] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-09 01:05:44,977 - INFO - 127.0.0.1 - - [09/Aug/2024 01:05:44] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-09 01:05:44,979 - INFO - 127.0.0.1 - - [09/Aug/2024 01:05:44] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-09 01:05:44,987 - INFO - 127.0.0.1 - - [09/Aug/2024 01:05:44] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-09 01:05:44,994 - INFO - 127.0.0.1 - - [09/Aug/2024 01:05:44] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-09 01:05:53,148 - INFO - 127.0.0.1 - - [09/Aug/2024 01:05:53] "[32mGET /login_oauth HTTP/1.1[0m" 302 -
+2024-08-09 01:05:53,290 - INFO - 127.0.0.1 - - [09/Aug/2024 01:05:53] "[32mGET /login_oauth HTTP/1.1[0m" 302 -
+2024-08-09 01:06:18,280 - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\techcamp_elearn\\app\\main.py', reloading
+2024-08-09 01:06:18,361 - INFO -  * Restarting with stat
+2024-08-09 01:06:50,310 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-09 01:06:50,310 - INFO - [33mPress CTRL+C to quit[0m
+2024-08-09 01:06:50,321 - INFO -  * Restarting with stat
+2024-08-09 01:06:51,763 - WARNING -  * Debugger is active!
+2024-08-09 01:06:51,791 - INFO -  * Debugger PIN: 145-870-983
+2024-08-09 01:06:55,130 - INFO - 127.0.0.1 - - [09/Aug/2024 01:06:55] "GET /1000/journeys HTTP/1.1" 200 -
+2024-08-09 01:06:55,415 - INFO - 127.0.0.1 - - [09/Aug/2024 01:06:55] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-09 01:06:55,505 - INFO - 127.0.0.1 - - [09/Aug/2024 01:06:55] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-09 01:06:55,575 - INFO - 127.0.0.1 - - [09/Aug/2024 01:06:55] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-09 01:06:55,610 - INFO - 127.0.0.1 - - [09/Aug/2024 01:06:55] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-09 01:06:55,625 - INFO - 127.0.0.1 - - [09/Aug/2024 01:06:55] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-09 01:06:55,645 - INFO - 127.0.0.1 - - [09/Aug/2024 01:06:55] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-09 01:06:56,150 - INFO - 127.0.0.1 - - [09/Aug/2024 01:06:56] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-09 01:06:56,160 - INFO - 127.0.0.1 - - [09/Aug/2024 01:06:56] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-09 01:06:56,160 - INFO - 127.0.0.1 - - [09/Aug/2024 01:06:56] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-09 01:06:56,166 - INFO - 127.0.0.1 - - [09/Aug/2024 01:06:56] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-09 01:06:56,171 - INFO - 127.0.0.1 - - [09/Aug/2024 01:06:56] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-09 01:06:56,187 - INFO - 127.0.0.1 - - [09/Aug/2024 01:06:56] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-09 01:06:56,196 - INFO - 127.0.0.1 - - [09/Aug/2024 01:06:56] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-09 01:06:56,198 - INFO - 127.0.0.1 - - [09/Aug/2024 01:06:56] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-09 01:06:56,425 - INFO - 127.0.0.1 - - [09/Aug/2024 01:06:56] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-09 01:06:57,241 - INFO - 127.0.0.1 - - [09/Aug/2024 01:06:57] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-09 01:06:57,826 - INFO - 127.0.0.1 - - [09/Aug/2024 01:06:57] "[32mGET /journeys/1000 HTTP/1.1[0m" 302 -
+2024-08-09 01:06:57,846 - INFO - 127.0.0.1 - - [09/Aug/2024 01:06:57] "GET /login HTTP/1.1" 200 -
+2024-08-09 01:06:57,918 - INFO - 127.0.0.1 - - [09/Aug/2024 01:06:57] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-09 01:06:57,920 - INFO - 127.0.0.1 - - [09/Aug/2024 01:06:57] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-09 01:06:57,926 - INFO - 127.0.0.1 - - [09/Aug/2024 01:06:57] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-09 01:06:57,933 - INFO - 127.0.0.1 - - [09/Aug/2024 01:06:57] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-09 01:06:57,939 - INFO - 127.0.0.1 - - [09/Aug/2024 01:06:57] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-09 01:06:57,942 - INFO - 127.0.0.1 - - [09/Aug/2024 01:06:57] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-09 01:06:57,951 - INFO - 127.0.0.1 - - [09/Aug/2024 01:06:57] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-09 01:06:57,954 - INFO - 127.0.0.1 - - [09/Aug/2024 01:06:57] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-09 01:06:57,956 - INFO - 127.0.0.1 - - [09/Aug/2024 01:06:57] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-09 01:06:57,971 - INFO - 127.0.0.1 - - [09/Aug/2024 01:06:57] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-09 01:06:57,994 - INFO - 127.0.0.1 - - [09/Aug/2024 01:06:57] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-09 01:06:57,995 - INFO - 127.0.0.1 - - [09/Aug/2024 01:06:57] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-09 01:06:58,008 - INFO - 127.0.0.1 - - [09/Aug/2024 01:06:58] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-09 01:06:58,010 - INFO - 127.0.0.1 - - [09/Aug/2024 01:06:58] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-09 01:06:58,339 - INFO - 127.0.0.1 - - [09/Aug/2024 01:06:58] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-09 01:07:00,874 - INFO - 127.0.0.1 - - [09/Aug/2024 01:07:00] "GET /login HTTP/1.1" 200 -
+2024-08-09 01:07:00,919 - INFO - 127.0.0.1 - - [09/Aug/2024 01:07:00] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-09 01:07:00,932 - INFO - 127.0.0.1 - - [09/Aug/2024 01:07:00] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-09 01:07:00,933 - INFO - 127.0.0.1 - - [09/Aug/2024 01:07:00] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-09 01:07:00,942 - INFO - 127.0.0.1 - - [09/Aug/2024 01:07:00] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-09 01:07:00,944 - INFO - 127.0.0.1 - - [09/Aug/2024 01:07:00] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-09 01:07:00,952 - INFO - 127.0.0.1 - - [09/Aug/2024 01:07:00] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-09 01:07:00,953 - INFO - 127.0.0.1 - - [09/Aug/2024 01:07:00] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-09 01:07:00,957 - INFO - 127.0.0.1 - - [09/Aug/2024 01:07:00] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-09 01:07:00,963 - INFO - 127.0.0.1 - - [09/Aug/2024 01:07:00] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-09 01:07:00,975 - INFO - 127.0.0.1 - - [09/Aug/2024 01:07:00] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-09 01:07:00,976 - INFO - 127.0.0.1 - - [09/Aug/2024 01:07:00] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-09 01:07:00,980 - INFO - 127.0.0.1 - - [09/Aug/2024 01:07:00] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-09 01:07:00,990 - INFO - 127.0.0.1 - - [09/Aug/2024 01:07:00] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-09 01:07:00,992 - INFO - 127.0.0.1 - - [09/Aug/2024 01:07:00] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-09 01:07:01,340 - INFO - 127.0.0.1 - - [09/Aug/2024 01:07:01] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-09 01:07:01,867 - INFO - 127.0.0.1 - - [09/Aug/2024 01:07:01] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-09 01:07:55,563 - INFO - 127.0.0.1 - - [09/Aug/2024 01:07:55] "GET / HTTP/1.1" 200 -
+2024-08-09 01:07:56,974 - INFO - 127.0.0.1 - - [09/Aug/2024 01:07:56] "GET /static/css/bootstrap.css HTTP/1.1" 200 -
+2024-08-09 01:07:57,613 - INFO - 127.0.0.1 - - [09/Aug/2024 01:07:57] "GET /static/js/bootstrap.js HTTP/1.1" 200 -
+2024-08-09 01:07:57,618 - INFO - 127.0.0.1 - - [09/Aug/2024 01:07:57] "GET /static/js/jquery.js HTTP/1.1" 200 -
+2024-08-09 01:07:57,626 - INFO - 127.0.0.1 - - [09/Aug/2024 01:07:57] "GET /static/css/menu.css HTTP/1.1" 200 -
+2024-08-09 01:07:57,629 - INFO - 127.0.0.1 - - [09/Aug/2024 01:07:57] "GET /static/css/font-awesome.css HTTP/1.1" 200 -
+2024-08-09 01:07:57,636 - INFO - 127.0.0.1 - - [09/Aug/2024 01:07:57] "GET /static/css/st.css HTTP/1.1" 200 -
+2024-08-09 01:07:57,638 - INFO - 127.0.0.1 - - [09/Aug/2024 01:07:57] "GET /static/css/animate.css HTTP/1.1" 200 -
+2024-08-09 01:07:57,784 - INFO - 127.0.0.1 - - [09/Aug/2024 01:07:57] "GET /static/js/plugins.js HTTP/1.1" 200 -
+2024-08-09 01:07:57,786 - INFO - 127.0.0.1 - - [09/Aug/2024 01:07:57] "GET /static/js/parallax.js HTTP/1.1" 200 -
+2024-08-09 01:07:57,786 - INFO - 127.0.0.1 - - [09/Aug/2024 01:07:57] "GET /static/js/countto.js HTTP/1.1" 200 -
+2024-08-09 01:07:58,451 - INFO - 127.0.0.1 - - [09/Aug/2024 01:07:58] "GET /static/js/portfolio.js HTTP/1.1" 200 -
+2024-08-09 01:07:58,453 - INFO - 127.0.0.1 - - [09/Aug/2024 01:07:58] "GET /static/js/animheader.js HTTP/1.1" 200 -
+2024-08-09 01:07:58,455 - INFO - 127.0.0.1 - - [09/Aug/2024 01:07:58] "GET /static/js/scripts.js HTTP/1.1" 200 -
+2024-08-09 01:07:58,458 - INFO - 127.0.0.1 - - [09/Aug/2024 01:07:58] "GET /static/js/js/main.js HTTP/1.1" 200 -
+2024-08-09 01:08:14,735 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:14] "GET /static/img/header.jpg HTTP/1.1" 200 -
+2024-08-09 01:08:15,132 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:15] "GET /static/img/favicon.png HTTP/1.1" 200 -
+2024-08-09 01:08:16,234 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:16] "[33mGET /app/static/img/favicon.png HTTP/1.1[0m" 404 -
+2024-08-09 01:08:17,222 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:17] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-09 01:08:19,186 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:19] "GET /1000/journeys HTTP/1.1" 200 -
+2024-08-09 01:08:20,070 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:20] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-09 01:08:20,073 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:20] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-09 01:08:20,075 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:20] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-09 01:08:20,078 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:20] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-09 01:08:20,085 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:20] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-09 01:08:20,086 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:20] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-09 01:08:20,626 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:20] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-09 01:08:20,631 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:20] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-09 01:08:20,633 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:20] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-09 01:08:20,637 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:20] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-09 01:08:20,643 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:20] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-09 01:08:20,645 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:20] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-09 01:08:20,646 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:20] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-09 01:08:21,157 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:21] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-09 01:08:21,663 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:21] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-09 01:08:21,900 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:21] "[32mGET /journeys/1000 HTTP/1.1[0m" 302 -
+2024-08-09 01:08:22,340 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:22] "GET /login HTTP/1.1" 200 -
+2024-08-09 01:08:22,959 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:22] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-09 01:08:22,960 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:22] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-09 01:08:22,971 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:22] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-09 01:08:22,978 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:22] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-09 01:08:23,035 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:23] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-09 01:08:23,043 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:23] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-09 01:08:23,044 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:23] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-09 01:08:23,044 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:23] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-09 01:08:23,045 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:23] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-09 01:08:23,048 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:23] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-09 01:08:23,049 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:23] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-09 01:08:23,084 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:23] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-09 01:08:23,087 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:23] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-09 01:08:23,181 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:23] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-09 01:08:23,838 - INFO - 127.0.0.1 - - [09/Aug/2024 01:08:23] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-09 01:09:06,431 - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\techcamp_elearn\\app\\main.py', reloading
+2024-08-09 01:09:06,521 - INFO -  * Restarting with stat
+2024-08-09 01:09:08,250 - WARNING -  * Debugger is active!
+2024-08-09 01:09:08,281 - INFO -  * Debugger PIN: 145-870-983
+2024-08-09 01:10:30,156 - INFO - 127.0.0.1 - - [09/Aug/2024 01:10:30] "[32mGET /login_oauth HTTP/1.1[0m" 302 -
+2024-08-09 01:11:06,465 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:06] "GET / HTTP/1.1" 200 -
+2024-08-09 01:11:07,606 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:07] "GET /static/css/bootstrap.css HTTP/1.1" 200 -
+2024-08-09 01:11:07,613 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:07] "GET /static/css/animate.css HTTP/1.1" 200 -
+2024-08-09 01:11:07,702 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:07] "GET /static/js/js/main.js HTTP/1.1" 200 -
+2024-08-09 01:11:07,706 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:07] "GET /static/js/countto.js HTTP/1.1" 200 -
+2024-08-09 01:11:07,714 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:07] "GET /static/js/portfolio.js HTTP/1.1" 200 -
+2024-08-09 01:11:07,715 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:07] "GET /static/js/scripts.js HTTP/1.1" 200 -
+2024-08-09 01:11:07,717 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:07] "GET /static/css/st.css HTTP/1.1" 200 -
+2024-08-09 01:11:07,719 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:07] "GET /static/js/parallax.js HTTP/1.1" 200 -
+2024-08-09 01:11:07,723 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:07] "GET /static/js/plugins.js HTTP/1.1" 200 -
+2024-08-09 01:11:07,728 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:07] "GET /static/js/bootstrap.js HTTP/1.1" 200 -
+2024-08-09 01:11:07,731 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:07] "GET /static/css/menu.css HTTP/1.1" 200 -
+2024-08-09 01:11:07,733 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:07] "GET /static/js/animheader.js HTTP/1.1" 200 -
+2024-08-09 01:11:07,735 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:07] "GET /static/css/font-awesome.css HTTP/1.1" 200 -
+2024-08-09 01:11:07,742 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:07] "GET /static/js/jquery.js HTTP/1.1" 200 -
+2024-08-09 01:11:10,461 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:10] "GET /static/img/header.jpg HTTP/1.1" 200 -
+2024-08-09 01:11:10,607 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:10] "GET /static/js/plugins.js HTTP/1.1" 200 -
+2024-08-09 01:11:10,613 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:10] "GET /static/js/parallax.js HTTP/1.1" 200 -
+2024-08-09 01:11:10,616 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:10] "GET /static/js/scripts.js HTTP/1.1" 200 -
+2024-08-09 01:11:10,617 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:10] "GET /static/js/portfolio.js HTTP/1.1" 200 -
+2024-08-09 01:11:10,620 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:10] "GET /static/js/js/main.js HTTP/1.1" 200 -
+2024-08-09 01:11:10,622 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:10] "GET /static/js/jquery.js HTTP/1.1" 200 -
+2024-08-09 01:11:10,624 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:10] "GET /static/js/bootstrap.js HTTP/1.1" 200 -
+2024-08-09 01:11:10,628 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:10] "GET /static/js/animheader.js HTTP/1.1" 200 -
+2024-08-09 01:11:10,630 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:10] "GET /static/js/countto.js HTTP/1.1" 200 -
+2024-08-09 01:11:11,124 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:11] "[33mGET /app/static/img/favicon.png HTTP/1.1[0m" 404 -
+2024-08-09 01:11:11,610 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:11] "GET /static/img/favicon.png HTTP/1.1" 200 -
+2024-08-09 01:11:13,573 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:13] "GET / HTTP/1.1" 200 -
+2024-08-09 01:11:13,992 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:13] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-09 01:11:14,030 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:14] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-09 01:11:14,032 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:14] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-09 01:11:14,034 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:14] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-09 01:11:14,172 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:14] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-09 01:11:14,175 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:14] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-09 01:11:14,176 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:14] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-09 01:11:14,180 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:14] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-09 01:11:14,185 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:14] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-09 01:11:14,197 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:14] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-09 01:11:14,202 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:14] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-09 01:11:14,205 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:14] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-09 01:11:14,213 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:14] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-09 01:11:14,256 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:14] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-09 01:11:14,771 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:14] "[36mGET /static/img/header.jpg HTTP/1.1[0m" 304 -
+2024-08-09 01:11:15,767 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:15] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-09 01:11:15,781 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:15] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-09 01:11:15,790 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:15] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-09 01:11:15,793 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:15] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-09 01:11:15,802 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:15] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-09 01:11:15,809 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:15] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-09 01:11:15,814 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:15] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-09 01:11:15,815 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:15] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-09 01:11:17,499 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:17] "GET /1000/journeys HTTP/1.1" 200 -
+2024-08-09 01:11:17,948 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:17] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-09 01:11:17,980 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:17] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-09 01:11:17,981 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:17] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-09 01:11:17,981 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:17] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-09 01:11:18,166 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:18] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-09 01:11:18,171 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:18] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-09 01:11:18,411 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:18] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-09 01:11:18,618 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:18] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-09 01:11:18,620 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:18] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-09 01:11:18,626 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:18] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-09 01:11:18,629 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:18] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-09 01:11:18,634 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:18] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-09 01:11:18,634 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:18] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-09 01:11:18,635 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:18] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-09 01:11:19,798 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:19] "[32mGET /journeys/1000 HTTP/1.1[0m" 302 -
+2024-08-09 01:11:20,182 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:20] "GET /login HTTP/1.1" 200 -
+2024-08-09 01:11:20,631 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:20] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-09 01:11:20,636 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:20] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-09 01:11:20,646 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:20] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-09 01:11:20,649 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:20] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-09 01:11:20,804 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:20] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-09 01:11:20,813 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:20] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-09 01:11:20,821 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:20] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-09 01:11:20,825 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:20] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-09 01:11:20,830 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:20] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-09 01:11:20,831 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:20] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-09 01:11:20,835 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:20] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-09 01:11:20,837 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:20] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-09 01:11:20,839 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:20] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-09 01:11:20,841 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:20] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-09 01:11:24,815 - INFO - 127.0.0.1 - - [09/Aug/2024 01:11:24] "[32mGET /login_oauth HTTP/1.1[0m" 302 -
+2024-08-09 01:12:07,764 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-09 01:12:07,764 - INFO - [33mPress CTRL+C to quit[0m
+2024-08-09 01:12:07,771 - INFO -  * Restarting with stat
+2024-08-09 01:12:09,418 - WARNING -  * Debugger is active!
+2024-08-09 01:12:09,462 - INFO -  * Debugger PIN: 145-870-983
+2024-08-09 01:12:36,530 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-09 01:12:36,530 - INFO - [33mPress CTRL+C to quit[0m
+2024-08-09 01:12:36,538 - INFO -  * Restarting with stat
+2024-08-09 01:12:37,781 - WARNING -  * Debugger is active!
+2024-08-09 01:12:37,809 - INFO -  * Debugger PIN: 145-870-983
+2024-08-09 01:12:51,855 - INFO - 127.0.0.1 - - [09/Aug/2024 01:12:51] "[32mGET /login_oauth HTTP/1.1[0m" 302 -
+2024-08-09 01:12:55,822 - INFO - 127.0.0.1 - - [09/Aug/2024 01:12:55] "GET /login/callback?state=d1NU8Hy05405X1ffnUVCoWTY7DCphD&code=4/0AcvDMrDpt0ENV9ZE_Gyic_vT8Hdv8RtSKw2bxKSajWejNkbOoCxmtkqfrqgfn7XMPzCQbQ&scope=email+profile+openid+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile&authuser=0&prompt=none HTTP/1.1" 200 -
+2024-08-09 01:14:32,190 - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\techcamp_elearn\\app\\main.py', reloading
+2024-08-09 01:14:32,492 - INFO -  * Restarting with stat
+2024-08-09 01:14:34,041 - WARNING -  * Debugger is active!
+2024-08-09 01:14:34,072 - INFO -  * Debugger PIN: 145-870-983
+2024-08-09 01:14:59,513 - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\techcamp_elearn\\app\\main.py', reloading
+2024-08-09 01:14:59,605 - INFO -  * Restarting with stat
+2024-08-09 01:15:00,982 - WARNING -  * Debugger is active!
+2024-08-09 01:15:00,998 - INFO -  * Debugger PIN: 145-870-983
+2024-08-09 01:15:11,559 - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\techcamp_elearn\\app\\main.py', reloading
+2024-08-09 01:15:11,633 - INFO -  * Restarting with stat
+2024-08-09 01:15:12,891 - WARNING -  * Debugger is active!
+2024-08-09 01:15:12,911 - INFO -  * Debugger PIN: 145-870-983
+2024-08-09 01:16:05,964 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-09 01:16:05,964 - INFO - [33mPress CTRL+C to quit[0m
+2024-08-09 01:16:05,971 - INFO -  * Restarting with stat
+2024-08-09 01:16:07,229 - WARNING -  * Debugger is active!
+2024-08-09 01:16:07,263 - INFO -  * Debugger PIN: 145-870-983
+2024-08-09 01:16:22,961 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:22] "GET / HTTP/1.1" 200 -
+2024-08-09 01:16:23,547 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:23] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-09 01:16:23,586 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:23] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-09 01:16:23,604 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:23] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-09 01:16:23,613 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:23] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-09 01:16:23,618 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:23] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-09 01:16:23,627 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:23] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:23,672 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:23] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:23,679 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:23] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:23,683 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:23] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:23,687 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:23] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:23,691 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:23] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:23,697 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:23] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:23,705 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:23] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:23,707 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:23] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:24,139 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:24] "[36mGET /static/img/header.jpg HTTP/1.1[0m" 304 -
+2024-08-09 01:16:26,782 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:26] "GET /1000/journeys HTTP/1.1" 200 -
+2024-08-09 01:16:27,729 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:27] "GET /1000/journeys HTTP/1.1" 200 -
+2024-08-09 01:16:28,185 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:28] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-09 01:16:28,433 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:28] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:28,438 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:28] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-09 01:16:28,445 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:28] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-09 01:16:28,449 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:28] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-09 01:16:28,455 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:28] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:28,474 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:28] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-09 01:16:28,479 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:28] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:28,490 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:28] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:28,500 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:28] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:28,506 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:28] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:28,515 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:28] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:28,520 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:28] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:28,522 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:28] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:30,087 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:30] "[32mGET /journeys/1000 HTTP/1.1[0m" 302 -
+2024-08-09 01:16:30,457 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:30] "GET /login HTTP/1.1" 200 -
+2024-08-09 01:16:30,932 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:30] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-09 01:16:30,947 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:30] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-09 01:16:31,120 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:31] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-09 01:16:31,121 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:31] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-09 01:16:31,134 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:31] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:31,139 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:31] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:31,143 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:31] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:31,154 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:31] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:31,157 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:31] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-09 01:16:31,160 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:31] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:31,167 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:31] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:31,172 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:31] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:31,176 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:31] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:31,179 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:31] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:34,879 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:34] "[32mGET /login_oauth HTTP/1.1[0m" 302 -
+2024-08-09 01:16:37,931 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:37] "[32mGET /login/callback?state=jA4BJ5EaQwyIcRSRdKjpXB6KhC45yb&code=4/0AcvDMrCIQI37cTUwwFLJgP3p3ZHd8gDgBKTrOkXhhFocp4r5vNNy45mx-xZhML0IoV5ftA&scope=email+profile+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile+openid&authuser=0&prompt=none HTTP/1.1[0m" 302 -
+2024-08-09 01:16:38,673 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:38] "GET / HTTP/1.1" 200 -
+2024-08-09 01:16:39,127 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:39] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-09 01:16:39,185 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:39] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-09 01:16:39,345 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:39] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-09 01:16:39,347 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:39] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-09 01:16:39,350 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:39] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-09 01:16:39,353 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:39] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:39,355 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:39] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:39,356 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:39] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:39,468 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:39] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:39,476 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:39] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:39,480 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:39] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:39,484 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:39] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:39,489 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:39] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:39,493 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:39] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:43,497 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:43] "GET /1000/journeys HTTP/1.1" 200 -
+2024-08-09 01:16:44,066 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:44] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-09 01:16:44,082 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:44] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-09 01:16:44,083 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:44] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:44,097 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:44] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-09 01:16:44,099 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:44] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-09 01:16:44,102 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:44] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:44,107 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:44] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-09 01:16:44,312 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:44] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:44,314 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:44] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:44,342 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:44] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:44,363 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:44] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:44,370 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:44] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:44,381 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:44] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:44,386 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:44] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-09 01:16:46,455 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:46] "[35m[1mGET /journeys/1000 HTTP/1.1[0m" 500 -
+2024-08-09 01:16:47,267 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:47] "GET /journeys/1000?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-08-09 01:16:47,269 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:47] "GET /journeys/1000?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-08-09 01:16:48,039 - INFO - 127.0.0.1 - - [09/Aug/2024 01:16:48] "GET /journeys/1000?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-08-09 01:17:21,502 - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\techcamp_elearn\\app\\main.py', reloading
+2024-08-09 01:17:21,601 - INFO -  * Restarting with stat
+2024-08-09 01:17:22,835 - WARNING -  * Debugger is active!
+2024-08-09 01:17:22,850 - INFO -  * Debugger PIN: 145-870-983
+2024-08-09 01:17:24,981 - INFO -  * Detected change in 'C:\\Users\\Admin\\Desktop\\techcamp_elearn\\app\\main.py', reloading
+2024-08-09 01:17:25,091 - INFO -  * Restarting with stat
+2024-08-09 01:17:26,496 - WARNING -  * Debugger is active!
+2024-08-09 01:17:26,517 - INFO -  * Debugger PIN: 145-870-983
+2024-08-09 01:19:15,546 - INFO - 127.0.0.1 - - [09/Aug/2024 01:19:15] "[35m[1mGET /journeys/1000 HTTP/1.1[0m" 500 -
+2024-08-09 01:19:16,241 - INFO - 127.0.0.1 - - [09/Aug/2024 01:19:16] "[36mGET /journeys/1000?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-08-09 01:19:16,246 - INFO - 127.0.0.1 - - [09/Aug/2024 01:19:16] "[36mGET /journeys/1000?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-08-09 01:19:16,654 - INFO - 127.0.0.1 - - [09/Aug/2024 01:19:16] "[36mGET /journeys/1000?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-08-09 01:19:32,351 - INFO - 127.0.0.1 - - [09/Aug/2024 01:19:32] "GET /journeys/1000 HTTP/1.1" 200 -
+2024-08-09 01:19:32,796 - INFO - 127.0.0.1 - - [09/Aug/2024 01:19:32] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-09 01:19:33,027 - INFO - 127.0.0.1 - - [09/Aug/2024 01:19:33] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-09 01:19:33,057 - INFO - 127.0.0.1 - - [09/Aug/2024 01:19:33] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-09 01:19:33,066 - INFO - 127.0.0.1 - - [09/Aug/2024 01:19:33] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-09 01:19:33,078 - INFO - 127.0.0.1 - - [09/Aug/2024 01:19:33] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-09 01:19:33,080 - INFO - 127.0.0.1 - - [09/Aug/2024 01:19:33] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-09 01:19:33,084 - INFO - 127.0.0.1 - - [09/Aug/2024 01:19:33] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-09 01:19:33,087 - INFO - 127.0.0.1 - - [09/Aug/2024 01:19:33] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-09 01:19:33,096 - INFO - 127.0.0.1 - - [09/Aug/2024 01:19:33] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-09 01:19:33,097 - INFO - 127.0.0.1 - - [09/Aug/2024 01:19:33] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-09 01:19:33,103 - INFO - 127.0.0.1 - - [09/Aug/2024 01:19:33] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-09 01:19:33,107 - INFO - 127.0.0.1 - - [09/Aug/2024 01:19:33] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-09 01:19:33,115 - INFO - 127.0.0.1 - - [09/Aug/2024 01:19:33] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-09 01:19:33,117 - INFO - 127.0.0.1 - - [09/Aug/2024 01:19:33] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-09 01:19:34,653 - INFO - 127.0.0.1 - - [09/Aug/2024 01:19:34] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-09 01:21:29,022 - INFO - 127.0.0.1 - - [09/Aug/2024 01:21:29] "GET /journeys/1000 HTTP/1.1" 200 -
+2024-08-09 01:21:29,464 - INFO - 127.0.0.1 - - [09/Aug/2024 01:21:29] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2024-08-09 01:21:29,482 - INFO - 127.0.0.1 - - [09/Aug/2024 01:21:29] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2024-08-09 01:21:29,488 - INFO - 127.0.0.1 - - [09/Aug/2024 01:21:29] "[36mGET /static/css/st.css HTTP/1.1[0m" 304 -
+2024-08-09 01:21:29,497 - INFO - 127.0.0.1 - - [09/Aug/2024 01:21:29] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2024-08-09 01:21:29,502 - INFO - 127.0.0.1 - - [09/Aug/2024 01:21:29] "[36mGET /static/css/menu.css HTTP/1.1[0m" 304 -
+2024-08-09 01:21:29,505 - INFO - 127.0.0.1 - - [09/Aug/2024 01:21:29] "[36mGET /static/js/jquery.js HTTP/1.1[0m" 304 -
+2024-08-09 01:21:29,506 - INFO - 127.0.0.1 - - [09/Aug/2024 01:21:29] "[36mGET /static/js/parallax.js HTTP/1.1[0m" 304 -
+2024-08-09 01:21:29,720 - INFO - 127.0.0.1 - - [09/Aug/2024 01:21:29] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2024-08-09 01:21:29,730 - INFO - 127.0.0.1 - - [09/Aug/2024 01:21:29] "[36mGET /static/js/countto.js HTTP/1.1[0m" 304 -
+2024-08-09 01:21:29,731 - INFO - 127.0.0.1 - - [09/Aug/2024 01:21:29] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2024-08-09 01:21:29,745 - INFO - 127.0.0.1 - - [09/Aug/2024 01:21:29] "[36mGET /static/js/js/main.js HTTP/1.1[0m" 304 -
+2024-08-09 01:21:29,758 - INFO - 127.0.0.1 - - [09/Aug/2024 01:21:29] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-08-09 01:21:29,762 - INFO - 127.0.0.1 - - [09/Aug/2024 01:21:29] "[36mGET /static/js/portfolio.js HTTP/1.1[0m" 304 -
+2024-08-09 01:21:29,766 - INFO - 127.0.0.1 - - [09/Aug/2024 01:21:29] "[36mGET /static/js/animheader.js HTTP/1.1[0m" 304 -
+2024-08-09 01:21:30,815 - INFO - 127.0.0.1 - - [09/Aug/2024 01:21:30] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2024-08-09 01:21:37,199 - INFO - 127.0.0.1 - - [09/Aug/2024 01:21:37] "[33mGET /course/1000/introduction/1000 HTTP/1.1[0m" 404 -

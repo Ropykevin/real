@@ -1,0 +1,61 @@
+{% include '/layout.html' %}
+{% block content %}
+<!-- Animated Intro
+================================================== -->
+<div class="large-header" >
+	<canvas id="demo-canvas"></canvas>
+
+    <div class="row mb-3">
+        <div class="hero-box col-sm-8 col-sm-offset-2">
+            <form role="search" method="get" id="searchform" class="form-search knowledgebase" action="#">
+                <div class="input-group">
+                    <input type="text" id="autocomplete-dynamic" name="s" class="form-control input-lg"
+                           autocomplete="off" placeholder="Find help! Enter search term here.">
+                    <span class="input-group-btn">
+							<input type="submit" id="searchsubmit" value="Search" class="btn btn-primary nomargtop">
+							</span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+<!-- Features
+================================================== -->
+<section class="page-wrapper gray">
+<div class="container">
+	<h2 class="title">Welcome to CodeTech.</h2>
+	<div class="row">
+		<div class="col-md-12 text-center">
+			<p class="lead">
+                An online training for programmers.<br/> We offer  <span style="color: #5e0400; font-weight: bold; text-align: center; font-size: larger;">{{  total }} Courses </span> you can learn.
+			</span>
+            </p>
+		</div>
+	</div>
+
+
+    <div class="row">
+
+    {% if categories %}
+        {% for each in categories %}
+            <a href="{{ url_for('category_journeys', category_id=each.id) }}">
+                <div class="col-md-4 feature wow zoomIn" style="height: 140px;" data-wow-duration="0.8s" data-wow-delay="0.7s">
+                   <img src="{{ each.categoryUrl }}" width="48px" height="48px" alt="">
+                    <div class="feature-content">
+                        <h3>{{ each.categoryTitle }}</h3>
+                        <p>{{ each.categoryDescription }}</p>
+                    </div>
+                </div>
+            </a>
+        {% endfor %}
+    {% else %}
+        <p style="color: #5e0400; text-align: center; font-size: larger;">All courses will be displayed here. Currently none is uploaded. Come back later!!</p>
+    {% endif %}
+	</div>
+
+	</div>
+
+</div>
+</section>
+{% endblock %}

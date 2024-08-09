@@ -1,0 +1,96 @@
+
+    {% include 'layout.html' %}
+    {% block content %}
+    <!-- <div class="page-loader">
+        <img src="/static/img/loader.gif" alt="">
+    </div> -->
+
+    <!-- Parallax Starter -->
+    <section class="pagetitle parallax parallax-image"
+        style="background-image:url('http://www.themepush.com/demo-calypso/wp-content/uploads/sites/5/2014/10/wheat-golden-field-fall-hd-wallpaper.jpg');">
+        <div class="wrapsection">
+            <div class="overlay" style="background:#303543;opacity:0.4;">
+            </div>
+            <div class="container">
+                <div class="parallax-content">
+                    <div class="block2 text-center" style="color:#fff;">
+                        <h2>
+                            <span class="text2 big wow zoomIn" data-wow-delay="0.4s" data-wow-duration="2s">
+                                {% if category %}
+                                Welcome to {{ category.title }} Programming
+                                {% else %}
+                                <p style="color: #5e0400; text-align: center; font-size: larger;">Course title will appear here!!</p>
+                                {% endif %}
+                            </span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Here -->
+    <section class="page-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="lead">
+{{ journey.name }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accordions & Tabs -->
+    <section id="startcontent">
+        <div class="container">
+            <div class="row page-content">
+                <div class="col-sm-2"></div>
+                <div class="col-md-8" style="margin: auto">
+                    <!-- begin accordion -->
+                    {% if sections %}
+                    <div class="panel-group" id="accordion-0">
+                        {% for sect in sections %}
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion-0"
+                                        href="#{{ sect.sectionTitle | replace(' ','_') }}" class="collapsed">
+                                        {{ sect.sectionTitle }}
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="{{ sect.sectionTitle | replace(' ','_') }}" class="panel-collapse collapse">
+                                <div>
+                                    <ul style="padding: 0;">
+                                        {% if sect.topics %}
+                                        {% for topic in sect.topics %}
+                                        <a href="/course/{{ sect.id }}/{{ topic.topicTitle | replace(' ','-') }}/{{ topic.id }}">
+                                            <li class="list-group-item">{{ topic.topicTitle }}</li>
+                                        </a>
+                                        {% endfor %}
+                                        {% else %}
+                                        <i class="fa fa-smile"></i>
+                                        <p style="color: #5e0400; text-align: center; font-size: larger;">Sorry!! Topics for {{
+                                            sect.sectionTitle }} currently not uploaded.
+                                            <br> All topics under {{ sect.sectionTitle }} will be displayed here.
+                                        </p>
+                                        {% endif %}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% else %}
+                    <!--  -->
+                    {% endif %}
+                </div>
+                <div class="col-sm-2"></div>
+                <!-- end accordion -->
+            </div>
+        </div>
+    </section>
+    {% endblock %}
+
+
