@@ -1,0 +1,121 @@
+{% include 'layout.html' %}
+{% block content %}
+<!-- <div class="page-loader">
+        <img src="/static/img/loader.gif" alt="">
+    </div> -->
+
+<!-- Parallax Starter -->
+<section class="pagetitle parallax parallax-image"
+    style="background-image:url('http://www.themepush.com/demo-calypso/wp-content/uploads/sites/5/2014/10/wheat-golden-field-fall-hd-wallpaper.jpg');">
+
+    <div class="container">
+        <div class="profile-container">
+            <div class="profile-card">
+                <div class="profile-header">
+                    <h1>Welcome, {{ user.fullName }}</h1>
+                </div>
+
+                <!-- Profile Details Section -->
+                <div id="profile-details-view">
+                    <p><strong>Email:</strong> {{ user.email }}</p>
+                    <!-- Additional user details go here -->
+                    <div class="profile-actions">
+                        <button onclick="toggleEditMode()" class="btn btn-edit">Edit Profile</button>
+                        <!-- Logout Button -->
+                         <a href="{{url_for("logout")}}"><button type="submit" class="btn btn-danger">Logout</button></a>
+                        
+                    </div>
+                </div>
+
+                <!-- Edit Profile Form -->
+                <div id="profile-edit-view" style="display: none;">
+                    <form action="{{ url_for('edit_profile') }}" method="POST">
+                        <label for="full_name"><strong>Full Name:</strong></label>
+                        <input type="text" id="full_name" name="full_name" value="{{ user.fullName }}" required>
+
+                        <label for="email"><strong>Email:</strong></label>
+                        <input type="email" id="email" name="email" value="{{ user.email }}" required>
+
+                        <!-- Additional fields go here -->
+
+                        <div class="profile-actions">
+                            <button type="submit" class="btn btn-save">Save Changes</button>
+                            <button type="button" onclick="toggleEditMode()" class="btn btn-cancel">Cancel</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    function toggleEditMode() {
+        var detailsView = document.getElementById("profile-details-view");
+        var editView = document.getElementById("profile-edit-view");
+        if (detailsView.style.display === "none") {
+            detailsView.style.display = "block";
+            editView.style.display = "none";
+        } else {
+            detailsView.style.display = "none";
+            editView.style.display = "block";
+        }
+    }
+</script>
+<style>
+    input[type="text"],
+    input[type="email"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+
+    .profile-actions .btn-edit {
+        background-color: #28a745;
+    }
+
+    .profile-actions .btn-edit:hover {
+        background-color: #218838;
+    }
+
+    .profile-actions .btn-save {
+        background-color: #007bff;
+    }
+
+    .profile-actions .btn-save:hover {
+        background-color: #0056b3;
+    }
+
+    .profile-actions .btn-cancel {
+        background-color: #dc3545;
+    }
+
+    .profile-actions .btn-cancel:hover {
+        background-color: #c82333;
+
+    }
+    .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+</style>
+{% endblock %}

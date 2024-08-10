@@ -1,136 +1,219 @@
-{% include 'layout.html' %}
+{% extends "layout.html" %}
 
-{% block styles %}
+{% block title %}Curriculum{% endblock %}
+
+{% block content %}
+<section class="ftco-section bg-light">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3 d-none d-md-block" id="sidebar-wrapper">
+                <div id="sidebar">
+                    <div style="color: #ff5e00;"
+                        class="sidebar-header d-flex justify-content-between align-items-center p-3">
+                        <h4>{{current_section.sectionTitle}}</h4>
+                    </div>
+                    <ul class="list-unstyled components" id="sidebar-list">
+                        {% for topic in topics %}
+                        <li id="sidebar-item-{{ loop.index0 }}">
+                            <a href="javascript:void(0)" onclick="showTopic({{ loop.index0 }})">{{ topic.topicTitle
+                                }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+
+            <div id="content-wrapper" class="col-md-9">
+                <h1 class="mb-4" id="topic-title"></h1>
+                <p id="topic-description"></p>
+
+                <!-- Navigation Buttons -->
+                <div class="d-flex justify-content-between mt-4">
+                    <button class="btn btn-primary" onclick="navigateToTopic('prev')">Previous</button>
+                    <button class="btn btn-primary" onclick="navigateToTopic('next')">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    var topics = {{ topics | tojson | safe }};
+    var currentTopicIndex = 0;  // Set to 0 to load the first topic
+
+    function showTopic(topicIndex) {
+        if (topicIndex < 0 || topicIndex >= topics.length) {
+            return;
+        }
+        currentTopicIndex = topicIndex;
+
+        var topic = topics[topicIndex];
+        document.getElementById('topic-title').innerText = topic.topicTitle;
+        document.getElementById('topic-description').innerHTML = topic.topicDescription;
+
+        // Update URL
+        var newUrl = new URL(window.location);
+        newUrl.searchParams.set('topic', topicIndex);
+        history.pushState({ topic: topicIndex }, '', newUrl);
+
+        updateSidebarStatus(topicIndex);
+        updateNavigationButtons();
+    }
+
+    function updateSidebarStatus(topicIndex) {
+        document.querySelectorAll('#sidebar-list li').forEach(function (item) {
+            item.classList.remove('active');
+            item.classList.remove('read');
+        });
+
+        var sidebarItem = document.getElementById('sidebar-item-' + topicIndex);
+        if (sidebarItem) {
+            sidebarItem.classList.add('active');
+            sidebarItem.classList.add('read');
+        }
+    }
+
+    function updateNavigationButtons() {
+        var prevButton = document.querySelector('.btn[onclick="navigateToTopic(\'prev\')"]');
+        var nextButton = document.querySelector('.btn[onclick="navigateToTopic(\'next\')"]');
+
+        // Hide Previous button if on the first topic
+        if (currentTopicIndex === 0) {
+            prevButton.style.display = 'none';
+        } else {
+            prevButton.style.display = 'block';
+        }
+
+        // Hide Next button if on the last topic
+        if (currentTopicIndex === topics.length - 1) {
+            nextButton.style.display = 'none';
+        } else {
+            nextButton.style.display = 'block';
+        }
+    }
+
+    function navigateToTopic(direction) {
+        var newIndex = direction === 'next' ? currentTopicIndex + 1 : currentTopicIndex - 1;
+        if (newIndex < 0 || newIndex >= topics.length) {
+            return;
+        }
+
+        document.getElementById('sidebar-item-' + currentTopicIndex).classList.add('read');
+
+        if (direction === 'next') {
+            document.getElementById('topic-description').innerHTML = 'Loading next topic...';
+        }
+
+        showTopic(newIndex);
+    }
+
+    document.getElementById('toggle-sidebar').addEventListener('click', function () {
+        var sidebarWrapper = document.getElementById('sidebar-wrapper');
+        sidebarWrapper.classList.toggle('collapsed');
+    });
+
+    // Handle URL changes (back/forward navigation)
+    window.addEventListener('popstate', function (event) {
+        if (event.state && event.state.topic !== undefined) {
+            showTopic(event.state.topic);
+        }
+    });
+
+    // Load the topic based on URL parameter on page load
+    (function () {
+        var urlParams = new URLSearchParams(window.location.search);
+        var topicIndex = parseInt(urlParams.get('topic'), 10);
+        if (!isNaN(topicIndex)) {
+            currentTopicIndex = topicIndex;
+        }
+        showTopic(currentTopicIndex);
+    })();
+</script>
+
+
 <style>
-    .wrapper {
-        display: flex;
-        width: 100%;
-    }
-
     #sidebar {
-
-        width: 250px;
-        position: fixed;
-        top: 0;
-        left: 0;
+        background-color: #333;
         height: 100vh;
-        z-index: 999;
-        background: #F2F2F2;
-        color: #fff;
-        transition: all 0.3s;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        padding-top: 48px;
+        z-index: 1000;
+        overflow-x: hidden;
+        overflow-y: auto;
+        transition: width 0.3s;
     }
 
-    #sidebar ul li ul {
-        transition: all 0.3s ease-out;
-        color: #17191c;
-        font-size: 15px;
-        position: relative;
-        padding: 13px 15px;
-        outline-width: 0;
+    #sidebar .components {
+        padding: 0;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+    #sidebar .components li a {
+        padding: 10px 15px;
+        font-size: 1.1em;
+        display: block;
+        color: #dee2e6;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    #sidebar .components li a:hover,
+    #sidebar .components li.active a {
+        background-color: #ffffff;
+        color: #ff5e00;
+    }
+
+    #sidebar .components li.read a {
+        color: #28a745;
+        font-weight: bold;
+    }
+
+    #sidebar-wrapper.collapsed #sidebar {
+        width: 80px;
+    }
+
+    #sidebar-wrapper.collapsed .sidebar-header h4 {
+        display: none;
+    }
+
+    #content-wrapper {
+        margin-left: 300px;
+        transition: margin-left 0.3s;
+    }
+
+    #content-wrapper.expanded {
+        margin-left: 100px;
+    }
+
+    @media (max-width: 767.98px) {
+        #sidebar-wrapper {
+            display: none;
+        }
+
+        #sidebar.show {
+            display: block;
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            background-color: white;
+            border-right: 1px solid #dee2e6;
+            overflow-y: auto;
+        }
+
+        #content-wrapper {
+            margin-left: 0;
+        }
+    }
+
+    .topic-description {
+        margin-top: 15px;
     }
 </style>
 
-<script>
-    $(document).ready(function () {
-
-        $("#sidebar").mCustomScrollbar({
-            theme: "minimal"
-        });
-
-        $('#sidebarCollapse').on('click', function () {
-            $('#sidebar').toggleClass('active');
-        });
-
-    });
-</script>
-{% endblock %}
-
-{% block content %}
-
-<div class="wrapper">
-    <!-- Sidebar -->
-    <!-- <div class="col-sm-2">
-        <nav id="sidebar">
-            {# <div class="sidebar-header">#}
-                {# <h3>Bootstrap Sidebar</h3>#}
-                {# </div>#}
-
-            <ul class="list-unstyled components">
-                {# <p>Dummy Heading</p>#}
-                {% for each in all_categories %}
-                <li>
-                    <a href="#{{ each.categotyname }}" data-toggle="collapse" aria-expanded="false"
-                        class="dropdown-toggle">{{ each.categotyname }}</a>
-                    <ul class="collapse list-unstyled" id="{{ each.categotyname }}">
-                        {% for topic in topics %}
-                        {% if each.id == topic.categoryid %}
-                        <a href="/course/{{ each.id }}/{{ topic.title | replace(' ','-') }}/{{ topic.id }}">
-                            <li>
-                                {{ topic.title }}
-                            </li>
-                        </a>
-                        {% endif %}
-                        {% endfor %}
-                    </ul>
-
-                </li>
-                {% endfor %}
-
-            </ul>
-
-        </nav>
-    </div> -->
-
-    <!-- Page Content --> -->
-  <div class="col-sm-10" id="">
-
-        {# <nav class="navbar navbar-expand-lg navbar-light bg-light">#}
-            {# <div class="container-fluid">#}
-                {##}
-                {# <button type="button" id="sidebarCollapse" class="btn btn-info">#}
-                    {# <i class="fas fa-align-left"></i>#}
-                    {# <span>Toggle Sidebar</span>#}
-                    {# </button>#}
-                {# </div>#}
-            {# </nav>#}
-
-        <h3>{{ TopicDetails.title }}</h3>
-        <p>{{ TopicDetails.content }}</p>
-
-    </div>
-</div>
-
-
-<script>
-    $(document).ready(function () {
-
-        $("#sidebar").mCustomScrollbar({
-            theme: "minimal"
-        });
-
-        $('#sidebarCollapse').on('click', function () {
-            $('#sidebar').toggleClass('active');
-            $('.collapse.in').toggleClass('in');
-            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-        });
-
-    });
-</script>
-
-{% block bottomcontent %}
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<!-- Popper.JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
-    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-    crossorigin="anonymous"></script>
-<!-- Bootstrap JS -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
-    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-    crossorigin="anonymous"></script>
-<!-- jQuery Custom Scroller CDN -->
-<script
-    src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-{% endblock %}
 {% endblock %}

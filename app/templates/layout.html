@@ -64,7 +64,7 @@
                 <i class="fa-solid fa-bars fa-2xl"></i>
             </button>
             <div class="collapse navbar-collapse" id="ftco-nav">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto" style="float: right;">
                     <li class="nav-item"><a href="{{ url_for('index') }}" class="nav-link"
                             style="color: orange;">Home</a></li>
                     <li class="nav-item">
@@ -72,10 +72,10 @@
                                 class="fa fa-bolt"></i><span class="link-item" style="color: orange;">Virtual
                                 Class</span></a>
                     </li>
-                    <li style="color: orange;" class="nav-item"><a href="{{ url_for('index') }}" class="nav-link"
-                            style="color: orange;">Online Class </a></li>
-                    <li style="color: orange;" class="nav-item"><a href="{{ url_for('logout') }}" class="nav-link"
-                            style="color: orange;">Logout </a></li>
+                    <li style="margin-right: 0;" class="nav-item"><a href="{{url_for('profile')}}" class="nav-link"><i class="fa-solid fa-user fa-2xl"></i> </a></li>
+
+                </ul>
+                <ul class="navbar-brand mobile pull-left" style="float: right;">
                 </ul>
             </div>
         </div>

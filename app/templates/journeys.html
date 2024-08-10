@@ -44,9 +44,9 @@
                                 <h5 class="card-title">{{ journey.name }}</h5>
                                 <p class="card-text">{{ journey.description }}</p>
                                 <a style="width: 47%;" href="{{ journey.videoUrl }}" class="btn btn-primary"
-                                    target="_blank">Watch Video</a>
+                                    target="_blank">Watch Preview</a>
                                 <a style="width: 47%; float: right;" href="{{ journey.streamUrl }}"
-                                    class="btn btn-secondary" target="_blank">Join Stream</a>
+                                    class="btn btn-secondary" target="_blank">Join Live class</a>
                                 <a style="width: 100%; margin-top: 10px;"
                                     href="{{ url_for('get_journey', journey_id=journey.id) }}"
                                     class="btn btn-primary">Continue Journey</a>
