@@ -5,33 +5,34 @@
 {% block content %}
 <section class="ftco-section bg-light">
     <div class="container-fluid">
-        <div class="row">
-            <!-- Sidebar -->
-            <div class="col-md-3 d-none d-md-block" id="sidebar-wrapper">
-                <div id="sidebar">
-                    <div style="color: #ff5e00;"
-                        class="sidebar-header d-flex justify-content-between align-items-center p-3">
-                        <h4>{{current_section.sectionTitle}}</h4>
-                    </div>
-                    <ul class="list-unstyled components" id="sidebar-list">
-                        {% for topic in topics %}
-                        <li id="sidebar-item-{{ loop.index0 }}">
-                            <a href="javascript:void(0)" onclick="showTopic({{ loop.index0 }})">{{ topic.topicTitle
-                                }}</a>
-                        </li>
-                        {% endfor %}
-                    </ul>
+        <!-- Sidebar -->
+        <div class="col-md-6 d-none d-md-block" id="sidebar-wrapper">
+            <div id="sidebar">
+                <div style="color: #ff5e00;"
+                    class="sidebar-header d-flex justify-content-between align-items-center p-3">
+                    <h4>{{ current_section.sectionTitle }}</h4>
                 </div>
+                <hr> <!-- Horizontal line -->
+                <ul class="list-unstyled components" id="sidebar-list">
+                    {% for topic in topics %}
+                    <li id="sidebar-item-{{ loop.index0 }}">
+                        <a href="javascript:void(0)" onclick="showTopic({{ loop.index0 }})">{{ topic.topicTitle }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
             </div>
+        </div>
 
+        <!-- Main Content -->
+        <div class="row">
             <div id="content-wrapper" class="col-md-9">
                 <h1 class="mb-4" id="topic-title"></h1>
-                <p id="topic-description"></p>
+                <p id="topic-description" class="topic-description"></p>
 
                 <!-- Navigation Buttons -->
                 <div class="d-flex justify-content-between mt-4">
-                    <button class="btn btn-primary" onclick="navigateToTopic('prev')">Previous</button>
-                    <button class="btn btn-primary" onclick="navigateToTopic('next')">Next</button>
+                    <button class="btn btn-primary" id="prev-btn" onclick="navigateToTopic('prev')">Previous</button>
+                    <button style="float: right;" class="btn btn-primary" id="next-btn" onclick="navigateToTopic('next')">Next</button>
                 </div>
             </div>
         </div>
@@ -40,7 +41,7 @@
 
 <script>
     var topics = {{ topics | tojson | safe }};
-    var currentTopicIndex = 0;  // Set to 0 to load the first topic
+    var currentTopicIndex = 0;
 
     function showTopic(topicIndex) {
         if (topicIndex < 0 || topicIndex >= topics.length) {
@@ -63,34 +64,24 @@
 
     function updateSidebarStatus(topicIndex) {
         document.querySelectorAll('#sidebar-list li').forEach(function (item) {
-            item.classList.remove('active');
-            item.classList.remove('read');
+            item.classList.remove('active', 'read');
         });
 
         var sidebarItem = document.getElementById('sidebar-item-' + topicIndex);
         if (sidebarItem) {
-            sidebarItem.classList.add('active');
-            sidebarItem.classList.add('read');
+            sidebarItem.classList.add('active', 'read');
         }
     }
 
     function updateNavigationButtons() {
-        var prevButton = document.querySelector('.btn[onclick="navigateToTopic(\'prev\')"]');
-        var nextButton = document.querySelector('.btn[onclick="navigateToTopic(\'next\')"]');
+        var prevButton = document.getElementById('prev-btn');
+        var nextButton = document.getElementById('next-btn');
 
         // Hide Previous button if on the first topic
-        if (currentTopicIndex === 0) {
-            prevButton.style.display = 'none';
-        } else {
-            prevButton.style.display = 'block';
-        }
+        prevButton.style.display = currentTopicIndex === 0 ? 'none' : 'block';
 
         // Hide Next button if on the last topic
-        if (currentTopicIndex === topics.length - 1) {
-            nextButton.style.display = 'none';
-        } else {
-            nextButton.style.display = 'block';
-        }
+        nextButton.style.display = currentTopicIndex === topics.length - 1 ? 'none' : 'block';
     }
 
     function navigateToTopic(direction) {
@@ -100,11 +91,6 @@
         }
 
         document.getElementById('sidebar-item-' + currentTopicIndex).classList.add('read');
-
-        if (direction === 'next') {
-            document.getElementById('topic-description').innerHTML = 'Loading next topic...';
-        }
-
         showTopic(newIndex);
     }
 
@@ -113,14 +99,12 @@
         sidebarWrapper.classList.toggle('collapsed');
     });
 
-    // Handle URL changes (back/forward navigation)
     window.addEventListener('popstate', function (event) {
         if (event.state && event.state.topic !== undefined) {
             showTopic(event.state.topic);
         }
     });
 
-    // Load the topic based on URL parameter on page load
     (function () {
         var urlParams = new URLSearchParams(window.location.search);
         var topicIndex = parseInt(urlParams.get('topic'), 10);
@@ -131,38 +115,40 @@
     })();
 </script>
 
-
 <style>
     #sidebar {
-        background-color: #333;
+        background-color: #ffffff;
         height: 100vh;
         position: fixed;
-        bottom: 0;
         left: 0;
+        top: 0;
         padding-top: 48px;
         z-index: 1000;
         overflow-x: hidden;
         overflow-y: auto;
         transition: width 0.3s;
+        color: black;
     }
 
     #sidebar .components {
         padding: 0;
         border-bottom: 1px solid #dee2e6;
+        max-height: calc(100vh - 100px);
+        overflow-y: auto;
     }
 
     #sidebar .components li a {
         padding: 10px 15px;
         font-size: 1.1em;
         display: block;
-        color: #dee2e6;
+        color: black;
         text-decoration: none;
         transition: background-color 0.3s, color 0.3s;
     }
 
     #sidebar .components li a:hover,
     #sidebar .components li.active a {
-        background-color: #ffffff;
+        background-color: #080808;
         color: #ff5e00;
     }
 
@@ -180,7 +166,7 @@
     }
 
     #content-wrapper {
-        margin-left: 300px;
+        margin-left: calc(150px + 1px);
         transition: margin-left 0.3s;
     }
 

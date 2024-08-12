@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{ url_for('static', filename='img/favicon.png') }}">
+    <title>TechCamp - Online Training for Data Science | Machine Learning | API Engineering | E-Commerce Development |
+        Mobile Application Development</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .sidebar {
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 250px;
+            background-color: #ffffff;
+            color: #000;
+            border-right: 1px solid #dee2e6;
+            overflow-y: auto;
+            z-index: 1030;
+            transition: transform 0.3s ease;
+        }
+
+        .sidebar-hide {
+            transform: translateX(-100%);
+        }
+
+        .sidebar-top {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .sidebar-content {
+            padding-top: 20px;
+        }
+
+        .sidebar a {
+            color: #000;
+            padding: 13px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .sidebar a:hover {
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: #000;
+            color: #fff;
+            position: fixed;
+            top: 0;
+            width: calc(100% - 250px);
+            left: 250px;
+            z-index: 1040;
+            padding: 15px;
+            transition: margin-left 0.3s ease;
+            /* Smooth transition for resizing */
+        }
+
+        .navbar-brand {
+            color: #fff;
+        }
+
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+            margin-top: 70px;
+        }
+
+        .active {
+            font-weight: bold;
+            background-color: #e9ecef;
+        }
+
+        .cta-button {
+            display: block;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 8px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                position: fixed;
+                top: 0;
+                transform: translateX(-100%);
+            }
+
+            .sidebar.show {
+                transform: translateX(0);
+            }
+
+            .navbar {
+                width: 100%;
+                margin-left: 0;
+                left: 0;
+            }
+
+            .content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sidebar Toggle Button for Small Screens -->
+    <button class="btn btn-primary d-lg-none" id="sidebarToggle">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- Side Navbar -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-top">
+            <a href="{{ url_for('index') }}" class="cta-button">Browse All Courses</a>
+        </div>
+        <div class="sidebar-content">
+            <h3>{{ current_section.sectionTitle }}</h3>
+            <ul id="sidebar-list">
+                {% for topic in topics %}
+                <li id="sidebar-item-{{ loop.index0 }}">
+                    <a href="javascript:void(0)" onclick="showTopic({{ loop.index0 }})">{{ topic.topicTitle }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <!-- Top Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Left side of the top navbar with a list of five items -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    {% for section in sections %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)" onclick="navigateToSection({{ section.id }})">{{
+                            section.sectionTitle }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.techcamp.live/bootcamps">Join Live class</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('profile') }}"><i class="fa-solid fa-user fa-2xl"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h1 class="mb-4" id="topic-title"></h1>
+        <p id="topic-description" class="topic-description"></p>
+        <div class="d-flex justify-content-between mt-4">
+            <button class="btn btn-primary" id="prev-btn" onclick="navigateToTopic('prev')">Previous</button>
+            <button class="btn btn-primary" id="next-btn" onclick="navigateToTopic('next')">Next</button>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script>
+        var topics = {{ topics | tojson | safe }};
+        var sections = {{ sections | tojson | safe }};
+        var currentTopicIndex = 0;
+        var currentSectionID = 0;
+
+        function showTopic(topicIndex) {
+            if (topicIndex < 0 || topicIndex >= topics.length) {
+                return;
+            }
+            currentTopicIndex = topicIndex;
+
+            var topic = topics[topicIndex];
+            document.getElementById('topic-title').innerText = topic.topicTitle;
+            document.getElementById('topic-description').innerHTML = topic.topicDescription;
+
+            // Update URL with section ID and topic index
+            var newUrl = new URL(window.location);
+            newUrl.searchParams.set('section', topic.sectionID || '');  // Ensure sectionID is valid
+            newUrl.searchParams.set('topic', topicIndex);  // Ensure topicIndex is valid
+            history.pushState({ section: topic.sectionID, topic: topicIndex }, '', newUrl);
+
+            updateSidebarStatus(topicIndex);
+            updateNavigationButtons();
+        }
+
+        function updateSidebarStatus(topicIndex) {
+            document.querySelectorAll('#sidebar-list li').forEach(function (item) {
+                item.classList.remove('active', 'read');
+            });
+
+            var sidebarItem = document.getElementById('sidebar-item-' + topicIndex);
+            if (sidebarItem) {
+                sidebarItem.classList.add('active', 'read');
+            }
+        }
+
+        function updateNavigationButtons() {
+            var prevButton = document.getElementById('prev-btn');
+            var nextButton = document.getElementById('next-btn');
+
+            // Hide Previous button if on the first topic
+            prevButton.style.display = currentTopicIndex === 0 ? 'none' : 'block';
+
+            // Hide Next button if on the last topic
+            nextButton.style.display = currentTopicIndex === topics.length - 1 ? 'none' : 'block';
+        }
+
+        function navigateToSection(sectionID) {
+            currentSectionID = sectionID;  // Update current section ID
+            var firstTopicIndex = topics.findIndex(function (topic) {
+                return topic.sectionID === sectionID;
+            });
+
+            if (firstTopicIndex !== -1) {
+                showTopic(firstTopicIndex);
+            } else {
+                console.log("Section ID not found or no topics in this section.");
+            }
+        }
+
+        function navigateToTopic(direction) {
+            var newIndex = direction === 'next' ? currentTopicIndex + 1 : currentTopicIndex - 1;
+            if (newIndex < 0 || newIndex >= topics.length) {
+                return;
+            }
+
+            document.getElementById('sidebar-item-' + currentTopicIndex).classList.add('read');
+            showTopic(newIndex);
+        }
+
+        window.addEventListener('popstate', function (event) {
+            if (event.state && event.state.topic !== undefined) {
+                showTopic(event.state.topic);
+            }
+        });
+
+        (function () {
+            var urlParams = new URLSearchParams(window.location.search);
+            var topicIndex = parseInt(urlParams.get('topic'), 10);
+            var sectionID = parseInt(urlParams.get('section'), 10);
+
+            if (!isNaN(topicIndex)) {
+                currentTopicIndex = topicIndex;
+            }
+            if (!isNaN(sectionID)) {
+                navigateToSection(sectionID);
+            } else {
+                showTopic(currentTopicIndex);
+            }
+        })();
+
+        // Sidebar toggle functionality
+        document.getElementById('sidebarToggle').addEventListener('click', function () {
+            document.getElementById('sidebar').classList.toggle('show');
+        });
+    </script>
+</body>
+
+</html>

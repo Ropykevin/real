@@ -44,7 +44,7 @@ def login():
 
 @app.route('/login_oauth')
 def login_oauth():
-    redirect_uri = "https://f6d9-105-29-165-232.ngrok-free.app/login/callback"
+    redirect_uri = "https://ecb9-102-69-235-37.ngrok-free.app/login/callback"
     print(f"Redirect URI: {redirect_uri}")
     session["nonce"] = generate_token()
     return oauth.google.authorize_redirect(redirect_uri, nonce=session["nonce"])
@@ -59,46 +59,40 @@ def callback():
         email = google_user['email']
         full_name = google_user['name']
 
-        # Check if user already exists
+        # Check if user already exists in the external API
         response = requests.get(f"{base_url_company_user}/email/{email}")
-
         if response.status_code == 200:
-            # User exists, update the user
             user = response.json()
-            trainee_id = user.get('id')
-            update_payload = {
-                "email": email,
-                "fullName": full_name
-            }
-            update_response = requests.put(
-                f"{base_url_company_user}/trainees/{trainee_id}", json=update_payload)
-            if update_response.status_code != 200:
-                flash(f"Error updating user in external API: {update_response.text}", 'error')
-                return redirect(url_for('login'))
         else:
-            # User does not exist, create a new user
+            # Register new user in the external API
             payload = {
                 "email": email,
                 "firebaseId": 'web',
                 "fullName": full_name,
+                "id": 0,
                 "latestDeviceId": "web"
             }
-            create_response = requests.post(
-                base_url_company_user, json=payload)
-            print("ongeza",create_response)
-            if create_response.status_code != 200:
-                flash(f"Error storing user: {create_response.text}", 'error')
+            response = requests.post(base_url_company_user, json=payload)
+            if response.status_code != 201:
+                flash(f"Error storing user in external API: {
+                      response.text}", 'error')
                 return redirect(url_for('login'))
-            user = create_response.json()
-            trainee_id = user.get('id')
+            user = response.json()
+
+        # Store user in session
+        session['user'] = user
 
         # Set cookies
         response = make_response(redirect(url_for('index')))
         response.set_cookie('user_email', email, secure=True, httponly=True)
         response.set_cookie('user_full_name', full_name,
                             secure=True, httponly=True)
-        response.set_cookie('trainee_id', str(trainee_id),
-                            secure=True, httponly=True)
+
+        # Redirect to the stored URL, if exists
+        next_url = session.pop('next', None)
+        if next_url:
+            return redirect(next_url)
+
         return response
 
     except requests.RequestException as req_e:
@@ -108,7 +102,6 @@ def callback():
         flash(f"An unexpected error occurred: {str(e)}", 'error')
         session.pop('oauth_token', None)
         return redirect(url_for('login'))
-
 
 
 
@@ -322,30 +315,48 @@ def topic_content(journey_id, section_id, topic_id):
             f'{base_url_journeys}/sections/{section_id}/topics/{topic_id}')
         response.raise_for_status()
         content = response.json()
-        print("rada",content)
+
+        # Fetch all topics in the current section
         section_response = requests.get(
             f'{base_url_journeys}/sections/{section_id}/topics')
         section_response.raise_for_status()
         topics = section_response.json()
-        
+        print("mimi",topics)
+
+        # Determine the index of the current topic
         topic_index = next((i for i, t in enumerate(
             topics) if t['id'] == topic_id), -1)
+
+        # Determine the previous and next topics
         prev_topic = topics[topic_index - 1] if topic_index > 0 else None
         next_topic = topics[topic_index +
                             1] if topic_index < len(topics) - 1 else None
-        # Fetch the current section details (optional, if needed)
+
+        # Fetch the current section details
         current_section_response = requests.get(
             f'{base_url_journeys}/journeys/{journey_id}/sections/{section_id}')
         current_section_response.raise_for_status()
         current_section = current_section_response.json()
-        # print("rada", current_section)
+        
+        sections_response = requests.get(
+            f'{base_url_journeys}/journeys/{journey_id}/sections')
+        sections_response.raise_for_status()
+        sections = sections_response.json()
+        print("vvv",sections)
 
-
-        return render_template('courseDetails.html', topic=content, prev_topic=prev_topic, next_topic=next_topic, topics=topics,current_section=current_section)
+        # Render the template with the data
+        return render_template(
+            'content.html',
+            topic=content,
+            prev_topic=prev_topic,
+            next_topic=next_topic,
+            topics=topics,
+            current_section=current_section,
+            sections=sections
+        )
     except requests.RequestException as e:
         print(f"An error occurred: {e}")
         abort(404)
-
 
 @app.route('/sections/<int:section_id>/topics')
 def get_topics_by_section_id(section_id):
