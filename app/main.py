@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, url_for, request, jsonify, json, session, send_from_directory, abort, make_response, flash
+from flask import Flask, render_template, redirect, url_for, request, jsonify, json, session, abort, make_response, flash
 from dotenv import load_dotenv
 from authlib.integrations.flask_client import OAuth
 from authlib.common.security import generate_token
@@ -6,28 +6,38 @@ import requests
 import os
 import logging
 from functools import wraps
+import firebase_admin
+from firebase_admin import credentials, auth, exceptions
 
+# Firebase initialization
+cred = credentials.Certificate('serviceAccountKey.json')
+firebase_admin.initialize_app(cred)
 
+# Logging configuration
 logging.basicConfig(filename='app.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
+# Flask app initialization
 app = Flask(__name__, static_folder='./static', template_folder='./templates')
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 oauth = OAuth(app)
 
+# Base URLs for APIs
 base_url_journeys = 'http://167.71.54.75:8084/'
 base_url_company_user = 'http://167.71.54.75:8082/trainees/'
 base_url_userprogress = 'http://167.71.54.75:8081/'
 
-# Google OAuth
+# Load Google OAuth details
 load_dotenv()
 GOOGLE_CLIENT_ID = os.environ.get("GOOGLE_CLIENT_ID")
 GOOGLE_CLIENT_SECRET = os.environ.get("GOOGLE_CLIENT_SECRET")
 GOOGLE_DISCOVERY_URL = "https://accounts.google.com/.well-known/openid-configuration"
 
-print(f"Google Client ID: {GOOGLE_CLIENT_ID}")
-print(f"Google Client Secret: {GOOGLE_CLIENT_SECRET}")
+# Print client information for debugging
+# print(f"Google Client ID: {GOOGLE_CLIENT_ID}")
+# print(f"Google Client Secret: {GOOGLE_CLIENT_SECRET}")
 
+# Register Google OAuth
 oauth.register(
     name='google',
     client_id=GOOGLE_CLIENT_ID,
@@ -44,8 +54,8 @@ def login():
 
 @app.route('/login_oauth')
 def login_oauth():
-    redirect_uri = "https://ecb9-102-69-235-37.ngrok-free.app/login/callback"
-    print(f"Redirect URI: {redirect_uri}")
+    redirect_uri = 'https://78e3-197-248-16-215.ngrok-free.app/login/callback'
+    # print(f"Redirect URI: {redirect_uri}")
     session["nonce"] = generate_token()
     return oauth.google.authorize_redirect(redirect_uri, nonce=session["nonce"])
 
@@ -53,42 +63,65 @@ def login_oauth():
 @app.route("/login/callback")
 def callback():
     try:
+        # Authorize access token
         token = oauth.google.authorize_access_token()
         google_user = oauth.google.parse_id_token(
-            token, nonce=session["nonce"])
-        email = google_user['email']
-        full_name = google_user['name']
+            token, nonce=session.get("nonce"))
+        email = google_user.get('email')
+        full_name = google_user.get('name')
 
-        # Check if user already exists in the external API
+        # Check if the user exists in your system
         response = requests.get(f"{base_url_company_user}/email/{email}")
+
         if response.status_code == 200:
+            # User exists in the system
             user = response.json()
+            firebase_id = user.get('firebaseId')
         else:
-            # Register new user in the external API
-            payload = {
-                "email": email,
-                "firebaseId": 'web',
-                "fullName": full_name,
-                "id": 0,
-                "latestDeviceId": "web"
-            }
-            response = requests.post(base_url_company_user, json=payload)
-            if response.status_code != 201:
-                flash(f"Error storing user in external API: {
-                      response.text}", 'error')
+            # User does not exist in the system, create user in Firebase
+            try:
+                try:
+                    firebase_user = auth.create_user(
+                        email=email, display_name=full_name)
+                except exceptions.FirebaseError as firebase_e:
+                    if firebase_e.code == 'EMAIL_EXISTS':
+                        # Fetch existing Firebase user if email already exists
+                        firebase_user = auth.get_user_by_email(email)
+                    else:
+                        raise firebase_e
+
+                firebase_id = firebase_user.uid
+
+                # Register the new user in your system
+                payload = {
+                    "email": email,
+                    "firebaseId": firebase_id,
+                    "fullName": full_name,
+                    "latestDeviceId": None
+                }
+
+                response = requests.post(base_url_company_user, json=payload)
+                if response.status_code != 201:
+                    error_details = response.json()
+                    flash(f"Error storing user: {error_details}", 'error')
+                    return redirect(url_for('login'))
+
+                user = response.json()
+            except requests.RequestException as req_e:
+                flash(f"An error occurred with the API: {req_e}", 'error')
                 return redirect(url_for('login'))
-            user = response.json()
+            except exceptions.FirebaseError as firebase_e:
+                flash(f"Firebase error: {str(firebase_e)}", 'error')
+                return redirect(url_for('login'))
 
         # Store user in session
         session['user'] = user
-
-        # Set cookies
         response = make_response(redirect(url_for('index')))
         response.set_cookie('user_email', email, secure=True, httponly=True)
         response.set_cookie('user_full_name', full_name,
                             secure=True, httponly=True)
 
-        # Redirect to the stored URL, if exists
+        # Redirect to the next URL if it exists
         next_url = session.pop('next', None)
         if next_url:
             return redirect(next_url)
@@ -98,29 +131,29 @@ def callback():
     except requests.RequestException as req_e:
         flash(f"An error occurred with the external API: {req_e}", 'error')
         return redirect(url_for('login'))
+    except exceptions.FirebaseError as firebase_e:
+        flash(f"Firebase error: {str(firebase_e)}", 'error')
+        return redirect(url_for('login'))
     except Exception as e:
         flash(f"An unexpected error occurred: {str(e)}", 'error')
         session.pop('oauth_token', None)
         return redirect(url_for('login'))
 
-
-
 def login_required(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
         if 'user' not in session:
-            # Storing the URL the user was trying to access
+            # Store the URL the user was trying to access
             session['next'] = request.url
             flash('You need to be logged in to access this page.', 'error')
             return redirect(url_for('login'))
         return f(*args, **kwargs)
     return decorated_function
-
 @app.route('/profile')
 @login_required
 def profile():
     user = session['user']
-    print(user)
+    # print(user)
     return render_template('profile.html', user=user)
 
 
@@ -142,9 +175,9 @@ def edit_profile():
     }
 
     try:
-        # Perform a PUT request to update the trainee details by email
+        # PUT request to update the trainee details by email
         response = requests.put(f"{base_url_company_user}{email}", json=update_payload)
-        response.raise_for_status()  # Raise an error for bad responses (4xx, 5xx)
+        response.raise_for_status()
 
         flash('Profile updated successfully', 'success')
 
@@ -283,7 +316,7 @@ def get_journey(journey_id):
             f'{base_url_journeys}/journeys/{journey_id}')
         journey_response.raise_for_status()
         journey = journey_response.json()
-        print("wewe",journey)
+        # print("wewe",journey)
         section_response = requests.get(
             f'{base_url_journeys}/journeys/{journey_id}/sections')
         section_response.raise_for_status()
@@ -303,7 +336,7 @@ def get_journey(journey_id):
     section = sections[0] if sections else {}
     section_id = section.get("id", None) if section else None
     topics = section.get('topics', []) if section else []
-    print(journey)
+    # print(journey)
     return render_template('courseTopics.html', journey=journey, sections=sections, section=section, section_id=section_id, topics=topics, journey_id=journey_id)
 
 
@@ -321,7 +354,7 @@ def topic_content(journey_id, section_id, topic_id):
             f'{base_url_journeys}/sections/{section_id}/topics')
         section_response.raise_for_status()
         topics = section_response.json()
-        print("mimi",topics)
+        # print("mimi",topics)
 
         # Determine the index of the current topic
         topic_index = next((i for i, t in enumerate(
@@ -342,7 +375,7 @@ def topic_content(journey_id, section_id, topic_id):
             f'{base_url_journeys}/journeys/{journey_id}/sections')
         sections_response.raise_for_status()
         sections = sections_response.json()
-        print("vvv",sections)
+        # print("vvv",sections)
 
         # Render the template with the data
         return render_template(
@@ -355,7 +388,7 @@ def topic_content(journey_id, section_id, topic_id):
             sections=sections
         )
     except requests.RequestException as e:
-        print(f"An error occurred: {e}")
+        # print(f"An error occurred: {e}")
         abort(404)
 
 @app.route('/sections/<int:section_id>/topics')
@@ -404,6 +437,123 @@ def get_levels_by_section_id(section_id):
         section = {}
     return render_template('client/levels.html', levels=levels, section=section)
 
+
+# user progress
+# section progress 
+@app.route('/users/<int:user_id>/journeys/<int:journey_id>/sections/<int:section_id>/progress', methods=['GET'])
+@login_required
+def get_section_progress(user_id, journey_id, section_id):
+    try:
+        url = f"{
+            base_url_userprogress}/users/progress/{user_id}/{journey_id}/{section_id}"
+        progress = fetch_data(url)
+        return jsonify(progress)
+    except requests.RequestException as e:
+        flash(f"Failed to fetch section progress: {e}", 'error')
+        return jsonify({'error': str(e)}), 500
+    
+# topic progress
+
+
+@app.route('/users/<int:user_id>/journeys/<int:journey_id>/sections/<int:section_id>/topics/<int:topic_id>/progress', methods=['GET'])
+@login_required
+def get_topic_progress(user_id, journey_id, section_id, topic_id):
+    try:
+        url = f"{base_url_userprogress}/users/progress/{
+            user_id}/{journey_id}/{section_id}/{topic_id}"
+        progress = fetch_data(url)
+        return jsonify(progress)
+    except requests.RequestException as e:
+        flash(f"Failed to fetch topic progress: {e}", 'error')
+        return jsonify({'error': str(e)}), 500
+
+# update section progress
+
+
+@app.route('/users/progress/sections', methods=['POST'])
+@login_required
+def create_section_progress():
+    data = request.json
+    try:
+        response = requests.post(
+            f"{base_url_userprogress}/users/progress/section", json=data)
+        response.raise_for_status()
+        return jsonify(response.json())
+    except requests.RequestException as e:
+        flash(f"Failed to create section progress: {e}", 'error')
+        return jsonify({'error': str(e)}), 500
+
+# update topic progress
+
+
+@app.route('/users/progress/topics', methods=['POST'])
+@login_required
+def create_topic_progress():
+    data = request.json
+    try:
+        response = requests.post(
+            f"{base_url_userprogress}/users/progress/topic", json=data)
+        response.raise_for_status()
+        return jsonify(response.json())
+    except requests.RequestException as e:
+        flash(f"Failed to create topic progress: {e}", 'error')
+        return jsonify({'error': str(e)}), 500
+
+# user section progress
+
+
+@app.route('/users/<int:user_id>/sections/progress', methods=['GET'])
+@login_required
+def get_user_sections_progress(user_id):
+    try:
+        url = f"{base_url_userprogress}/users/progress/sections/{user_id}"
+        progress = fetch_data(url)
+        return jsonify(progress)
+    except requests.RequestException as e:
+        flash(f"Failed to fetch user sections progress: {e}", 'error')
+        return jsonify({'error': str(e)}), 500
+
+
+# user topic progress
+
+@app.route('/users/<int:user_id>/topics/progress', methods=['GET'])
+@login_required
+def get_user_topics_progress(user_id):
+    try:
+        url = f"{base_url_userprogress}/users/progress/topics/{user_id}"
+        progress = fetch_data(url)
+        return jsonify(progress)
+    except requests.RequestException as e:
+        flash(f"Failed to fetch user topics progress: {e}", 'error')
+        return jsonify({'error': str(e)}), 500
+
+# journey progress 
+
+
+@app.route('/users/<int:user_id>/journeys/<int:journey_id>/progress/total', methods=['GET'])
+@login_required
+def get_user_journey_total_progress(user_id, journey_id):
+    try:
+        url = f"{base_url_userprogress}/users/progress/total/{user_id}/{journey_id}"
+        progress = fetch_data(url)
+        return jsonify(progress)
+    except requests.RequestException as e:
+        flash(f"Failed to fetch user journey total progress: {e}", 'error')
+        return jsonify({'error': str(e)}), 500
+
+# all topics 
+
+
+@app.route('/users/<int:user_id>/journeys/<int:journey_id>/topics/progress', methods=['GET'])
+@login_required
+def get_user_topics_total_progress(user_id, journey_id):
+    try:
+        url = f"{base_url_userprogress}/users/topics/{user_id}/{journey_id}"
+        progress = fetch_data(url)
+        return jsonify(progress)
+    except requests.RequestException as e:
+        flash(f"Failed to fetch user topics total progress: {e}", 'error')
+        return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
     app.run(debug=True)

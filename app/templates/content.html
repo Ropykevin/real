@@ -168,7 +168,7 @@
                 </ul>
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="https://www.techcamp.live/bootcamps">Join Live class</a>
+                        <a class="nav-link" href="https://www.techcamp.co.ke/bootcamps">Join Live class</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('profile') }}"><i class="fa-solid fa-user fa-2xl"></i></a>
@@ -285,6 +285,48 @@
         // Sidebar toggle functionality
         document.getElementById('sidebarToggle').addEventListener('click', function () {
             document.getElementById('sidebar').classList.toggle('show');
+        });
+    </script>
+    <script>
+
+        jQuery(document).ready(function () {
+
+            $('#messageSend').on('click', function (e) {
+
+                e.preventDefault();
+
+                // var that = $(this), url = that.attr('action'), method = that.attr('method'), data = {};
+
+                // that.find('[name]').each(function (index, value) { var that = $(this), name = that.attr('name'), value = that.val(); data[name] = value; });
+
+                // $('#response_error').html('<center><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i></center>');
+
+                $.ajax({
+                    url: url,
+                    type: method,
+                    data: data,
+                    success: function (results) {
+                        console.log("update progress results", results)
+
+                        // $('#response_error').html('');
+
+                        // $('#messageSend').html(results);
+
+                    },
+
+                    error: function (data) {
+                        console.log("update progress error", data)
+
+                        // var errors = '<font color="red"><ul>';
+                        // for (datos in data.responseJSON) {
+                        //     errors += '<li>' + data.responseJSON[datos] + '</li>';
+                        // }
+                        // errors += '</ul></font>';
+                        // $('#response_error').show().html(errors);
+                    }
+                });
+
+            });
         });
     </script>
 </body>
