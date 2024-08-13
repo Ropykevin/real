@@ -1,5 +1,8 @@
 /.env
 ./.env
 .env/
-/serviceAccountKey
-./app/serviceAccountKe
+/serviceAccountKey.json
+serviceAccountKey.json
+./app/serviceAccountKe.json
+/app/serviceAccountKe.json
+app/serviceAccountKe.json
