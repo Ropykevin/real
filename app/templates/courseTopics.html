@@ -1,4 +1,4 @@
-{% include 'layout.html' %}
+{% extends 'layout.html' %}
 {% block content %}
 <!-- <div class="page-loader">
     <img src="/static/img/loader.gif" alt="">
@@ -33,6 +33,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
+                <!-- Add any additional content here if needed -->
             </div>
         </div>
     </div>
@@ -49,28 +50,30 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion-0"
-                                    href="{{ sect.sectionTitle | replace(' ','_') }}" class="collapsed">
+                                <a data-toggle="collapse" data-parent="#accordion-0" href="#section_{{ loop.index }}"
+                                    class="collapsed">
                                     {{ sect.sectionTitle }}
                                 </a>
                             </h4>
                         </div>
-                        <div id="{{ sect.sectionTitle | replace(' ','_') }}" class="panel-collapse collapse">
+                        <div id="section_{{ loop.index }}" class="panel-collapse collapse">
                             <div>
                                 <ul class="list-group">
                                     {% if sect.topics %}
                                     {% for topic in sect.topics %}
                                     <li class="list-group-item">
-                                        <a href="{{ url_for('topic_content', journey_id=journey.id, section_id=sect.id, topic_id=topic.id) }}">
+                                        <a
+                                            href="{{ url_for('topic_content', journey_id=journey_id, section_id=sect.id, topic_id=topic.id) }}">
                                             {{ topic.topicTitle }}
                                         </a>
                                     </li>
                                     {% endfor %}
                                     {% else %}
                                     <i class="fa fa-smile"></i>
-                                    <p class="text-warning text-center" style="font-size: larger;">Sorry!! Topics for {{
-                                        sect.sectionTitle }} currently not uploaded. <br> All topics under {{
-                                        sect.sectionTitle }} will be displayed here.</p>
+                                    <p class="text-warning text-center" style="font-size: larger;">
+                                        Sorry!! Topics for {{ sect.sectionTitle }} currently not uploaded. <br>
+                                        All topics under {{ sect.sectionTitle }} will be displayed here.
+                                    </p>
                                     {% endif %}
                                 </ul>
                             </div>
@@ -79,7 +82,9 @@
                     {% endfor %}
                 </div>
                 {% else %}
-                <p class="text-warning text-center">No sections available.</p>
+                <p class="text-warning text-center" style="font-size: larger;">
+                    No sections available for this journey.
+                </p>
                 {% endif %}
             </div>
         </div>

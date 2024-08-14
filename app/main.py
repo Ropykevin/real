@@ -340,6 +340,63 @@ def get_journey(journey_id):
     return render_template('courseTopics.html', journey=journey, sections=sections, section=section, section_id=section_id, topics=topics, journey_id=journey_id)
 
 
+@app.route('/journeys/<int:journey_id>/levels', methods=['GET'])
+@login_required
+def get_levels_by_journey(journey_id):
+    journey_response = requests.get(f'{base_url_journeys}/journeys/{journey_id}')
+    journey_response.raise_for_status()
+    journey = journey_response.json()
+    print(journey)
+    levels = [
+        {'id': 1, 'name': 'Beginner',  'icon': 'beginner.png'},
+        {'id': 2, 'name': 'Intermediate',  'icon': 'intermediate.png'},
+        {'id': 3, 'name': 'Advanced',  'icon': 'advanced.png'},
+        {'id': 4, 'name': 'Expert',  'icon': 'expert.png'},
+        {'id': 5, 'name': 'Real World Application Examples',  'icon': 'realworld.png'},
+        {'id': 6, 'name': 'Sample Interview Questions',  'icon': 'questions.png'},
+    ]
+
+    return render_template('levels.html', levels=levels, journey_id=journey_id, journey=journey)
+
+
+@app.route('/journeys/<int:journey_id>/sections/level/<int:level_id>', methods=['GET'])
+@login_required
+def get_section_by_level(journey_id, level_id):
+    try:
+        # Fetch journey details
+        journey_response = requests.get(
+            f'{base_url_journeys}/journeys/{journey_id}')
+        journey_response.raise_for_status()
+        journey = journey_response.json()
+
+        # Fetch all sections
+        section_response = requests.get(
+            f'{base_url_journeys}/journeys/{journey_id}/sections')
+        section_response.raise_for_status()
+        sections = section_response.json()
+
+        # Fetch topics for each section
+        for section in sections:
+            section_id = section["id"]
+            topics_response = requests.get(
+                f'{base_url_journeys}/sections/{section_id}/topics')
+            topics_response.raise_for_status()
+            section['topics'] = topics_response.json()
+
+        # Fetch sections by level
+        api_url = f'{
+            base_url_journeys}/journeys/{journey_id}/sections/level/{level_id}'
+        sections_by_level = fetch_data(api_url)
+        if sections_by_level is None:
+            flash(f"Failed to retrieve sections for journey ID {journey_id} and level ID {level_id}", 'error')
+            sections_by_level = []
+
+        return render_template('courseTopics.html', sections=sections_by_level, journey_id=journey_id, level_id=level_id, journey=journey)
+
+    except requests.RequestException as e:
+        flash(f"An error occurred: {e}", 'error')
+        return redirect(url_for('index'))
+
 @app.route('/<int:journey_id>/sections/<int:section_id>/topics/<int:topic_id>')
 def topic_content(journey_id, section_id, topic_id):
     try:
@@ -498,6 +555,7 @@ def create_topic_progress():
     except requests.RequestException as e:
         flash(f"Failed to create topic progress: {e}", 'error')
         return jsonify({'error': str(e)}), 500
+
 
 # user section progress
 

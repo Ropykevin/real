@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+{% block content %}
+<section class="ftco-section bg-light">
+    <div class="container">
+        <div class="row justify-content-center pb-4">
+            <div class="col-md-12 heading-section text-center ftco-animate">
+                <h2 class="mb-4">{{ journey.name }}</h2>
+            </div>
+        </div>
+        <div class="row">
+            {% for level in levels %}
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <a href="{{ url_for('get_section_by_level', journey_id=journey_id, level_id=level.id) }}"
+                        class="btn btn-primary">
+                        <div class="card-body">
+                            <img src="{{ url_for('static', filename='images/' ~ level.icon) }}"
+                                alt="{{ level.name }} Icon" class="level-icon">
+
+                            <h5 class="card-title">{{ level.name }}</h5>
+                            <p class="card-text">{{ level.description }}</p>
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}
