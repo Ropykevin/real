@@ -63,7 +63,7 @@
                                     {% for topic in sect.topics %}
                                     <li class="list-group-item">
                                         <a
-                                            href="{{ url_for('topic_content', journey_id=journey_id, section_id=sect.id, topic_id=topic.id) }}">
+                                            href="{{ url_for('topic_content', journey_id=journey_id, section_id=sect.id, topic_id=topic.id ) }}">
                                             {{ topic.topicTitle }}
                                         </a>
                                     </li>

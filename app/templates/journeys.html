@@ -20,16 +20,6 @@
         background-color: #ced4da;
         /* Darkest gray */
     }
-
-    .card-img-top {
-        width: 100%;
-        height: auto;
-    }
-
-    .card-body a {
-        margin-top: 10px;
-        display: block;
-    }
 </style>
 <section class="ftco-section bg-light">
     <div class="container">
@@ -42,25 +32,28 @@
         </div>
         <div class="row">
             {% for journey in journeys %}
-            <div class="col-md-6 col-lg-4 mb-4">
+            <div class="container">
                 <div
-                    class="card {% if loop.index0 % 4 == 0 %} bg-color-1 {% elif loop.index0 % 4 == 1 %} bg-color-2 {% elif loop.index0 % 4 == 2 %} bg-color-3 {% else %} bg-color-4 {% endif %}">
+                    class="card mb-3 {% if loop.index0 % 4 == 0 %} bg-color-1 {% elif loop.index0 % 4 == 1 %} bg-color-2 {% elif loop.index0 % 4 == 2 %} bg-color-3 {% else %} bg-color-4 {% endif %}">
                     <div class="row no-gutters">
-                        <div class="col-md-12 col-lg-4">
+                        <div class="col-md-4">
                             <img src="{{ journey.imageUrl }}" class="card-img-top" alt="{{ journey.name }}">
                         </div>
-                        <div class="col-md-12 col-lg-8">
+                        <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title">{{ journey.name }}</h5>
                                 <p class="card-text">{{ journey.description }}</p>
-                                <a href="{{ journey.videoUrl }}" class="btn btn-primary" target="_blank">Watch
-                                    Preview</a>
-                                <a href="{{ journey.streamUrl }}" class="btn btn-secondary" target="_blank">Join Live
-                                    class</a>
-                                <a href="{{ url_for('get_journey', journey_id=journey.id) }}"
+                                <a style="width: 47%;" href="{{ journey.videoUrl }}" class="btn btn-primary"
+                                    target="_blank">Watch Preview</a>
+                                <a style="width: 47%; float: right;" href="{{ journey.streamUrl }}"
+                                    class="btn btn-secondary" target="_blank">Join Live class</a>
+                                <a style="width: 100%; margin-top: 10px;"
+                                    href="{{ url_for('get_journey', journey_id=journey.id) }}"
                                     class="btn btn-primary">Continue Journey</a>
-                                <a href="{{ url_for('get_levels_by_journey', journey_id=journey.id) }}"
-                                    class="btn btn-success">Start Journey</a>
+                                <!-- Start Journey Button -->
+                                <a style="width: 100%; margin-top: 10px;"
+                                    href="{{ url_for('get_levels_by_journey', journey_id=journey.id) }}"
+                                    class="btn btn-success" style="text-align: center;">Start Journey</a>
                             </div>
                         </div>
                     </div>
@@ -70,4 +63,4 @@
         </div>
     </div>
 </section>
-{% endblock %}
+{% endblock %} 

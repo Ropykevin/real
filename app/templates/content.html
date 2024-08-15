@@ -137,11 +137,11 @@
             <a href="{{ url_for('index') }}" class="cta-button">Browse All Courses</a>
         </div>
         <div class="sidebar-content">
-            <h3>{{ current_section.sectionTitle }}</h3>
+            <h4 style="margin-left: 20px;">{{ current_section.sectionTitle }}</h4>
             <ul id="sidebar-list">
                 {% for topic in topics %}
-                <li id="sidebar-item-{{ loop.index0 }}">
-                    <a href="javascript:void(0)" onclick="showTopic({{ loop.index0 }})">{{ topic.topicTitle }}</a>
+                <li class="list-group-item" id="sidebar-item-{{ loop.index0 }}">
+                    <a href="javascript:void(0)" onclick="showTopic({{ loop.index0 }},{{to}})">{{ topic.topicTitle }}</a>
                 </li>
                 {% endfor %}
             </ul>
@@ -186,33 +186,41 @@
             <button class="btn btn-primary" id="next-btn" onclick="navigateToTopic('next')">Next</button>
         </div>
     </div>
-
+y
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <script>
         var topics = {{ topics | tojson | safe }};
         var sections = {{ sections | tojson | safe }};
+        console.log(sections)
         var currentTopicIndex = 0;
-        var currentSectionID = 0;
+        var currentSectionIndex = 0;
 
-        function showTopic(topicIndex) {
-            if (topicIndex < 0 || topicIndex >= topics.length) {
-                return;
+        function showTopic(topicIndex,sectionIndex) {
+                if (topicIndex < 0 || topicIndex >= topics.length) {
+                    return;
+                }
+                currentTopicIndex = topicIndex;
+                currentSectionIndex= sectionIndex
+
+                var topic = topics[topicIndex];
+                console.log(topic)
+                var section=sections[sectionIndex]
+                document.getElementById('topic-title').innerText = topic.topicTitle;
+                document.getElementById('topic-description').innerHTML = topic.topicDescription;
+
+                var newUrl = new URL(window.location);
+                newUrl.searchParams.set('section', topic.sectionID || '');
+                newUrl.searchParams.set('topic', topicIndex);
+                history.pushState({ section: topic.sectionID, topic: topicIndex }, '', newUrl);
+
+                updateSidebarStatus(topicIndex);
+                updateNavigationButtons();
+
+                // Update progress after displaying the topic
+                updateProgress(topic.journeyId, topic.levelId, topic.sectionId, topic.id, 'currentUserId', 100);
             }
-            currentTopicIndex = topicIndex;
 
-            var topic = topics[topicIndex];
-            document.getElementById('topic-title').innerText = topic.topicTitle;
-            document.getElementById('topic-description').innerHTML = topic.topicDescription;
-
-            var newUrl = new URL(window.location);
-            newUrl.searchParams.set('section', topic.sectionID || '');  
-            newUrl.searchParams.set('topic', topicIndex);  
-            history.pushState({ section: topic.sectionID, topic: topicIndex }, '', newUrl);
-
-            updateSidebarStatus(topicIndex);
-            updateNavigationButtons();
-        }
 
         function updateSidebarStatus(topicIndex) {
             document.querySelectorAll('#sidebar-list li').forEach(function (item) {
@@ -235,20 +243,6 @@
             // Hide Next button if on the last topic
             nextButton.style.display = currentTopicIndex === topics.length - 1 ? 'none' : 'block';
         }
-
-        function navigateToSection(sectionID) {
-            currentSectionID = sectionID;  // Update current section ID
-            var firstTopicIndex = topics.findIndex(function (topic) {
-                return topic.sectionID === sectionID;
-            });
-
-            if (firstTopicIndex !== -1) {
-                showTopic(firstTopicIndex);
-            } else {
-                console.log("Section ID not found or no topics in this section.");
-            }
-        }
-
         function navigateToTopic(direction) {
             var newIndex = direction === 'next' ? currentTopicIndex + 1 : currentTopicIndex - 1;
             if (newIndex < 0 || newIndex >= topics.length) {
@@ -285,25 +279,29 @@
             document.getElementById('sidebar').classList.toggle('show');
         });
 
-        function updateProgress(topicId, progress) {
-                fetch('/updateProgress', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        topic_id: topicId,
-                        progress: progress
-                    })
-                })
-                    .then(response => response.json())
-                    .then(data => {
-                        console.log('Success:', data);
-                    })
-                    .catch((error) => {
-                        console.error('Error:', error);
-                    });
-            }
+    function updateProgress(journeyId, levelId, sectionId, topicId, userId) {
+        fetch('/users/progress/topics', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                journeyId: journeyId,
+                levelId: levelId,
+                sectionId: sectionId,
+                topicId: topicId,
+                userId: {{user | safe}}
+            })
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+    }
+
 
     </script>
     <script>

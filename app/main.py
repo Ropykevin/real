@@ -54,7 +54,7 @@ def login():
 
 @app.route('/login_oauth')
 def login_oauth():
-    redirect_uri = 'https://78e3-197-248-16-215.ngrok-free.app/login/callback'
+    redirect_uri ='https://bca4-197-248-16-215.ngrok-free.app/login/callback'
     # print(f"Redirect URI: {redirect_uri}")
     session["nonce"] = generate_token()
     return oauth.google.authorize_redirect(redirect_uri, nonce=session["nonce"])
@@ -116,6 +116,7 @@ def callback():
 
         # Store user in session
         session['user'] = user
+        
         response = make_response(redirect(url_for('index')))
         response.set_cookie('user_email', email, secure=True, httponly=True)
         response.set_cookie('user_full_name', full_name,
@@ -125,7 +126,6 @@ def callback():
         next_url = session.pop('next', None)
         if next_url:
             return redirect(next_url)
-
         return response
 
     except requests.RequestException as req_e:
@@ -346,7 +346,6 @@ def get_levels_by_journey(journey_id):
     journey_response = requests.get(f'{base_url_journeys}/journeys/{journey_id}')
     journey_response.raise_for_status()
     journey = journey_response.json()
-    print(journey)
     levels = [
         {'id': 1, 'name': 'Beginner',  'icon': 'beginner.png'},
         {'id': 2, 'name': 'Intermediate',  'icon': 'intermediate.png'},
@@ -362,6 +361,7 @@ def get_levels_by_journey(journey_id):
 @app.route('/journeys/<int:journey_id>/sections/level/<int:level_id>', methods=['GET'])
 @login_required
 def get_section_by_level(journey_id, level_id):
+    user = session["user"]
     try:
         # Fetch journey details
         journey_response = requests.get(
@@ -390,6 +390,7 @@ def get_section_by_level(journey_id, level_id):
         if sections_by_level is None:
             flash(f"Failed to retrieve sections for journey ID {journey_id} and level ID {level_id}", 'error')
             sections_by_level = []
+            
 
         return render_template('courseTopics.html', sections=sections_by_level, journey_id=journey_id, level_id=level_id, journey=journey)
 
@@ -397,44 +398,46 @@ def get_section_by_level(journey_id, level_id):
         flash(f"An error occurred: {e}", 'error')
         return redirect(url_for('index'))
 
+
 @app.route('/<int:journey_id>/sections/<int:section_id>/topics/<int:topic_id>')
 def topic_content(journey_id, section_id, topic_id):
+    user = session.get("user")
+    if not user:
+        abort(403)  # Handle unauthorized access if user is not logged in
+
     try:
         # Fetch the current topic
-        response = requests.get(
-            f'{base_url_journeys}/sections/{section_id}/topics/{topic_id}')
+        response = requests.get(f'{base_url_journeys}/sections/{section_id}/topics/{topic_id}')
         response.raise_for_status()
         content = response.json()
 
         # Fetch all topics in the current section
-        section_response = requests.get(
-            f'{base_url_journeys}/sections/{section_id}/topics')
+        section_response = requests.get(f'{base_url_journeys}/sections/{section_id}/topics')
         section_response.raise_for_status()
         topics = section_response.json()
-        # print("mimi",topics)
 
         # Determine the index of the current topic
-        topic_index = next((i for i, t in enumerate(
-            topics) if t['id'] == topic_id), -1)
+        topic_index = next((i for i, t in enumerate(topics) if t['id'] == topic_id), -1)
 
         # Determine the previous and next topics
         prev_topic = topics[topic_index - 1] if topic_index > 0 else None
-        next_topic = topics[topic_index +
-                            1] if topic_index < len(topics) - 1 else None
+        next_topic = topics[topic_index + 1] if topic_index < len(topics) - 1 else None
 
         # Fetch the current section details
-        current_section_response = requests.get(
-            f'{base_url_journeys}/journeys/{journey_id}/sections/{section_id}')
+        current_section_response = requests.get(f'{base_url_journeys}/journeys/{journey_id}/sections/{section_id}')
         current_section_response.raise_for_status()
         current_section = current_section_response.json()
-        
-        sections_response = requests.get(
-            f'{base_url_journeys}/journeys/{journey_id}/sections')
+
+        # Fetch all sections in the journey
+        sections_response = requests.get(f'{base_url_journeys}/journeys/{journey_id}/sections')
         sections_response.raise_for_status()
         sections = sections_response.json()
-        # print("vvv",sections)
 
-        # Render the template with the data
+        # Fetch the current journey details
+        journey_response = requests.get(f'{base_url_journeys}/journeys/{journey_id}')
+        journey_response.raise_for_status()
+        journey = journey_response.json()
+
         return render_template(
             'content.html',
             topic=content,
@@ -442,11 +445,14 @@ def topic_content(journey_id, section_id, topic_id):
             next_topic=next_topic,
             topics=topics,
             current_section=current_section,
-            sections=sections
+            sections=sections,
+            journey=journey,  
+            user=user["id"]
         )
+
     except requests.RequestException as e:
-        # print(f"An error occurred: {e}")
-        abort(404)
+        app.logger.error(f"An error occurred while fetching data: {e}")
+        abort(404)  
 
 @app.route('/sections/<int:section_id>/topics')
 def get_topics_by_section_id(section_id):
@@ -533,7 +539,7 @@ def create_section_progress():
     data = request.json
     try:
         response = requests.post(
-            f"{base_url_userprogress}/users/progress/section", json=data)
+            f"{base_url_userprogress}users/progress/section", json=data)
         response.raise_for_status()
         return jsonify(response.json())
     except requests.RequestException as e:
@@ -547,9 +553,10 @@ def create_section_progress():
 @login_required
 def create_topic_progress():
     data = request.json
+    print("kikombe",data)
     try:
         response = requests.post(
-            f"{base_url_userprogress}/users/progress/topic", json=data)
+            f"{base_url_userprogress}users/progress/topic", json=data)
         response.raise_for_status()
         return jsonify(response.json())
     except requests.RequestException as e:
@@ -557,61 +564,62 @@ def create_topic_progress():
         return jsonify({'error': str(e)}), 500
 
 
-# user section progress
+# # user section progress
 
 
-@app.route('/users/<int:user_id>/sections/progress', methods=['GET'])
-@login_required
-def get_user_sections_progress(user_id):
-    try:
-        url = f"{base_url_userprogress}/users/progress/sections/{user_id}"
-        progress = fetch_data(url)
-        return jsonify(progress)
-    except requests.RequestException as e:
-        flash(f"Failed to fetch user sections progress: {e}", 'error')
-        return jsonify({'error': str(e)}), 500
+# @app.route('/users/<int:user_id>/sections/progress', methods=['GET'])
+# @login_required
+# def get_user_sections_progress(user_id):
+#     try:
+#         url = f"{base_url_userprogress}users/progress/sections/{user_id}"
+#         progress = fetch_data(url)
+#         return jsonify(progress)
+#     except requests.RequestException as e:
+#         flash(f"Failed to fetch user sections progress: {e}", 'error')
+#         return jsonify({'error': str(e)}), 500
 
 
-# user topic progress
+# # user topic progress
 
-@app.route('/users/<int:user_id>/topics/progress', methods=['GET'])
-@login_required
-def get_user_topics_progress(user_id):
-    try:
-        url = f"{base_url_userprogress}/users/progress/topics/{user_id}"
-        progress = fetch_data(url)
-        return jsonify(progress)
-    except requests.RequestException as e:
-        flash(f"Failed to fetch user topics progress: {e}", 'error')
-        return jsonify({'error': str(e)}), 500
+# @app.route('/users/<int:user_id>/topics/progress', methods=['GET'])
+# @login_required
+# def get_user_topics_progress(user_id):
+#     try:
+#         url = f"{base_url_userprogress}users/progress/topics/{user_id}"
+#         progress = fetch_data(url)
+#         print(progress)
+#         return jsonify(progress)
+#     except requests.RequestException as e:
+#         flash(f"Failed to fetch user topics progress: {e}", 'error')
+#         return jsonify({'error': str(e)}), 500
 
-# journey progress 
-
-
-@app.route('/users/<int:user_id>/journeys/<int:journey_id>/progress/total', methods=['GET'])
-@login_required
-def get_user_journey_total_progress(user_id, journey_id):
-    try:
-        url = f"{base_url_userprogress}/users/progress/total/{user_id}/{journey_id}"
-        progress = fetch_data(url)
-        return jsonify(progress)
-    except requests.RequestException as e:
-        flash(f"Failed to fetch user journey total progress: {e}", 'error')
-        return jsonify({'error': str(e)}), 500
-
-# all topics 
+# # journey progress 
 
 
-@app.route('/users/<int:user_id>/journeys/<int:journey_id>/topics/progress', methods=['GET'])
-@login_required
-def get_user_topics_total_progress(user_id, journey_id):
-    try:
-        url = f"{base_url_userprogress}/users/topics/{user_id}/{journey_id}"
-        progress = fetch_data(url)
-        return jsonify(progress)
-    except requests.RequestException as e:
-        flash(f"Failed to fetch user topics total progress: {e}", 'error')
-        return jsonify({'error': str(e)}), 500
+# @app.route('/users/<int:user_id>/journeys/<int:journey_id>/progress/total', methods=['GET'])
+# @login_required
+# def get_user_journey_total_progress(user_id, journey_id):
+#     try:
+#         url = f"{base_url_userprogress}users/progress/total/{user_id}/{journey_id}"
+#         progress = fetch_data(url)
+#         return jsonify(progress)
+#     except requests.RequestException as e:
+#         flash(f"Failed to fetch user journey total progress: {e}", 'error')
+#         return jsonify({'error': str(e)}), 500
+
+# # all topics 
+
+
+# @app.route('/users/<int:user_id>/journeys/<int:journey_id>/topics/progress', methods=['GET'])
+# @login_required
+# def get_user_topics_total_progress(user_id, journey_id):
+#     try:
+#         url = f"{base_url_userprogress}users/topics/{user_id}/{journey_id}"
+#         progress = fetch_data(url)
+#         return jsonify(progress)
+#     except requests.RequestException as e:
+#         flash(f"Failed to fetch user topics total progress: {e}", 'error')
+#         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
     app.run(debug=True)
