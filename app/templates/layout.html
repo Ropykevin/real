@@ -68,15 +68,12 @@
             </button>
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto" style="float: right;">
-                    <li class="nav-item"><a href="{{ url_for('index') }}" class="nav-link"
-                            style="color: orange;">Home</a></li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://www.techcamp.live/bootcamps" target="_blank"><i
-                                class="fa fa-bolt"></i><span class="link-item" style="color: orange;">Virtual
-                                Class</span></a>
+                        <a class="nav-link" href="https://www.techcamp.co.ke/bootcamps">Join Live class</a>
                     </li>
-                    <li style="margin-right: 0;" class="nav-item"><a href="{{url_for('profile')}}" class="nav-link"><i class="fa-solid fa-user fa-2xl"></i> </a></li>
-
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('profile.profile') }}"><i class="fa-solid fa-user fa-2xl"></i></a>
+                    </li>
                 </ul>
                 <ul class="navbar-brand mobile pull-left" style="float: right;">
                 </ul>

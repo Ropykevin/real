@@ -43,17 +43,18 @@
                             <div class="card-body">
                                 <h5 class="card-title">{{ journey.name }}</h5>
                                 <p class="card-text">{{ journey.description }}</p>
-                                <a style="width: 47%;" href="{{ journey.videoUrl }}" class="btn btn-primary"
+                                <!-- <a style="width: 47%;" href="{{ journey.videoUrl }}" class="btn btn-primary"
                                     target="_blank">Watch Preview</a>
                                 <a style="width: 47%; float: right;" href="{{ journey.streamUrl }}"
-                                    class="btn btn-secondary" target="_blank">Join Live class</a>
-                                <a style="width: 100%; margin-top: 10px;"
-                                    href="{{ url_for('get_journey', journey_id=journey.id) }}"
+                                    class="btn btn-secondary" target="_blank">Join Live class</a> -->
+                                <!-- <a style="width: 100%; margin-top: 10px;"
+                                    href="{{ url_for('journeys.get_journey', journey_id=journey.id) }}"
                                     class="btn btn-primary">Continue Journey</a>
-                                <!-- Start Journey Button -->
                                 <a style="width: 100%; margin-top: 10px;"
-                                    href="{{ url_for('get_levels_by_journey', journey_id=journey.id) }}"
-                                    class="btn btn-success" style="text-align: center;">Start Journey</a>
+                                    href="{{ url_for('sections.get_sections_for_journey', journey_id=journey.id) }}"
+                                    class="btn btn-success" style="text-align: center;">Start Journey</a> -->
+                                    <a style="width: 100%; margin-top: 10px;" href="{{ url_for('curriculum.get_curriculum', journey_id=journey.id) }}"
+                                        class="btn btn-success" style="text-align: center;">View Details</a>
                             </div>
                         </div>
                     </div>

@@ -42,18 +42,17 @@
         {% if categories %}
         {% for category in categories %}
         <div class="col-lg-4 col-md-6 mb-4">
-            <a class="text-decoration-none"
-                href="{{ url_for('category_journeys', category_name=category['categoryTitle'])}}">
+            <a class="text-decoration-none" href="{{ url_for('categories.category_journeys', category_id=category['id'])}}">
                 <div class="card border-0">
                     <div class="backgroundEffect"></div>
                     <div class="pic">
                         <img src="{{ category.categoryUrl }}" alt="Category image">
                     </div>
-                    <div class="content">
+                    <div class="content text-center"> <!-- Added text-center class -->
                         <p class="h-1 mt-4">{{ category.categoryTitle }}</p>
                         <p class="text-muted mt-3">{{ category.categoryDescription }}</p>
-                        <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
-                            <div class="btn btn-primary">View Courses<span class="fas fa-arrow-right"></span></div>
+                        <div class="d-flex justify-content-center mt-3 pb-3"> <!-- Center the button -->
+                            <div class="btn btn-primary">View Courses<span class="fas fa-arrow-right ms-2"></span></div>
                         </div>
                     </div>
                 </div>
@@ -67,6 +66,7 @@
         {% endif %}
     </div>
 </div>
+
 
 
     </div>

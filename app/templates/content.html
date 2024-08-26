@@ -14,7 +14,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
-          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -134,17 +134,20 @@
     <!-- Side Navbar -->
     <div class="sidebar" id="sidebar">
         <div class="sidebar-top">
-            <a href="{{ url_for('index') }}" class="cta-button">Browse All Courses</a>
+            <a href="{{ url_for('categories.index') }}" class="cta-button">Browse All Courses</a>
         </div>
         <div class="sidebar-content">
-            <h4 style="margin-left: 20px;">{{ current_section.sectionTitle }}</h4>
+            {% for section in curr %}
+            <h4 style="margin-left: 20px;">{{ section.sectionTitle }}</h4>
             <ul id="sidebar-list">
-                {% for topic in topics %}
-                <li class="list-group-item" id="sidebar-item-{{ loop.index0 }}">
-                    <a href="javascript:void(0)" onclick="showTopic({{ loop.index0 }},{{to}})">{{ topic.topicTitle }}</a>
+                <li class="list-group-item" id="sidebar-item">
+                    {% for topic in section.sectionTopics%}
+                    <a href="">{{topic.title}}</a>
+                    {% endfor %}
                 </li>
-                {% endfor %}
+
             </ul>
+            {% endfor %}
         </div>
     </div>
 
@@ -156,22 +159,19 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Left side of the top navbar with a list of five items -->
+            <!-- Left side of the top navbar -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
-                    {% for section in sections %}
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)" onclick="navigateToSection({{ section.id }})">{{
-                            section.sectionTitle }}</a>
+                        <a class="nav-link" href=" "></a>
                     </li>
-                    {% endfor %}
                 </ul>
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="https://www.techcamp.co.ke/bootcamps">Join Live class</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('profile') }}"><i class="fa-solid fa-user fa-2xl"></i></a>
+                        <a class="nav-link" href="{{ url_for('profile.profile') }}"><i class="fa-solid fa-user fa-2xl"></i></a>
                     </li>
                 </ul>
             </div>
@@ -182,170 +182,13 @@
         <h1 class="mb-4" id="topic-title"></h1>
         <p id="topic-description" class="topic-description"></p>
         <div class="d-flex justify-content-between mt-4">
-            <button class="btn btn-primary" id="prev-btn" onclick="navigateToTopic('prev')">Previous</button>
-            <button class="btn btn-primary" id="next-btn" onclick="navigateToTopic('next')">Next</button>
+            <button class="btn btn-primary" id="prev-btn">Previous</button>
+            <button class="btn btn-primary" id="next-btn">Next</button>
         </div>
     </div>
-y
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-    <script>
-        var topics = {{ topics | tojson | safe }};
-        var sections = {{ sections | tojson | safe }};
-        console.log(sections)
-        var currentTopicIndex = 0;
-        var currentSectionIndex = 0;
-
-        function showTopic(topicIndex,sectionIndex) {
-                if (topicIndex < 0 || topicIndex >= topics.length) {
-                    return;
-                }
-                currentTopicIndex = topicIndex;
-                currentSectionIndex= sectionIndex
-
-                var topic = topics[topicIndex];
-                console.log(topic)
-                var section=sections[sectionIndex]
-                document.getElementById('topic-title').innerText = topic.topicTitle;
-                document.getElementById('topic-description').innerHTML = topic.topicDescription;
-
-                var newUrl = new URL(window.location);
-                newUrl.searchParams.set('section', topic.sectionID || '');
-                newUrl.searchParams.set('topic', topicIndex);
-                history.pushState({ section: topic.sectionID, topic: topicIndex }, '', newUrl);
-
-                updateSidebarStatus(topicIndex);
-                updateNavigationButtons();
-
-                // Update progress after displaying the topic
-                updateProgress(topic.journeyId, topic.levelId, topic.sectionId, topic.id, 'currentUserId', 100);
-            }
-
-
-        function updateSidebarStatus(topicIndex) {
-            document.querySelectorAll('#sidebar-list li').forEach(function (item) {
-                item.classList.remove('active', 'read');
-            });
-
-            var sidebarItem = document.getElementById('sidebar-item-' + topicIndex);
-            if (sidebarItem) {
-                sidebarItem.classList.add('active', 'read');
-            }
-        }
-
-        function updateNavigationButtons() {
-            var prevButton = document.getElementById('prev-btn');
-            var nextButton = document.getElementById('next-btn');
-
-            // Hide Previous button if on the first topic
-            prevButton.style.display = currentTopicIndex === 0 ? 'none' : 'block';
-
-            // Hide Next button if on the last topic
-            nextButton.style.display = currentTopicIndex === topics.length - 1 ? 'none' : 'block';
-        }
-        function navigateToTopic(direction) {
-            var newIndex = direction === 'next' ? currentTopicIndex + 1 : currentTopicIndex - 1;
-            if (newIndex < 0 || newIndex >= topics.length) {
-                return;
-            }
-
-            document.getElementById('sidebar-item-' + currentTopicIndex).classList.add('read');
-            showTopic(newIndex);
-        }
-
-        window.addEventListener('popstate', function (event) {
-            if (event.state && event.state.topic !== undefined) {
-                showTopic(event.state.topic);
-            }
-        });
-
-        (function () {
-            var urlParams = new URLSearchParams(window.location.search);
-            var topicIndex = parseInt(urlParams.get('topic'), 10);
-            var sectionID = parseInt(urlParams.get('section'), 10);
-
-            if (!isNaN(topicIndex)) {
-                currentTopicIndex = topicIndex;
-            }
-            if (!isNaN(sectionID)) {
-                navigateToSection(sectionID);
-            } else {
-                showTopic(currentTopicIndex);
-            }
-        })();
-
-        // Sidebar toggle functionality
-        document.getElementById('sidebarToggle').addEventListener('click', function () {
-            document.getElementById('sidebar').classList.toggle('show');
-        });
-
-    function updateProgress(journeyId, levelId, sectionId, topicId, userId) {
-        fetch('/users/progress/topics', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                journeyId: journeyId,
-                levelId: levelId,
-                sectionId: sectionId,
-                topicId: topicId,
-                userId: {{user | safe}}
-            })
-        })
-            .then(response => response.json())
-            .then(data => {
-                console.log('Success:', data);
-            })
-            .catch((error) => {
-                console.error('Error:', error);
-            });
-    }
-
-
-    </script>
-    <script>
-
-        jQuery(document).ready(function () {
-
-            $('#messageSend').on('click', function (e) {
-
-                e.preventDefault();
-
-                // var that = $(this), url = that.attr('action'), method = that.attr('method'), data = {};
-
-                // that.find('[name]').each(function (index, value) { var that = $(this), name = that.attr('name'), value = that.val(); data[name] = value; });
-
-                // $('#response_error').html('<center><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i></center>');
-
-                $.ajax({
-                    url: url,
-                    type: method,
-                    data: data,
-                    success: function (results) {
-                        console.log("update progress results", results)
-
-                        // $('#response_error').html('');
-
-                        // $('#messageSend').html(results);
-
-                    },
-
-                    error: function (data) {
-                        console.log("update progress error", data)
-
-                        // var errors = '<font color="red"><ul>';
-                        // for (datos in data.responseJSON) {
-                        //     errors += '<li>' + data.responseJSON[datos] + '</li>';
-                        // }
-                        // errors += '</ul></font>';
-                        // $('#response_error').show().html(errors);
-                    }
-                });
-
-            });
-        });
-    </script>
 </body>
 
 </html>

@@ -1,0 +1,106 @@
+{% extends 'layout.html' %}
+{% block content %}
+<!-- <div class="page-loader">
+    <img src="/static/img/loader.gif" alt="">
+</div> -->
+
+<!-- Parallax Starter -->
+<section class="pagetitle parallax parallax-image"
+    style="background-image:url('http://www.themepush.com/demo-calypso/wp-content/uploads/sites/5/2014/10/wheat-golden-field-fall-hd-wallpaper.jpg');">
+    <div class="wrapsection">
+        <div class="overlay" style="background:#303543;opacity:0.4;"></div>
+        <div class="container">
+            <div class="parallax-content">
+                <div class="block2 text-center" style="color:#fff;">
+                    <h2>
+                        <span class="text2 big wow zoomIn" data-wow-delay="0.4s" data-wow-duration="2s">
+                            {% if journey %}
+                            Welcome to {{ journey.name }} Course
+                            {% else %}
+                            <p class="text-warning text-center" style="font-size: larger;">Course title will appear
+                                here!!</p>
+                            {% endif %}
+                        </span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Content Here -->
+<section class="page-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card-body">
+                    <h3 class="card-title">{{ journey.description }}</h3>
+                    <a style="width: 47%;" href="{{ journey.videoUrl }}" class="btn btn-primary" target="_blank">Watch
+                        Preview</a>
+                    <a style="width: 47%; float: right;" href="{{ journey.streamUrl }}" class="btn btn-secondary"
+                        target="_blank">Join Live class</a>
+                    <a style="width: 100%; margin-top: 10px;" href="{{ url_for('journeys.get_journey', journey_id=journey.id) }}"
+                        class="btn btn-primary">Continue Journey</a>
+                    <a style="width: 100%; margin-top: 10px;" href="{{ url_for('journeys.get_journey', journey_id=journey.id) }}"
+                        class="btn btn-success" style="text-align: center;">Start Journey</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Accordions & Tabs -->
+<section id="startcontent">
+    <div class="container">
+        <div class="row page-content">
+            <div class="col-md-12">
+                <h2 class="text-center">Curriculum</h2> 
+                {% if curr %}
+                <div>
+                    {% for sect in curr %}
+                    <div class="panel panel-default">
+                        <div>
+                            <h4 class="panel-title">
+                                <a>
+                                    {{ sect.sectionTitle }}
+                                </a>
+                            </h4>
+                        </div>
+
+                        <div>
+                            <ol class="list-group">
+                                {% if sect.sectionTopics %}
+                                {% set topic_counter = 1 %}
+                                {% for topic in sect.sectionTopics %}
+                                <li class="list-group-item">
+                                    {% for i in sections %}
+                                    <a
+                                        href="{{url_for('topic_content',journey_id=journey.id,section_id=i.id,topic_id=topic.id)}}">
+                                        {% endfor %}
+                                        {{ topic_counter }}. {{ topic.title }}
+                                    </a>
+                                    {% set topic_counter = topic_counter + 1 %}
+                                </li>
+                                {% endfor %}
+                                {% else %}
+                                <i class="fa fa-smile"></i>
+                                <p class="text-warning text-center" style="font-size: larger;">
+                                    Sorry!! Topics for {{ sect.sectionTitle }} currently not uploaded. <br>
+                                    All topics under {{ sect.sectionTitle }} will be displayed here.
+                                </p>
+                                {% endif %}
+                            </ol>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <p class="text-warning text-center" style="font-size: larger;">
+                    No sections available for this journey.
+                </p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

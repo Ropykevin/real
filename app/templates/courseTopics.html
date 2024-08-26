@@ -15,7 +15,7 @@
                     <h2>
                         <span class="text2 big wow zoomIn" data-wow-delay="0.4s" data-wow-duration="2s">
                             {% if journey %}
-                            Welcome to {{ journey.name }} Programming
+                            Welcome to {{ journey.name }} Course
                             {% else %}
                             <p class="text-warning text-center" style="font-size: larger;">Course title will appear
                                 here!!</p>
@@ -33,7 +33,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <!-- Add any additional content here if needed -->
+               
             </div>
         </div>
     </div>
@@ -43,7 +43,7 @@
 <section id="startcontent">
     <div class="container">
         <div class="row page-content">
-            <div class="col-md-8 offset-md-2">
+            <div class="col-md-12">
                 {% if sections %}
                 <div class="panel-group" id="accordion-0">
                     {% for sect in sections %}
@@ -63,7 +63,7 @@
                                     {% for topic in sect.topics %}
                                     <li class="list-group-item">
                                         <a
-                                            href="{{ url_for('topic_content', journey_id=journey_id, section_id=sect.id, topic_id=topic.id ) }}">
+                                            href="{{ url_for('topics.topic_content', journey_id=journey_id, section_id=sect.id, topic_id=topic.id ) }}">
                                             {{ topic.topicTitle }}
                                         </a>
                                     </li>
