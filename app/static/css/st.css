@@ -260,6 +260,7 @@ ul.longarrowlist li:before {
 /*=========================*/
 .large-header {
 	position:relative;
+	top: 0;
 	width:100%;
 	background:#333;
 	overflow:hidden;
@@ -271,7 +272,7 @@ ul.longarrowlist li:before {
 	-moz-animation:10s ease-in;
 	-o-animation:10s ease-in;
 	animation:10s ease-in;
-	height: 250px;
+	height: 500px;
 }
 .main-title {
 	font-weight:700;

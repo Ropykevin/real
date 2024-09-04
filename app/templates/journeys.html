@@ -20,6 +20,24 @@
         background-color: #ced4da;
         /* Darkest gray */
     }
+
+    .progress-container {
+        background-color: #f3f3f3;
+        border-radius: 25px;
+        margin: 10px 0;
+        height: 20px;
+    }
+
+    .progress-bar {
+        height: 100%;
+        background-color: #4caf50;
+        border-radius: 25px;
+        text-align: center;
+        color: white;
+        line-height: 20px;
+        /* Align text vertically */
+        transition: width 0.3s ease;
+    }
 </style>
 <section class="ftco-section bg-light">
     <div class="container">
@@ -43,18 +61,16 @@
                             <div class="card-body">
                                 <h5 class="card-title">{{ journey.name }}</h5>
                                 <p class="card-text">{{ journey.description }}</p>
-                                <!-- <a style="width: 47%;" href="{{ journey.videoUrl }}" class="btn btn-primary"
-                                    target="_blank">Watch Preview</a>
-                                <a style="width: 47%; float: right;" href="{{ journey.streamUrl }}"
-                                    class="btn btn-secondary" target="_blank">Join Live class</a> -->
-                                <!-- <a style="width: 100%; margin-top: 10px;"
-                                    href="{{ url_for('journeys.get_journey', journey_id=journey.id) }}"
-                                    class="btn btn-primary">Continue Journey</a>
+                                <!-- Progress bar -->
+                                <div class="progress-container">
+                                    <div class="progress-bar" style="width: {{ journey.progress }}%;">
+                                        {{ journey.progress }}%
+                                    </div>
+                                </div>
+
                                 <a style="width: 100%; margin-top: 10px;"
-                                    href="{{ url_for('sections.get_sections_for_journey', journey_id=journey.id) }}"
-                                    class="btn btn-success" style="text-align: center;">Start Journey</a> -->
-                                    <a style="width: 100%; margin-top: 10px;" href="{{ url_for('curriculum.get_curriculum', journey_id=journey.id) }}"
-                                        class="btn btn-success" style="text-align: center;">View Details</a>
+                                    href="{{ url_for('curriculum.get_curriculum', journey_id=journey.id) }}"
+                                    class="btn btn-success" style="text-align: center;">View Details</a>
                             </div>
                         </div>
                     </div>
@@ -64,4 +80,7 @@
         </div>
     </div>
 </section>
-{% endblock %} 
+<script>
+
+</script>
+{% endblock %}

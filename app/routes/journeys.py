@@ -7,7 +7,6 @@ journeys_bp = Blueprint('journeys', __name__)
 
 
 @journeys_bp.route('/journeys/<int:journey_id>', methods=['GET'])
-# @login_required
 def get_journey(journey_id):
 
     try:

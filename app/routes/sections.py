@@ -18,7 +18,6 @@ def fetch_data(url):
 @sections_bp.route('/journeys/<int:journey_id>/sections', methods=['GET'])
 # @login_required
 def get_sections_for_journey(journey_id):
-    # user = session["user"]
     try:
         # Fetch journey details
         journey_response = requests.get(
@@ -39,6 +38,10 @@ def get_sections_for_journey(journey_id):
         response.raise_for_status()
         curr = response.json()
         print(curr)
+        # users
+        user = session['user']
+        print("mimi", user['id'])
+        user_id = user['id']
         return render_template('courseTopics.html', sections=sections, journey_id=journey_id, journey=journey, curr=curr)
 
     except requests.RequestException as e:

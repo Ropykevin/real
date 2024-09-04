@@ -1,9 +1,10 @@
 from routes.imports import *
 from config import *
 from authlib.integrations.flask_client import OAuth
-from flask import Blueprint
+from flask import Blueprint 
 
 oauth_bp = Blueprint('oauth', __name__)
+
 
 
 oauth = OAuth()

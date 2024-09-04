@@ -47,6 +47,7 @@
                 {% if sections %}
                 <div class="panel-group" id="accordion-0">
                     {% for sect in sections %}
+                    {% set section_id = sect.id %}
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
@@ -63,7 +64,7 @@
                                     {% for topic in sect.topics %}
                                     <li class="list-group-item">
                                         <a
-                                            href="{{ url_for('topics.topic_content', journey_id=journey_id, section_id=sect.id, topic_id=topic.id ) }}">
+                                            href="{{ url_for('topics.topic_content', journey_id=journey_id, section_id=sect.id,topic_id=topic.id) }}">
                                             {{ topic.topicTitle }}
                                         </a>
                                     </li>
@@ -79,6 +80,9 @@
                             </div>
                         </div>
                     </div>
+                    <div id="app">
+
+                    </div>
                     {% endfor %}
                 </div>
                 {% else %}
@@ -90,4 +94,31 @@
         </div>
     </div>
 </section>
+<script>
+    Vue.createApp({
+        data() {
+            return {
+                NewSection:{
+                "journeyId": journey_id,
+                "sectionId": section_id,
+                "levelId": sections.level,
+                "userId": user_id,
+                'data': true
+                }
+
+                }
+            },
+        methods: {
+            saveSectionProgress(){
+                console.log(NewSection);
+                 axios.post('/users/progress/section', NewSection)
+                
+
+    }
+        },
+        }
+
+
+    ).mount('#app');
+</script>
 {% endblock %}
